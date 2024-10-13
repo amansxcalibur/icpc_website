@@ -5,11 +5,17 @@ import ContactUs from "@/components/footer/contact_us";
 import LatestUpdates from "@/components/latest_updates/latest_updates";
 import Hero from "@/components/hero/hero";
 import HallOfFame from "@/components/tables/hall_of_fame";
+import HowToRegister from "@/components/tables/how_register";
+import ImpDates from "@/components/tables/imoprtant_dates";
+import WhyParticipate from "@/components/about/why_participate";
+import ExclusicePerks from "@/components/about/perks";
 
 export default function Trial(){
     return(
         <div className="min-h-[100vh]">
             {/* <Hero/> */}
+            <WhyParticipate/>
+            <ExclusicePerks/>
             <div className="bg-white pt-[8vw]">
                 {/* <div className="min-h-[20vw] flex flex-col justify-center items-center w-full max-md:mb-[10vw]">
                     <p className="text-[3vw] max-md:text-[6vw] max-w-[50vw] text-center text-[#fcba31] mb-[3vw]">About Us</p>
@@ -47,6 +53,8 @@ export default function Trial(){
                     <div className="min-h-[50vw] min-w-[80vw] max-md:min-w-[90vw] bg-stone-600"></div>
                 </div> */}
                 <HallOfFame/>
+                <HowToRegister/>
+                <ImpDates/>
                 <LatestUpdates/>
                 {/* <section class="bg-gray-50 py-16">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
