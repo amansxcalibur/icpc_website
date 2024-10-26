@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function HowToRegister(){
     return(
-        <div className="bg-black min-w-screen flex justify-center">
+        <div className="bg-black min-w-screen flex justify-center py-[5vw]">
             <div className="min-w-[60vw]">
                 <p className="text-[3vw] mb-[3vw]">How to Register?</p>
                 <div className="text-[2vw]">
