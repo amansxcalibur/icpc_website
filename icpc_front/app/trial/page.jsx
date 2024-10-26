@@ -11,6 +11,7 @@ import WhyParticipate from "@/components/about/why_participate";
 import ExclusicePerks from "@/components/about/perks";
 import AboutAmrita from "@/components/about/amrita_vv";
 import AltHero from "@/components/hero/alt_hero";
+import ExclusicePerks2 from "@/components/about/perks_2";
 
 export default function Trial(){
     return(
@@ -18,7 +19,7 @@ export default function Trial(){
             {/* <Hero/> */}
             <AltHero/>
             <WhyParticipate/>
-            <ExclusicePerks/>
+            <ExclusicePerks2/>
             <div className="bg-white pt-[8vw]">
                 {/* <div className="min-h-[20vw] flex flex-col justify-center items-center w-full max-md:mb-[10vw]">
                     <p className="text-[3vw] max-md:text-[6vw] max-w-[50vw] text-center text-[#fcba31] mb-[3vw]">About Us</p>

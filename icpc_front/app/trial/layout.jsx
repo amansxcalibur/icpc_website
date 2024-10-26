@@ -40,8 +40,8 @@ export default function Layout({ children }) {
 
     return (
         <div className="w-full">
-            <nav className={`min-h-[5vw] z-10 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "transform translate-y-0" : "transform -translate-y-full"}`}>
-                <Image src="/icpc_foundation.png" width={1} height={1} className="h-[6vw] max-md:h-[6vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
+            <nav className={`mix-blend-difference min-h-[5vw] z-10 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "transform translate-y-0" : "transform -translate-y-full"}`}>
+                <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[6vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
                     <button className="mx-[1vw] hover:text-black transition ease-in duration-300">Home</button>
                     <button className="mx-[1vw] hover:text-black transition ease-in duration-300">ASPC</button>

@@ -1,43 +1,26 @@
 'use client'
 
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function ExclusivePerks2() {
     const [scrollPos, setScrollPos] = useState(0);
-    const [isInView, setIsInView] = useState(false);
-    const parentRef = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => setIsInView(entry.isIntersecting),
-            { threshold: 0.1 }
-        );
-
-        if (parentRef.current) observer.observe(parentRef.current);
-        
-        return () => observer.disconnect();
-    }, []);
-
-    useEffect(() => {
-        if (!isInView) return;
-
         const handleScroll = () => {
             setScrollPos(window.scrollY);
-        }
+        };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [isInView]);
+    }, []);
 
     return (
-        <div ref={parentRef} className="flex w-screen justify-center items-center flex-col my-[5vw] text-black relative">
+        <div className="flex w-screen justify-center items-center flex-col my-[5vw] text-black relative">
             <div
-                className="absolute z-50"
+                className="absolute z-50 bg-black h-full"
                 style={{
-                    transform: isInView
-                        ? `translate(${Math.sin(scrollPos * 0.01) * 20}px, ${scrollPos * 100}px)`
-                        : "translate(0, 0)",
+                    transform: `translate(${Math.sin(scrollPos * 0.01) * 20}px,${(scrollPos * 0.01) * 20}px)`,
                 }}
             >
                 <Image
