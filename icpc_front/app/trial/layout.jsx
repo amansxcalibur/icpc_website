@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import SideMenu from "@/components/navbar/sidemenu/sidemenu";
 import Logo from "../_assets/logo2.png";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
+import LiveNow from "@/components/carousals/live_now";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
@@ -40,6 +41,9 @@ export default function Layout({ children }) {
 
     return (
         <div className="w-full">
+            <div className="backdrop-blur-lg">
+                <LiveNow/>
+            </div>
             <nav className={`mix-blend-difference min-h-[5vw] z-10 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "transform translate-y-0" : "transform -translate-y-full"}`}>
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[6vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
@@ -53,7 +57,7 @@ export default function Layout({ children }) {
                     <SideMenu />
                 </div>
             </nav>
-            <div className="max-w-screen -mt-[6vw] bg-stone-300">
+            <div className="max-w-screen -mt-[9vw] bg-stone-300">
                 {children}
                 <Terminal/>
             </div>

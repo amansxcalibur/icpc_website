@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function WhyParticipate(){
     return(
-        <div className="text-black bg-stone-300 flex mt-[5vw] min-w-[100vw] min-h-[50vw] justify-center items-center">
+        <div className="text-black bg-white flex pt-[5vw] min-w-[100vw] min-h-[50vw] justify-center items-center">
             <div className="w-[70vw] flex flex-col">
                 <div className="flex-1 flex">
                     <div className="flex-1 text-[3vw] tracking-tighter font-semibold">Why Participate?</div>
