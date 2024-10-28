@@ -47,9 +47,9 @@ export default function Layout({ children }) {
             <nav className={`mix-blend-difference min-h-[5vw] z-10 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "transform translate-y-0" : "transform -translate-y-full"}`}>
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[6vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
-                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300">Home</button>
-                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300">ASPC</button>
-                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300">Important Dates</button>
+                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300" onClick={()=>{scrollTo(0,0)}}>Home</button>
+                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300" onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
+                    <button className="mx-[1vw] hover:text-black transition ease-in duration-300" onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
                     <button className="mx-[1vw] hover:text-black transition ease-in duration-300">Contests</button>
                 </div>
                 <button className="py-[0.5vw] px-[1vw] max-md:pr-[2vw] mx-[1vw] hover:bg-white hover:text-black rounded-full transition duration-300 ease max-md:hidden">Login</button>
@@ -57,7 +57,7 @@ export default function Layout({ children }) {
                     <SideMenu />
                 </div>
             </nav>
-            <div className="max-w-screen -mt-[9vw] bg-stone-300">
+            <div className="max-w-screen -mt-[9vw] bg-stone-30 bg-white">
                 {children}
                 <Terminal/>
             </div>

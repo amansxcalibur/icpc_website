@@ -38,7 +38,7 @@ export default function ExclusivePerks2() {
                     className="h-[10vw] w-auto"
                 /> */}
             </div>
-            <p className="text-[3vw] font-semibold">Exclusive Perks</p>
+            <p id="perks" className="text-[3vw] font-semibold">Exclusive Perks</p>
             <div className="flex justify-center min-w-[80vw] mt-[2vw] flex-col">
                 <div className="flex-1 min-h-[10vw] flex items-center mt-[5vw]">
                     <div className="flex-1 flex justify-center">

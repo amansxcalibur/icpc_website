@@ -6,7 +6,7 @@ import LatestUpdates from "@/components/latest_updates/latest_updates";
 import Hero from "@/components/hero/hero";
 import HallOfFame from "@/components/tables/hall_of_fame";
 import HowToRegister from "@/components/tables/how_register";
-import ImpDates from "@/components/tables/imoprtant_dates";
+import ImpDates from "@/components/tables/important_dates";
 import WhyParticipate from "@/components/about/why_participate";
 import ExclusicePerks from "@/components/about/perks";
 import AboutAmrita from "@/components/about/amrita_vv";
@@ -20,7 +20,7 @@ export default function Trial(){
             <AltHero/>
             <WhyParticipate/>
             <ExclusicePerks2/>
-            <div className="bg-white pt-[8vw]">
+            <div className="pt-[8vw] bg-white">
                 {/* <div className="min-h-[20vw] flex flex-col justify-center items-center w-full max-md:mb-[10vw]">
                     <p className="text-[3vw] max-md:text-[6vw] max-w-[50vw] text-center text-[#fcba31] mb-[3vw]">About Us</p>
                     <p className="text-[1.5vw] max-md:text-[3.5vw] max-w-[60vw] max-md:max-w-[90vw] text-center text-black">The ICPC - International Collegiate Programming Contest is the premiere global programming competition conducted by and for the world's universities. For over four decades, the ICPC has grown to be a game-changing global competitive educational program.</p>
@@ -56,9 +56,9 @@ export default function Trial(){
                     <p className="text-[1.5vw] max-md:text-[3vw] max-w-[60vw] text-center text-black mb-[2vw]">ICPC Amritapuri Through the Eyes of Competitors</p>
                     <div className="min-h-[50vw] min-w-[80vw] max-md:min-w-[90vw] bg-stone-600"></div>
                 </div> */}
-                <HallOfFame/>
-                <HowToRegister/>
                 <ImpDates/>
+                {/* <HallOfFame/> */}
+                <HowToRegister/>
                 <LatestUpdates/>
                 {/* <section class="bg-gray-50 py-16">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
