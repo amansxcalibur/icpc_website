@@ -56,6 +56,7 @@ export default function Trial(){
                     <p className="text-[1.5vw] max-md:text-[3vw] max-w-[60vw] text-center text-black mb-[2vw]">ICPC Amritapuri Through the Eyes of Competitors</p>
                     <div className="min-h-[50vw] min-w-[80vw] max-md:min-w-[90vw] bg-stone-600"></div>
                 </div> */}
+                <div className="bg-gradient-to-t from-white to-transparent absolute -mt-[15vw] w-screen min-h-[10vw]"></div>
                 <ImpDates/>
                 {/* <HallOfFame/> */}
                 <HowToRegister/>

@@ -111,8 +111,7 @@ export default function Terminal() {
   const toggleTerminal = () => {
     setIsOpen(prev => !prev);
     if (!isOpen) {
-      // Reset position when opening
-      setPosition({ left: window.innerWidth / 4, top: window.innerHeight / 4 });
+      setPosition({ left: window.innerWidth / 4, top: scrollY+window.innerHeight / 4 });
     }
   };
 

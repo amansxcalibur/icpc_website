@@ -31,7 +31,7 @@ export default function ContactUs(){
                 </div>
             </div>
         </div>
-        <div className="text-white max-md:text-[3vw] text-[1vw] text-center bg-blue-950">&copy;2024 ICPC Asia Amritapuri Regional Contest. All rights reserved.</div>
+        <div className="text-white max-md:text-[3vw] text-[1vw] text-center bg-blue-950 pb-[1vw]">&copy;2024 ICPC Asia Amritapuri Regional Contest. All rights reserved.</div>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import Terminal from "../ui_elems/terminal/terminal";
 import CustomButton from "../ui_elems/buttons/color_onhover_button";
+import Image from "next/image";
 
 export default function AltHero(){
     return(
@@ -17,24 +18,29 @@ export default function AltHero(){
                 Your browser does not support the video tag.
             </video>
         </div> */}
-        <div className="min-h-screen flex flex-col justify-center items-center w-full max-md:mt-[15vw] max-md:min-h-[90vw] bg-red-300 bg-[url('/temp_bg.jpeg')] rounded-b-[2vw]">
+        <div className="rounded-bg-full max-md:-mt-[24vw]">
+            <Image src="/amrita.jpg" className="md:min-h-screen max-md:min-h-[90vw] max-md:w-auto md:min-w-[100vw]" width={1} height={1} unoptimized>
+            </Image>
+        </div>
+        <div className="md:min-h-screen min-w-[100vw] max-md:min-h-[90vw] bg-black opacity-50 absolute z-[5] top-0 mix-blend-multiply"></div>
+        <div className="md:min-h-screen flex flex-col justify-center items-center w-full max-md:min-h-[90vw] absolute z-10 top-0">
             <div className="flex flex-col justify-center">
-                <p className="text-center text-[5vw] max-md:text-[6vw] tracking-tighter max-w-[80vw] max-md:max-w-[90vw] text-white mb-[2vw]">
+                <p className="text-center text-[5vw] max-md:text-[9vw] max-md:leading-[12vw] tracking-tighter max-w-[80vw] max-md:max-w-[90vw] text-white mb-[2vw] font-semibold">
                     Welcome to<br/> ICPC 2024 Regionals
                 </p>
                 <p className="text-[1.4vw] -mt-[1vw] max-md:text-[4vw] max-w-[40vw] max-md:max-w-[90vw] text-center text-white font-medium mb-[2vw]">
                 Join the brightest minds at <br/>Amrita Vishwa Vidyapeetham for ICPC 2024.
                 </p>
                 <div className="w-full flex justify-center">
-                    <div className="max-w-[22vw] flex flex-1">
+                    <div className="max-w-[22vw] flex flex-1 max-md:max-w-[40vw]">
                         <div className="flex-1 flex justify-center">
-                            <div className="bg-blue-500 rounded-[2vw] overflow-hidden">
+                            <div className="bg-blue-500 rounded-[2vw] max-md:rounded-[6vw] overflow-hidden">
                                 <CustomButton>Join us</CustomButton>
                             </div>
                         </div>
                         <div className="flex-1 flex justify-center">
-                        <div className="bg-blue-500 rounded-[2vw] overflow-hidden">
-                            <CustomButton>Terminal</CustomButton>
+                        <div className="bg-blue-500 rounded-[2vw] max-md:rounded-[6vw] overflow-hidden">
+                            <CustomButton>Register</CustomButton>
                         </div>
                         </div>
                     </div>
