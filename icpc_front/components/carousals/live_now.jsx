@@ -5,7 +5,7 @@ export default function LiveNow(){
     return(
         <div className="flex animate-infinite-scroll-x min-h-[3vw] items-center gap-[0.5vw] max-w-[100vw] text-white">
             {iter.map((index)=>(
-                <div className="flex items-center gap-[0.5vw]">
+                <div key={index} className="flex items-center gap-[0.5vw]">
                     <p className="text-[1.2vw] min-w-[12vw]">Registrations up Now</p>
                     <Smiley/>
                 </div>
