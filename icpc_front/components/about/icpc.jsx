@@ -6,21 +6,30 @@ export default function WhatsICPC(){
             <div className="w-[70vw] max-md:w-[90vw] flex flex-col">
                 
                 <div className="flex-1 flex max-md:flex-col mb-[2vw]">
-                    <div className="flex-1 text-[3vw] tracking-tighter font-semibold max-md:text-[6vw]">
+                    <div className="flex-[2] text-[3vw] tracking-tighter font-semibold max-md:text-[6vw]">
                         What&apos;s ICPC?
                     </div>
-                    <div className="flex-1 text-[1.3vw] max-md:text-[4vw]">
+                    <div className="flex-[3] text-[1.3vw] max-md:text-[4vw]">
                     The International Collegiate Programming Contest (ICPC) is the world&apos;s oldest and most esteemed programming competition and is the ultimate stage for students passionate about coding and problem-solving.
-                    ICPC sharpens <strong>creativity</strong>, <strong>teamwork</strong>, and <strong>resilience</strong>—qualities that make a real difference in software development, data science, and beyond. 
-                    By joining ICPC, you&apos;ll experience the thrill of innovation, connect with passionate coders, and elevate your problem-solving abilities to new heights.
+                    ICPC sharpens <strong>creativity</strong>, <strong>teamwork</strong>, and <strong>resilience</strong>—qualities that make a real difference in your day to day and professional life.
+                    By joining ICPC, you&apos;ll have the chance to dive into the art of solving complex problems under real-world constraints, connect with passionate coders, and take your problem-solving skills to the next level!
                     </div>
                 </div>
                 <div className="mb-[2vw]">
                     {/* <p className="text-[3vw] mb-[2vw] text-center font-semibold">Why Participate?</p> */}
                     <p className="text-[1.2vw] max-md:text-[4vw]">
-                    Competitive programming is more than mastering algorithms—it&apos;s a comprehensive workout for your brain.
+                        Have no worry if you&apos;re just a beginner—ICPC welcomes all skill levels and backgrounds, from computer science to biology, chemistry, and more. 
+                        In today&apos;s AI-driven world, ICPC helps you develop critical problem-solving and logical skills that machines can&apos;t replicate. 
+                        It&apos;s a space to build resilience, and prepare yourself with skills that keep you relevant, no matter how fast technology evolves.
+                    </p>
+                    <div className="flex-[2] mt-[5vw] mb-[1vw] text-[3vw] tracking-tighter font-semibold max-md:text-[6vw] text-center">
+                        Why Participate?
+                    </div>
+                    <p className="text-[1.2vw] max-md:text-[4vw]">
+                        Competitive programming is more than mastering algorithms—it&apos;s more about developing a skill for <strong>problem solving</strong>.
                         When you dive into CP/DSA (Competitive Programming/Data Structures and Algorithms), 
-                        you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your <strong>career</strong> and <strong>life</strong>. 
+                        you don&apos;t just learn coding techniques; you cultivate a suite of invaluable <strong>problem solving</strong> skills that will serve you throughout your <strong>career</strong> and <strong>life</strong>.
+                        This platform gives students the chance to grow by learning from some of the brightest minds in the programming community.
                     </p>
                 </div>
                 <div className="flex-1 flex mt-[1vw] flex-col gap-y-[2vw]">

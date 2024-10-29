@@ -6,13 +6,16 @@ export default function WhyParticipate(){
             <div className="w-[70vw] max-md:w-[90vw] flex flex-col">
                 <div className="flex-1 flex max-md:flex-col">
                     <div className="flex-1 text-[3vw] tracking-tighter font-semibold max-md:text-[6vw]">
-                        Why Amritapuri?
+                        Why Amrita?
                     </div>
                     <div className="flex-1 text-[1.3vw] max-md:text-[4vw]">
-                        <p>Competitive programming is more than mastering algorithms—it&apos;s a comprehensive workout for your brain.</p>
                         {/* When you dive into CP/DSA (Competitive Programming/Data Structures and Algorithms), 
                         you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. */}
-                        <p className="mt-[0.5vw]"><strong>Amritapuri</strong> isn&apos;t just a venue—it&apos;s an <span className="text-[#92133b]">experience</span>, you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. Here&apos;s what you can expect at the regionals</p>
+                        <p className="mt-[0.5vw]">
+                        <strong>Amrita</strong> isn&apos;t just an institution—it&apos;s a diverse experience across multiple campuses, each offering something unique. At <strong>Amritapuri</strong>, 
+                        you&apos;ll be inspired by the tranquil backwaters of Kerala; <strong>Coimbatore</strong> surrounds you with scenic hills that fuel focus and creativity; and 
+                        in <strong>Bangalore</strong>, you&apos;re at the heart of India&apos;s Silicon Valley. Here&apos;s what you can expect at the regionals
+                        </p>
                     </div>
                 </div>
                 <div className="flex-1 flex mt-[4vw] max-md:flex-col gap-x-[1vw]">
