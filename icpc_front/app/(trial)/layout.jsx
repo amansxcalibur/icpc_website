@@ -5,6 +5,7 @@ import SideMenu from "@/components/navbar/sidemenu/sidemenu";
 import Logo from "../_assets/logo2.png";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
 import LiveNow from "@/components/carousals/live_now";
+import Link from "next/link";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
@@ -60,6 +61,8 @@ export default function Layout({ children }) {
                     <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
                     <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
                     <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to register</button>
+                    <Link href="/halloffame" className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`}>Hall of Fame</Link>
+                    <Link href="/promote" className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`}>Promote</Link>
                 </div>
                 <button className="py-[0.5vw] px-[1vw] max-md:pr-[2vw] mx-[1vw] hover:bg-white hover:text-black rounded-full transition duration-300 ease max-md:hidden invisible">Login</button>
                 <div className="flex justify-end items-center text-5xl px-5 md:hidden max-md:flex-1">

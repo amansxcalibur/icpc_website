@@ -4,10 +4,12 @@ import { useEffect, useState, useRef } from "react";
 import SideMenu from "@/components/navbar/sidemenu/sidemenu";
 import Logo from "../_assets/logo2.png";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
+import Link from "next/link";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
     const scrollDir = useRef("scrolling down");
+    const [hero, setHero] = useState(true);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -15,6 +17,11 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
+            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth)){
+                setHero(false);
+            }else{
+                setHero(true);
+            }
             if (scrollY < lastScrollY) {
                 setOpen(true);
             }
@@ -43,10 +50,12 @@ export default function Layout({ children }) {
             <nav className={`min-h-[5vw] z-10 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "transform translate-y-0" : "transform -translate-y-full"}`}>
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[6vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
-                    <button className="mx-[1vw] hover:text-gray-500 text-black transition ease-in duration-300">Home</button>
-                    <button className="mx-[1vw] hover:text-gray-500 text-black transition ease-in duration-300">ASPC</button>
-                    <button className="mx-[1vw] hover:text-gray-500 text-black transition ease-in duration-300">Important Dates</button>
-                    <button className="mx-[1vw] hover:text-gray-500 text-black transition ease-in duration-300">Contests</button>
+                    <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{scrollTo(0,0)}}>Home</button>
+                    <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
+                    <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
+                    <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to register</button>
+                    <Link href="/halloffame" className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`}>Hall of Fame</Link>
+                    <Link href="/promote" className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`}>Promote</Link>
                 </div>
                 <button className="py-[0.5vw] px-[1vw] max-md:pr-[2vw] mx-[1vw] hover:bg-white hover:text-black rounded-full transition duration-300 ease max-md:hidden">Login</button>
                 <div className="flex justify-end items-center text-5xl px-5 md:hidden max-md:flex-1">

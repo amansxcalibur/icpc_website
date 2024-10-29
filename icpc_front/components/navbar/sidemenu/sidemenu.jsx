@@ -21,6 +21,8 @@ export default function SideMenu(){
                         <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
                         <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
                         <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to Register</button>
+                        <Link href="/icpc/halloffame" className="mx-[1vw] my-[1.5vw]">Hall of Fame</Link>
+                        <Link href="/icpc/promote" className="mx-[1vw] my-[1.5vw]">Promote</Link>
                     </div>
                     {/* <ul className="flex justify-center flex-col text-4xl mt-3">
                         {options.map(option=>
