@@ -28,7 +28,7 @@ export default function ImpDates(){
                     <div className="flex-1 flex md:justify-center md:flex-col max-md:justify-start items-center">
                         <div className="bg-yellow-500 rounded-full min-h-[12vw] min-w-[12vw] max-md:min-w-[28vw] max-md:min-h-[28vw] flex justify-center items-center">
                             <div className="text-white">
-                                <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">30</span></div>
+                                <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">31</span></div>
                                 <div className="text-[1.2vw] max-md:text-[3vw]">Oct 2024</div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ export default function ImpDates(){
                     <div className="flex-1 flex md:justify-center md:flex-col max-md:justify-start items-center">
                         <div className="bg-red-700 rounded-full min-h-[12vw] min-w-[12vw] max-md:min-w-[28vw] max-md:min-h-[28vw] flex justify-center items-center">
                             <div className="text-white">
-                                <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">11</span></div>
+                                <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">16</span></div>
                                 <div className="text-[1.2vw] max-md:text-[3vw]">Nov 2024</div>
                             </div>
                         </div>

@@ -7,20 +7,20 @@ export default function WhatsICPC(){
                 
                 <div className="flex-1 flex max-md:flex-col mb-[2vw]">
                     <div className="flex-1 text-[3vw] tracking-tighter font-semibold max-md:text-[6vw]">
-                        What's ICPC?
+                        What&apos;s ICPC?
                     </div>
                     <div className="flex-1 text-[1.3vw] max-md:text-[4vw]">
-                    The International Collegiate Programming Contest (ICPC) is the world's oldest and most esteemed programming competition and is the ultimate stage for students passionate about coding and problem-solving.
+                    The International Collegiate Programming Contest (ICPC) is the world&apos;s oldest and most esteemed programming competition and is the ultimate stage for students passionate about coding and problem-solving.
                     ICPC sharpens <strong>creativity</strong>, <strong>teamwork</strong>, and <strong>resilience</strong>—qualities that make a real difference in software development, data science, and beyond. 
-                    By joining ICPC, you'll experience the thrill of innovation, connect with passionate coders, and elevate your problem-solving abilities to new heights.
+                    By joining ICPC, you&apos;ll experience the thrill of innovation, connect with passionate coders, and elevate your problem-solving abilities to new heights.
                     </div>
                 </div>
                 <div className="mb-[2vw]">
                     {/* <p className="text-[3vw] mb-[2vw] text-center font-semibold">Why Participate?</p> */}
                     <p className="text-[1.2vw] max-md:text-[4vw]">
-                    Competitive programming is more than mastering algorithms—it's a comprehensive workout for your brain.
+                    Competitive programming is more than mastering algorithms—it&apos;s a comprehensive workout for your brain.
                         When you dive into CP/DSA (Competitive Programming/Data Structures and Algorithms), 
-                        you don't just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your <strong>career</strong> and <strong>life</strong>. 
+                        you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your <strong>career</strong> and <strong>life</strong>. 
                     </p>
                 </div>
                 <div className="flex-1 flex mt-[1vw] flex-col gap-y-[2vw]">

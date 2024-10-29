@@ -9,10 +9,10 @@ export default function WhyParticipate(){
                         Why Amritapuri?
                     </div>
                     <div className="flex-1 text-[1.3vw] max-md:text-[4vw]">
-                        <p>Competitive programming is more than mastering algorithms—it's a comprehensive workout for your brain.</p>
+                        <p>Competitive programming is more than mastering algorithms—it&apos;s a comprehensive workout for your brain.</p>
                         {/* When you dive into CP/DSA (Competitive Programming/Data Structures and Algorithms), 
-                        you don't just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. */}
-                        <p className="mt-[0.5vw]"><strong>Amritapuri</strong> isn't just a venue—it's an <span className="text-[#92133b]">experience</span>, you don't just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. Here's what you can expect at the regionals</p>
+                        you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. */}
+                        <p className="mt-[0.5vw]"><strong>Amritapuri</strong> isn&apos;t just a venue—it&apos;s an <span className="text-[#92133b]">experience</span>, you don&apos;t just learn coding techniques; you cultivate a suite of invaluable skills that will serve you throughout your career and life. Here&apos;s what you can expect at the regionals</p>
                     </div>
                 </div>
                 <div className="flex-1 flex mt-[4vw] max-md:flex-col gap-x-[1vw]">
