@@ -17,7 +17,7 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
-            if (scrollY>window.innerHeight){
+            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth)){
                 setHero(false);
             }else{
                 setHero(true);
@@ -53,7 +53,7 @@ export default function Layout({ children }) {
             <div className="backdrop-blur-lg invisible">
                 <LiveNow/>
             </div> */}
-            <nav className={`min-h-[5vw] z-50 sticky top-0 max-md:min-h-[15vw] flex backdrop-blur-md items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "md:transform translate-y-0" : "md:transform -translate-y-full"}`}>
+            <nav className={`min-h-[5vw] z-50 sticky top-0 max-md:min-h-[15vw] ${hero?"backdrop-blur-md":"max-md:bg-black"} flex items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "md:transform translate-y-0" : "md:transform -translate-y-full"}`}>
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[15vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
                     <button className={`mx-[1vw] ${hero?"hover:text-black text-white":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{scrollTo(0,0)}}>Home</button>

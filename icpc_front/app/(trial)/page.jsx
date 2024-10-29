@@ -12,12 +12,14 @@ import ExclusicePerks from "@/components/about/perks";
 import AboutAmrita from "@/components/about/amrita_vv";
 import AltHero from "@/components/hero/alt_hero";
 import ExclusicePerks2 from "@/components/about/perks_2";
+import WhatsICPC from "@/components/about/icpc";
 
 export default function Trial(){
     return(
         <div className="min-h-[100vh]">
             {/* <Hero/> */}
             <AltHero/>
+            <WhatsICPC/>
             <WhyParticipate/>
             <ExclusicePerks2/>
             <div className="pt-[8vw] bg-white">
