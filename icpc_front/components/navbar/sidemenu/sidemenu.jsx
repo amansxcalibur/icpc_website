@@ -27,10 +27,15 @@ export default function SideMenu(){
                             <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to Register</button>
                         </>
                         :
-                        <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
+                        <>
+                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
+                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Exclusive Perks</Link>
+                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Important Dates</Link>
+                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
+                        </>
                         }
-                        <Link href="/halloffame" className="mx-[1vw] my-[1.5vw]">Hall of Fame</Link>
-                        <Link href="/promote" className="mx-[1vw] my-[1.5vw]">Promote</Link>
+                        <Link href="/halloffame" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Hall of Fame</Link>
+                        <Link href="/promote" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Promote</Link>
                     </div>
                     {/* <ul className="flex justify-center flex-col text-4xl mt-3">
                         {options.map(option=>

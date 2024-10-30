@@ -5,11 +5,13 @@ import SideMenu from "@/components/navbar/sidemenu/sidemenu";
 import Logo from "../_assets/logo2.png";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
     const scrollDir = useRef("scrolling down");
     const [hero, setHero] = useState(true);
+    const router = useRouter()
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -51,6 +53,9 @@ export default function Layout({ children }) {
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[15vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
                     <Link href="/icpc" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`} onClick={()=>{scrollTo(0,0)}}>Home</Link>
+                    <Link href="/icpc" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`}>Exclusive Perks</Link>
+                    <Link href="/icpc" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`}>Important Dates</Link>
+                    <Link href="/icpc" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`}>How to register</Link>
                     <Link href="/halloffame" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`}>Hall of Fame</Link>
                     <Link href="/promote" className={`mx-[1vw] ${hero?"hover:text-red-700 text-black":"text-black hover:text-red-500"} transition ease-in duration-300`}>Promote</Link>
                 </div>
