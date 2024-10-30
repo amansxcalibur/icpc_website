@@ -3,10 +3,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import Bars from "../../svg/bars-3"
 import Logo from "../../../app/_assets/logo2.png"
 
 export default function SideMenu(){
+    const pathname=usePathname();
     const [open, setOpen]=useState(false)
     return(
         <>
@@ -17,12 +19,18 @@ export default function SideMenu(){
                 <div className="bg-[#4b82c4] w-[60vw] p-4 rounded-l-[2vw]">
                     <button className="text-5xl" onClick={()=>{setOpen(false)}}>X</button>
                     <div className="flex flex-col flex-1 justify-center items-start text-[6vw]">
-                        <button className="mx-[1vw] my-[1.5vw] mt-[4vw]" onClick={()=>{scrollTo(0,0)}}>Home</button>
-                        <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
-                        <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
-                        <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to Register</button>
-                        <Link href="/icpc/halloffame" className="mx-[1vw] my-[1.5vw]">Hall of Fame</Link>
-                        <Link href="/icpc/promote" className="mx-[1vw] my-[1.5vw]">Promote</Link>
+                        {pathname=='/icpc'?
+                        <>
+                            <button className="mx-[1vw] my-[1.5vw] mt-[4vw]" onClick={()=>{scrollTo(0,0)}}>Home</button>
+                            <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
+                            <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
+                            <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to Register</button>
+                        </>
+                        :
+                        <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
+                        }
+                        <Link href="/halloffame" className="mx-[1vw] my-[1.5vw]">Hall of Fame</Link>
+                        <Link href="/promote" className="mx-[1vw] my-[1.5vw]">Promote</Link>
                     </div>
                     {/* <ul className="flex justify-center flex-col text-4xl mt-3">
                         {options.map(option=>

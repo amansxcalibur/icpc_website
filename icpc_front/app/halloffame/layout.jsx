@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import SideMenu from "@/components/navbar/sidemenu/sidemenu";
 import Logo from "../_assets/logo2.png";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
+import LiveNow from "@/components/carousals/live_now";
 import Link from "next/link";
 
 export default function Layout({ children }) {
@@ -46,7 +47,13 @@ export default function Layout({ children }) {
     }, []);
 
     return (
-        <div className="w-full bg-white">
+        <div className="w-full">
+            {/* <div className="backdrop-blur-lg absolute top-0 z-20">
+                <LiveNow/>
+            </div>
+            <div className="backdrop-blur-lg invisible">
+                <LiveNow/>
+            </div> */}
             <nav className={`min-h-[5vw] z-50 sticky top-0 max-md:min-h-[15vw] backdrop-blur-md max-md:bg-black flex items-center text-[1vw] max-md:text-[5vw] w-full transition-transform ease-in-out duration-300 ${open ? "md:transform translate-y-0" : "md:transform -translate-y-full"}`}>
                 <Image src="/icpc_foundation.png" width={1} height={1} className="mix-blend-normal h-[6vw] max-md:h-[15vw] max-md:pl-[2vw] w-auto -mr-[2vw] mx-[2vw]" alt="Logo" unoptimized/>
                 <div className="md:flex flex-1 justify-center items-center max-md:hidden">
@@ -59,8 +66,9 @@ export default function Layout({ children }) {
                     <SideMenu />
                 </div>
             </nav>
-            <div className="max-w-screen bg-stone-300">
+            <div className="max-w-screen md:-mt-[6vw] max-md:-pt-[-9vw] bg-stone-30 bg-white">
                 {children}
+                <Terminal/>
             </div>
         </div>
     );
