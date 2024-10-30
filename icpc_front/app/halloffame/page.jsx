@@ -3,7 +3,7 @@ import Terminal from "@/components/ui_elems/terminal/terminal_2";
 
 export default function page2(){
     return(
-        <div className="pt-[9vw]">
+        <div id="hall_of_fame">
         <HallOfFame/>
         {/* <Terminal/> */}
         </div>
