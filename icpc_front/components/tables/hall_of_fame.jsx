@@ -3,27 +3,42 @@ import hallOfFameData from '../json/hall_of_fame.json';
 
 export default function HallOfFame() {
     return (
-        <div className="min-w-screen flex flex-col invert pb-[6vw] items-center">
+        <div className="min-h-screen flex flex-col items-center bg-[#92133b] pt-[8vw]">
             <div className='flex-1 flex flex-col min-w-[80vw] max-md:min-w-[90vw]'>
-                <p className="text-[3vw] px-[4vw] text-center mb-[1vw] max-md:text-[6vw]">Hall of Fame</p>
-                <div className="flex-1 flex flex-col px-[2vw] text-[1.2vw] max-md:text-[3vw] max-md:gap-y-[5vw]">
-                    <p className='max-md:text-[3.5vw] md:mb-[2vw] text-center'>Celebrate the champions who have made their mark at the ICPC Amritapuri Regionals:</p>
-                    <div className="flex flex-1 min-h-[4vw] items-center text-[1vw] max-md:text-[3vw] max-md:-mb-[2vw] max-md:mt-[4vw]">
-                        <div className="flex-1">Year</div>
-                        <div className="flex-1">Team Name</div>
-                        <div className="flex-1">College</div>
-                    </div>
-                    <div className="bg-dotted-gradient-line bg-dotted-size bg-dotted-pos h-[5px] bg-repeat-x"></div>
-                    
+                {/* Title Section */}
+                <div className="text-center mb-[4vw]">
+                    <h1 className="text-[4vw] font-bold mb-[1vw] max-md:text-[8vw] text-white">
+                        Hall of Fame
+                    </h1>
+                    <p className='text-[1.2vw] max-md:text-[3.5vw] text-gray-200'>
+                        Celebrating the champions who have made their mark at the ICPC Amritapuri Regionals
+                    </p>
+                </div>
+
+                {/* Table Header */}
+                <div className="flex min-h-[4vw] items-center text-[1.2vw] max-md:text-[3vw] font-semibold text-white border-b border-white/30 pb-[1vw]">
+                    <div className="flex-1">Year</div>
+                    <div className="flex-[2]">Team Name</div>
+                    <div className="flex-[2]">College</div>
+                </div>
+                
+                {/* Table Content */}
+                <div className="mt-[2vw] space-y-[2vw]">
                     {hallOfFameData.map((entry, index) => (
-                        <React.Fragment key={index}>
-                            <div className="flex flex-1 min-h-[7vw] items-center">
-                                <div className="flex-1">{entry.year}</div>
-                                <div className="flex-1"><strong>{entry.team}</strong></div>
-                                <div className="flex-1">{entry.college}</div>
+                        <div 
+                            key={index}
+                            className="flex items-center min-h-[4vw] hover:bg-white/5 rounded-lg transition-all duration-300 p-[1vw]"
+                        >
+                            <div className="flex-1 text-[1.1vw] max-md:text-[3vw] text-gray-300">
+                                {entry.year}
                             </div>
-                            <div className="bg-dotted-gradient-line bg-dotted-size bg-dotted-pos h-[5px] bg-repeat-x"></div>
-                        </React.Fragment>
+                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw]">
+                                <span className="font-semibold text-white">{entry.team}</span>
+                            </div>
+                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw] text-gray-200">
+                                {entry.college}
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

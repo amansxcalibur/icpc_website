@@ -3,10 +3,27 @@ import { useState, useRef, useEffect } from "react"
 import Image from "next/image";
 
 const COMMANDS = {
-  '--help': 'Available commands:\n--help: Show this help message\nclear: Clear the terminal\necho [text]: Display text\nversion: Show terminal version',
+  'help' : `
+Available commands:
+- help: Show this help message
+- about: About ICPC World Finals
+- register: Get registration information
+- clear: Clear terminal screen`,
   'clear': '',
-  'version': 'Terminal v1.0.0',
-  'echo': (args) => args.join(' ')
+  'about' : `
+International Collegiate Programming Contest (ICPC)
+World Finals 2024 @ Amrita University
+
+The ICPC is the premier global programming competition conducted by and for the world's universities. 
+The contest fosters creativity, teamwork, and innovation in building new software programs.`,
+ 'register' : `
+To register your team, please visit the official ICPC registration website at https://icpc.global/registration.
+
+Registration Deadline: November 9th, 2024
+Registration Fee: 1100 INR per team
+
+For more information, contact the ICPC World Finals 2024 Organizing Committee at icpc@amrita.edu.
+`
 };
 
 export default function Terminal() {
@@ -14,7 +31,7 @@ export default function Terminal() {
   const [offset, setOffset] = useState([0, 0]);
   const [position, setPosition] = useState({ left: 100, top: 100 });
   const [input, setInput] = useState('');
-  const [history, setHistory] = useState(['Welcome to Terminal v1.0.0\nType --help for available commands']);
+  const [history, setHistory] = useState(['Welcome\nType help for available commands']);
   const [commandHistory, setCommandHistory] = useState([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
@@ -43,13 +60,13 @@ export default function Terminal() {
         output = COMMANDS[command];
       }
     } else if (command) {
-      output = `Command not found: ${command}. Type --help for available commands.`;
+      output = `Command not found: ${command}. Type help for available commands.`;
     }
 
     if (command === 'clear') {
       setHistory([]);
     } else {
-      setHistory(prev => [...prev, `test@test$ ${cmd}`, output].filter(Boolean));
+      setHistory(prev => [...prev, `coder@amritaicpc$ ${cmd}`, output].filter(Boolean));
     }
   };
 
@@ -127,7 +144,7 @@ export default function Terminal() {
 
       {isOpen && (
         <div 
-          className="absolute z-20 bg-black min-w-[35vw] min-h-[20vw] rounded-[1vw] overflow-hidden flex flex-col shadow-lg animate-fade-in"
+          className="absolute z-20 bg-black w-[35vw] h-[20vw] rounded-[1vw] overflow-hidden flex flex-col shadow-lg animate-fade-in"
           style={{ 
             left: position.left + "px", 
             top: position.top + "px",
@@ -135,32 +152,34 @@ export default function Terminal() {
         >
           <div 
             ref={ref}
-            className="min-h-[2vw] bg-gray-700 w-full flex justify-between items-center cursor-move"
+            className="h-[2vw] bg-gray-700 w-full flex justify-between items-center cursor-move"
             onMouseDown={handleMouseDown}
           >
             <div className="flex items-center">
-              <div className="rounded-full ml-[0.5vw] bg-red-500 min-h-[1vw] min-w-[1vw] cursor-pointer hover:bg-red-600" onClick={toggleTerminal} />
-              <div className="rounded-full ml-[0.2vw] bg-yellow-500 min-h-[1vw] min-w-[1vw]" />
-              <div className="rounded-full ml-[0.2vw] bg-green-500 min-h-[1vw] min-w-[1vw]" />
+              <div className="rounded-full ml-[0.5vw] bg-red-500 h-[1vw] w-[1vw] cursor-pointer hover:bg-red-600" onClick={toggleTerminal} />
+             
             </div>
-            <div className="text-xs text-gray-300 mr-2">Terminal v1.0.0</div>
+            <div className="text-xs text-gray-300 mr-2">ICPC Help Terminal</div>
           </div>
           
-          <div ref={outputRef} className="flex-1 overflow-y-auto p-2 font-mono text-green-400">
+          <div 
+            ref={outputRef} 
+            className="flex-1 overflow-y-auto p-2 font-mono text-green-400 text-[0.8vw] max-h-[calc(20vw-4vw)]"
+          >
             {history.map((line, i) => (
-              <div key={i} className="whitespace-pre-wrap">{line}</div>
+              <div key={i} className="whitespace-pre-wrap break-words">{line}</div>
             ))}
           </div>
 
-          <div className="flex px-2 py-1 font-mono text-green-400 border-t border-gray-700">
-            <span>test@test$ </span>
+          <div className="flex px-2 py-1 font-mono text-green-400 text-[0.8vw] border-t border-gray-700 h-[2vw]">
+            <span>coder@amritaicpc$ </span>
             <input
               ref={inputRef}
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="flex-1 bg-transparent outline-none ml-1"
+              className="flex-1 bg-transparent outline-none ml-1 min-w-0"
               autoFocus
             />
           </div>
