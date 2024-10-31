@@ -3,21 +3,21 @@ import Image from "next/image"
 export default function WhatsICPC(){
     return(
         <div className="min-h-screen bg-white flex justify-center items-center pt-[5vw]">
-            <div className="w-[85vw] flex flex-col">
+            <div className="w-[85vw] flex flex-col max-md:w-[95vw]">
                 {/* Title and Main Description */}
                 <div className="mb-[2vw] max-md:px-[2vw]">
                     <h1 className="text-[2.5vw] mb-[1vw] max-md:text-[6vw] font-semibold text-blue-950">
-                        What's ICPC?
+                        What&apos;s ICPC?
                     </h1>
                     <div className="space-y-[1vw]">
                         <p className="text-[1.1vw] max-md:text-[3.2vw] text-gray-600 leading-snug max-md:text-left">
-                            The International Collegiate Programming Contest (ICPC) is the world's oldest and most esteemed programming competition and is the ultimate stage for students passionate about coding and problem-solving. 
+                            The International Collegiate Programming Contest (ICPC) is the world&apos;s oldest and most esteemed programming competition and is the ultimate stage for students passionate about coding and problem-solving. 
                             ICPC sharpens <span className="font-semibold">creativity</span>, <span className="font-semibold">teamwork</span>, and <span className="font-semibold">resilience</span>—qualities that make a real difference in your day to day and professional life.
                         </p>
                         <p className="text-[1.1vw] max-md:text-[3.2vw] text-gray-600 leading-snug max-md:text-left">
-                            Have no worry if you're just a <span className="font-semibold">beginner</span>—ICPC welcomes all skill levels and backgrounds, from computer science to biology, chemistry, and more. 
-                            In today's AI-driven world, ICPC helps you develop critical problem-solving and logical skills that machines can't replicate. 
-                            It's a space to build resilience, and prepare yourself with skills that keep you relevant, no matter how fast technology evolves.
+                            Have no worry if you&apos;re just a <span className="font-semibold">beginner</span>—ICPC welcomes all skill levels and backgrounds, from computer science to biology, chemistry, and more. 
+                            In today&apos;s AI-driven world, ICPC helps you develop critical problem-solving and logical skills that machines can&apos;t replicate. 
+                            It&apos;s a space to build resilience, and prepare yourself with skills that keep you relevant, no matter how fast technology evolves.
                         </p>
                     </div>
                 </div>

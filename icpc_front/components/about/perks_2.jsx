@@ -7,12 +7,12 @@ export default function ExclusivePerks2() {
         <div className="h-screen bg-white flex justify-center items-center">
             <div className="w-[90vw] flex flex-col">
                 {/* Title */}
-                <h1 id="perks" className="text-[2.5vw] mb-[3vw] max-md:text-[6vw] font-semibold text-blue-950">
+                <h1 id="perks" className="text-[2.5vw] mb-[3vw] max-md:text-[6vw] max-md:mb-[5vw] font-semibold text-blue-950">
                     Exclusive Perks
                 </h1>
 
                 {/* Grid of Perks */}
-                <div className="grid grid-cols-2 gap-[3vw] max-md:grid-cols-1">
+                <div className="grid grid-cols-2 gap-[3vw] max-md:grid-cols-1 max-md:gap-y-[10vw]">
                     {/* Perk 1 */}
                     <div className="flex gap-[2vw] items-center">
                         <div className="w-[15vw] h-[15vw] max-md:w-[30vw] max-md:h-[30vw] rounded-[1vw] overflow-hidden flex-shrink-0">

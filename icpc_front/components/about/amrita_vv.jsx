@@ -2,7 +2,7 @@ export default function AboutAmrita(){
     return(
         <div id="about_amrita" className="h-screen flex flex-col">
             {/* About Amrita Section - 70% height */}
-            <div className="h-[70%] bg-[#92133b] flex justify-center items-center">
+            <div className="h-[70%] max-md:h-[60%] bg-[#92133b] flex justify-center items-center">
                 <div className="max-w-[80vw] max-md:max-w-[90vw]">
                     <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-white mb-[2vw]">
                         About Amrita Vishwa Vidyapeetham
@@ -11,24 +11,24 @@ export default function AboutAmrita(){
                         <p>
                             Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, 
                             educating a vibrant student population of over 24,000 by 1700+ strong faculty. 
-                            Accredited with the highest possible 'A++' grade by NAAC, Amrita offers more than 250 UG, PG, 
+                            Accredited with the highest possible &apos;A++&apos; grade by NAAC, Amrita offers more than 250 UG, PG, 
                             and Ph.D. programs in Engineering, Management, Medical Sciences including Ayurveda, Life Sciences, 
                             Physical Sciences, Agriculture Sciences, Arts & Humanities, and Social & Behavioral Sciences.
                         </p>
                         <p>
                             With its extensive network of nine campuses spread across Amaravati, Amritapuri, Bengaluru, 
                             Chennai, Coimbatore, Kochi, Mysuru, Nagercoil(*) and NCR Delhi (Faridabad), Amrita University 
-                            stands as one of India's preeminent private educational institutions.
+                            stands as one of India&apos;s preeminent private educational institutions.
                         </p>
                     </div>
                 </div>
             </div>
 
             {/* Contact Us Section - 30% height */}
-            <div className="h-[30%] bg-blue-950 text-white">
+            <div className="h-[30%] max-md:h-[40%] bg-blue-950 text-white max-md:pt-[5vw]">
                 <div className="h-full flex flex-col">
                     {/* Contact Content */}
-                    <div className="flex-1 grid grid-cols-3 max-md:grid-cols-1 gap-[2vw] px-[10vw] py-[2vw]">
+                    <div className="flex-1 grid grid-cols-3 max-md:grid-cols-1 gap-[2vw] px-[10vw] max-md:px-[5vw] py-[2vw]">
                         {/* Contact Info */}
                         <div>
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Contact Us</h2>

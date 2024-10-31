@@ -13,9 +13,9 @@ export default function WhyParticipate(){
                     </div>
                     <div className="flex-1">
                         <p className="text-[1.1vw] max-md:text-[3vw] text-gray-300">
-                            <strong className="text-white">Amrita</strong> isn't just an institution—it's a diverse experience across multiple campuses, each offering something unique. At <strong className="text-white">Amritapuri</strong>, 
-                            you'll be inspired by the tranquil backwaters of Kerala; <strong className="text-white">Coimbatore</strong> surrounds you with scenic hills that fuel focus and creativity; and 
-                            in <strong className="text-white">Bangalore</strong>, you're at the heart of India's Silicon Valley. Here's what you can expect at the regionals:
+                            <strong className="text-white">Amrita</strong> isn&apos;t just an institution—it&apos;s a diverse experience across multiple campuses, each offering something unique. At <strong className="text-white">Amritapuri</strong>, 
+                            you&apos;ll be inspired by the tranquil backwaters of Kerala; <strong className="text-white">Coimbatore</strong> surrounds you with scenic hills that fuel focus and creativity; and 
+                            in <strong className="text-white">Bangalore</strong>, you&apos;re at the heart of India&apos;s Silicon Valley. Here&apos;s what you can expect at the regionals:
                         </p>
                     </div>
                 </div>
