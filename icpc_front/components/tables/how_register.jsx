@@ -69,16 +69,22 @@ export default function HowToRegister(){
                                 </div>
                                 <div className="text-center">
                                     <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">Online Round</p>
-                                    <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">4:00 PM - 6:00 PM</p>
+                                    <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">5:30 PM - 8:00 PM</p>
                                 </div>
                             </div>
 
                             {/* Onsite Round */}
                             <div className="flex flex-col items-center">
                                 <div className="bg-blue-600 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                                    <div className="text-white text-[2.5vw] max-md:text-[6vw] font-bold">TBD</div>
+                                    <div className="text-white text-center">
+                                        <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">28</div>
+                                        <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">DEC 2024</div>
+                                    </div>
                                 </div>
-                                <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">Onsite Round</p>
+                                <div className="text-center">
+                                    <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">Onsite Round</p>
+                                    <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">Till <span className="font-bold">29th</span> Dec</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -161,7 +161,7 @@ export default function Terminal() {
     <>
       <button 
         onClick={toggleTerminal}
-        className="fixed z-50 bottom-0 right-0 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-[5vw] h-[5vw] max-md:w-[20vw] max-md:h-[20vw] flex justify-center items-center m-[1vw] hover:scale-110 transition-all duration-300 ease-in-out shadow-lg"
+        className="fixed z-20 bottom-0 right-0 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-[5vw] h-[5vw] max-md:w-[20vw] max-md:h-[20vw] flex justify-center items-center m-[1vw] hover:scale-110 transition-all duration-300 ease-in-out shadow-lg"
         aria-label="Toggle Terminal"
       >
         <Image src="/terminal_black.png" width={1} height={1} className="h-[4vw] w-auto max-md:h-[15vw] brightness-0" unoptimized></Image>
