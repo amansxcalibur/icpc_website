@@ -6,6 +6,7 @@ import LatestUpdates from "@/components/latest_updates/latest_updates";
 import Hero from "@/components/hero/hero";
 import HallOfFame from "@/components/tables/hall_of_fame";
 import HowToRegister from "@/components/tables/how_register";
+import ImpDates from "@/components/tables/important_dates";
 import WhyParticipate from "@/components/about/why_participate";
 import ExclusicePerks from "@/components/about/perks";
 import AboutAmrita from "@/components/about/amrita_vv";
@@ -58,7 +59,10 @@ export default function Trial(){
                     <div className="min-h-[50vw] min-w-[80vw] max-md:min-w-[90vw] bg-stone-600"></div>
                 </div> */}
                 <div className="bg-gradient-to-t from-white to-transparent absolute -mt-[15vw] w-screen min-h-[10vw]"></div>
+                <ImpDates/>
+                {/* <HallOfFame/> */}
                 <HowToRegister/>
+                <LatestUpdates/>
                 {/* <section class="bg-gray-50 py-16">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Latest Updates</h2>
@@ -91,6 +95,7 @@ export default function Trial(){
                     </div>
                 </section> */}
                 <AboutAmrita/>
+                <ContactUs/>
             </div>
         </div>
     )

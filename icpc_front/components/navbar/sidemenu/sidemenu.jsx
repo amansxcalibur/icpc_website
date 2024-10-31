@@ -22,18 +22,14 @@ export default function SideMenu(){
                         {pathname=='/icpc'?
                         <>
                             <button className="mx-[1vw] my-[1.5vw] mt-[4vw]" onClick={()=>{scrollTo(0,0)}}>Home</button>
-                            <Link href="#perks">
-                                <div className="text-[1.2vw] max-md:text-[4vw] hover:text-blue-500">
-                                    Why Amrita
-                                </div>
-                            </Link>
+                            <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('perks').scrollIntoView()}}>Exclusive Perks</button>
                             <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('important dates').scrollIntoView()}}>Important Dates</button>
                             <button className="mx-[1vw] my-[1.5vw]" onClick={()=>{document.getElementById('register').scrollIntoView()}}>How to Register</button>
                         </>
                         :
                         <>
                             <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
-                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Why Amrita</Link>
+                            <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Exclusive Perks</Link>
                             <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Important Dates</Link>
                             <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
                         </>
