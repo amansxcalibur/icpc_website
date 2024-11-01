@@ -59,7 +59,7 @@ export default function ExclusivePerks2() {
                     <div className="flex gap-[2vw] items-center">
                         <div className="w-[15vw] h-[15vw] max-md:w-[30vw] max-md:h-[30vw] rounded-[1vw] overflow-hidden flex-shrink-0">
                             <Image 
-                                src="/winner_icpc.jpg" 
+                                src="/icpc_winners_double_site.jpg" 
                                 width={500} 
                                 height={500} 
                                 alt="Certificates"

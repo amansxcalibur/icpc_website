@@ -8,7 +8,7 @@ export default function AltHero(){
         <>
         <div className="rounded-bg-full max-md:-mt-[24vw]">
             <Image 
-                src="/amrita.jpg" 
+                src="/amrita_hq.jpg" 
                 className="md:min-h-screen max-md:min-h-[90vw] max-md:w-auto md:min-w-[100vw]" 
                 width={1} 
                 height={1} 
