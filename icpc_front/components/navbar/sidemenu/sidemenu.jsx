@@ -17,9 +17,9 @@ export default function SideMenu({openMenu, setOpenMenu}){
                 <div className="bg-[#4b82c4] w-[60vw] p-4 rounded-l-[2vw]">
                     <button className="text-5xl" onClick={()=>{setOpenMenu(false)}}>X</button>
                     <div className="flex flex-col flex-1 justify-center items-start text-[6vw]">
-                        <Link href="/icpc" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
-                        <Link href="/icpc#perks" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Why Amrita</Link>
-                        <Link href="/icpc#register" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
+                        <Link href="/" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
+                        <Link href="/#perks" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Why Amrita</Link>
+                        <Link href="/#register" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
                         <Link href="/halloffame" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Hall of Fame</Link>
                         <Link href="/promote" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Promote</Link>
                     </div>

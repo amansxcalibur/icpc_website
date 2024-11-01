@@ -2,11 +2,13 @@
 import { useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar/navbar";
 import Script from "next/script";
+import { usePathname } from "next/navigation";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
     const scrollDir = useRef("scrolling down");
     const [hero, setHero] = useState(false);
+    const pathname = usePathname()
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -14,7 +16,7 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
-            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth)){
+            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth) || pathname=='/promote'){
                 setHero(false);
             }else{
                 setHero(true);

@@ -23,19 +23,19 @@ export default function Navbar({ open, hero, darkSection }) {
             />
             <div className="md:flex flex-1 justify-center items-center max-md:hidden">
                 <Link 
-                    href="/icpc" 
+                    href="/" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Home
                 </Link>
                 <Link 
-                    href="/icpc#perks" 
+                    href="/#perks" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Why Amrita
                 </Link>
                 <Link 
-                    href="/icpc#register" 
+                    href="/#register" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     How to register

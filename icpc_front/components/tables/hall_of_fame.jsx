@@ -4,7 +4,7 @@ import hallOfFameData from '../json/hall_of_fame.json';
 export default function HallOfFame() {
     return (
         <div className="min-h-screen flex flex-col items-center bg-[#92133b] pt-[8vw]">
-            <div className='flex-1 flex flex-col min-w-[80vw] max-md:min-w-[90vw]'>
+            <div className='flex-1 flex flex-col min-w-[80vw] max-md:min-w-[95=vw] max-md:max-w-[95vw]'>
                 {/* Title Section */}
                 <div className="text-center mb-[4vw]">
                     <h1 className="text-[4vw] font-bold mb-[1vw] max-md:text-[8vw] text-white">
