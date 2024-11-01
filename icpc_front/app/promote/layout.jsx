@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar/navbar";
+import Script from "next/script";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
@@ -43,6 +44,19 @@ export default function Layout({ children }) {
 
     return (
         <div className="w-full bg-white">
+            {/* Google Analytics */}
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-XQF50KFS2B"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-XQF50KFS2B');
+                `}
+            </Script>
             <Navbar open={open} hero={hero} darkSection={false} />
             <div className="max-w-screen bg-stone-300">
                 {children}
