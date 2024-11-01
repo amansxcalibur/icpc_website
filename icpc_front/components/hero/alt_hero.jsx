@@ -9,14 +9,14 @@ export default function AltHero(){
         <div className="rounded-bg-full max-md:-mt-[24vw]">
             <Image 
                 src="/amrita_hq.jpg" 
-                className="md:min-h-screen max-md:min-h-[90vw] max-md:w-auto md:min-w-[100vw]" 
+                className="md:min-h-screen max-md:min-h-[90vw] max-md:w-auto md:min-w-full  max-h-[100vh]" 
                 width={1} 
                 height={1} 
                 unoptimized
                 alt="Amrita Campus"
             />
         </div>
-        <div className="md:min-h-screen min-w-[100vw] max-md:min-h-[90vw] bg-black opacity-50 absolute z-[5] top-0 mix-blend-multiply"></div>
+        <div className="md:min-h-screen min-w-full max-md:min-h-[90vw] bg-black opacity-50 absolute z-[5] top-0 mix-blend-multiply"></div>
         <div className="md:min-h-screen flex flex-col justify-center items-center w-full max-md:min-h-[90vw] absolute z-10 top-0">
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-center text-[5vw] max-md:text-[9vw] max-md:leading-[12vw] tracking-tighter max-w-[80vw] max-md:max-w-[90vw] text-white mb-[2vw] font-semibold">
