@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function WhyParticipate(){
     return(
-        <div id="why_participate" className="h-screen bg-blue-950 flex justify-center items-center">
+        <div id="why_participate" className="min-h-screen max-md:py-[5vw] bg-blue-950 flex justify-center items-center">
             <div className="w-[90vw] flex flex-col">
                 {/* Header Section */}
                 <div className="flex max-md:flex-col gap-[4vw] mb-[4vw]">

@@ -1,8 +1,8 @@
 export default function AboutAmrita(){
     return(
-        <div id="about_amrita" className="h-screen flex flex-col">
+        <div id="about_amrita" className="min-h-screen flex flex-col">
             {/* About Amrita Section - 70% height */}
-            <div className="h-[70%] max-md:h-[60%] bg-[#92133b] flex justify-center items-center">
+            <div className="flex-[7] max-md:flex-[6] max-md:py-[5vw] bg-[#92133b] flex justify-center items-center">
                 <div className="max-w-[80vw] max-md:max-w-[90vw]">
                     <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-white mb-[2vw]">
                         About Amrita Vishwa Vidyapeetham
@@ -25,12 +25,12 @@ export default function AboutAmrita(){
             </div>
 
             {/* Contact Us Section - 30% height */}
-            <div className="h-[30%] max-md:h-[40%] bg-blue-950 text-white max-md:pt-[5vw]">
-                <div className="h-full flex flex-col">
+            <div className="flex-[3] max-md:flex-[4] bg-blue-950 text-white max-md:pt-[5vw] flex justify-center items-center">
+                <div className="h-full flex min-w-[95vw] md:min-w-[80vw]">
                     {/* Contact Content */}
-                    <div className="flex-1 grid grid-cols-3 max-md:grid-cols-1 gap-[2vw] px-[10vw] max-md:px-[5vw] py-[2vw]">
+                    <div className="flex-1 flex max-md:flex-col gap-[2vw] max-md:px-[5vw] py-[2vw]">
                         {/* Contact Info */}
-                        <div>
+                        <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Contact Us</h2>
                             <div className="text-[1vw] max-md:text-[3vw] text-gray-300">
                                 <p>Amrita School of Engineering</p>
@@ -40,7 +40,7 @@ export default function AboutAmrita(){
                         </div>
 
                         {/* Quick Links */}
-                        <div>
+                        <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Quick Links</h2>
                             <div className="text-[1vw] max-md:text-[3vw] text-gray-300 space-y-[0.5vw]">
                                 <p className="hover:text-blue-300 cursor-pointer">ICPC Global</p>
@@ -50,7 +50,7 @@ export default function AboutAmrita(){
                         </div>
 
                         {/* Contact Details */}
-                        <div>
+                        <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Get in Touch</h2>
                             <div className="text-[1vw] max-md:text-[3vw] text-gray-300">
                                 <p>Email: icpc@amrita.edu</p>
@@ -58,12 +58,11 @@ export default function AboutAmrita(){
                             </div>
                         </div>
                     </div>
-
-                    {/* Copyright */}
-                    <div className="text-center py-[1vw] text-[0.9vw] max-md:text-[2.5vw] bg-blue-950 text-gray-300">
-                        &copy; 2024 ICPC Asia Amritapuri Regional Contest. All rights reserved.
-                    </div>
                 </div>
+            </div>
+            {/* Copyright */}
+            <div className="text-center py-[1vw] text-[0.9vw] max-md:text-[2.5vw] bg-blue-950 text-gray-300">
+                &copy; 2024 ICPC Asia Amritapuri Regional Contest. All rights reserved.
             </div>
         </div>
     )
