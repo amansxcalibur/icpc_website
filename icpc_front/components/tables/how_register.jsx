@@ -69,7 +69,7 @@ export default function HowToRegister(){
                                 </div>
                                 <div className="text-center">
                                     <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">Online Round</p>
-                                    <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">5:30 PM - 8:00 PM</p>
+                                    <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">6:00 PM - 8:30 PM</p>
                                 </div>
                             </div>
 
