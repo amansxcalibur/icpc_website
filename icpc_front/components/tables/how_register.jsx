@@ -108,7 +108,7 @@ export default function HowToRegister() {
                     Registration Deadline
                   </p>
                   <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    5:00 PM
+                    8:00 PM
                   </p>
                 </div>
               </div>
