@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function WhatsICPC(){
     return(
-        <div className="min-h-screen bg-white flex justify-center items-center pt-[5vw]">
+        <div className="min-h-screen bg-white flex justify-center items-center py-[5vw]">
             <div className="w-[85vw] flex flex-col max-md:w-[95vw]">
                 {/* Title and Main Description */}
                 <div className="mb-[2vw] max-md:px-[2vw]">
