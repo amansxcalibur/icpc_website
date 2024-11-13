@@ -66,6 +66,9 @@ export default function HowToRegister() {
                 </p>
               </div>
             </div>
+            <p className="text-[1vw] text-white mt-[2vw] max-md:mt-[4vw] font-semibold bg-[#1d347e] border-l-4 border-blue-500 p-4 rounded-lg max-md:text-[3vw]">
+              <span className="font-bold">Please note:</span> There will be a single Preliminary Online Contest for all three Regional Sites in India (i.e., Kanpur, Amritapuri, and Chennai). Each regional site will prepare its own rank list based on the teams registered for that site from the Preliminary Online Contest rankings. Teams participating in multiple regional sites are requested to keep the same team members for each Regional Site.
+            </p>
           </div>
 
           {/* Important Dates Section */}
