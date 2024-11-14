@@ -53,7 +53,7 @@ export default function AboutAmrita(){
                         <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Get in Touch</h2>
                             <div className="text-[1vw] max-md:text-[3vw] text-gray-300">
-                                <p>Email: icpc@amrita.edu</p>
+                                <p>Email: icpc@am.amrita.edu</p>
                                 <p>Phone: +91 476 280 1111</p>
                             </div>
                         </div>
