@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 export default function WhatsICPC(){
     return(
@@ -6,6 +7,7 @@ export default function WhatsICPC(){
             <div className="w-[85vw] flex flex-col max-md:w-[95vw]">
                 {/* Title and Main Description */}
                 <div className="mb-[2vw] max-md:px-[2vw]">
+                    <Link href="/registered-teams" className="mx-[1vw] my-[1.5vw] mt-[4vw] md:hidden underline text-gray-600 text-[3vw]">Already registered? Check and confirm if your team got accepted.</Link>
                     <h1 className="text-[2.5vw] mb-[1vw] max-md:text-[6vw] font-semibold text-blue-950">
                         What&apos;s ICPC?
                     </h1>
