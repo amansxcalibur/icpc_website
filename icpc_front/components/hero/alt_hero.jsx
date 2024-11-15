@@ -25,14 +25,14 @@ export default function AltHero(){
                 <p className="text-[1.4vw] -mt-[1vw] max-md:text-[4vw] max-w-[40vw] max-md:max-w-[90vw] text-center text-white font-medium mb-[4vw]">
                     Join the brightest minds at <br/>Amrita Vishwa Vidyapeetham for ICPC 2024.
                 </p>
-                <a 
-                    href="https://icpc.global" 
+                <Link
+                    href="/registered-teams" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                 >
-                    Register Now
-                </a>
+                    View Team Selection Process
+                </Link>
             </div>
         </div>
         </>

@@ -13,7 +13,7 @@ export default function HowToRegister() {
           {/* How to Register Section */}
           <div className="mb-[4vw] max-md:mb-[6vw]">
             <p className="text-[2.5vw] mb-[2vw] max-md:text-[5vw] max-md:mb-[3vw] font-semibold text-white">
-              How to Register?
+              <span className="line-through">How to Register?</span> <span className="font-light">(closed)</span>
             </p>
             <div className="grid grid-cols-2 gap-x-[5vw] gap-y-[2vw] max-md:grid-cols-1 max-md:gap-y-[3vw]">
               <div className="group">
@@ -55,14 +55,14 @@ export default function HowToRegister() {
                 </p>
                 <p className="text-[1vw] max-md:text-[3vw] text-wrap max-w-[40vw] max-md:max-w-[90vw] text-gray-300">
                   Complete the&nbsp;
-                  <Link
-                    href={
-                      "https://aoap.amrita.edu/gateway/index/index?ekey=ICPC24"
-                    }
-                    className="underline"
+                  <span
+                    // href={
+                    //   "https://aoap.amrita.edu/gateway/index/index?ekey=ICPC24"
+                    // }
+                    className="underline hover:text-blue-300"
                   >
                     payment process
-                  </Link>
+                  </span>
                 </p>
               </div>
             </div>
