@@ -47,6 +47,12 @@ export default function Navbar({ open, hero, darkSection }) {
                     Hall of Fame
                 </Link>
                 <Link 
+                    href="/registered-teams" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Registered Teams
+                </Link>
+                <Link 
                     href="/promote" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >

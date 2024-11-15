@@ -21,6 +21,7 @@ export default function SideMenu({openMenu, setOpenMenu}){
                         <Link href="/#perks" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Why Amrita</Link>
                         <Link href="/#register" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
                         <Link href="/halloffame" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Hall of Fame</Link>
+                        <Link href="/registered-teams" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Registered Teams</Link>
                         <Link href="/promote" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Promote</Link>
                     </div>
                     {/* <ul className="flex justify-center flex-col text-4xl mt-3">
