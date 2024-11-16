@@ -25,14 +25,25 @@ export default function AltHero(){
                 <p className="text-[1.4vw] -mt-[1vw] max-md:text-[4vw] max-w-[40vw] max-md:max-w-[90vw] text-center text-white font-medium mb-[4vw]">
                     Join the brightest minds at <br/>Amrita Vishwa Vidyapeetham for ICPC 2024.
                 </p>
-                <Link
-                    href="/registered-teams" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
-                >
-                    View Team Selection Process
-                </Link>
+                <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
+                    <Link
+                        href="/registered-teams" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                    >
+                        View Team Selection Process
+                    </Link>
+                    <p className="md:hidden mt-[1vw]"></p>
+                    <Link
+                        href="/contest-guidelines" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                    >
+                        View Contest Guidelines
+                    </Link>
+                </div>
             </div>
         </div>
         </>
