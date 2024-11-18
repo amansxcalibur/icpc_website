@@ -17,7 +17,7 @@ World Finals 2024 @ Amrita University
 The ICPC is the premier global programming competition conducted by and for the world's universities. 
 The contest fosters creativity, teamwork, and innovation in building new software programs.`,
  'register' : `
-To register your team, please visit the official ICPC registration website at https://icpc.global/registration.
+Registrations are now closed.
 
 Registration Deadline: November 9th, 2024
 Registration Fee: 1100 INR per team

@@ -121,7 +121,7 @@ export default function HowToRegister() {
                 <div className="bg-red-700 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      16
+                      23
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
                       NOV 2024
@@ -133,7 +133,7 @@ export default function HowToRegister() {
                     Online Round
                   </p>
                   <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    6:00 PM - 8:30 PM
+                    9:00 PM - 11:30 PM
                   </p>
                 </div>
               </div>
