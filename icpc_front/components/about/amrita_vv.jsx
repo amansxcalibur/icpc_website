@@ -3,7 +3,7 @@ export default function AboutAmrita(){
         <div id="about_amrita" className="min-h-screen flex flex-col">
             {/* About Amrita Section - 70% height */}
             <div className="flex-[7] max-md:flex-[6] max-md:py-[5vw] bg-[#92133b] flex justify-center items-center">
-                <div className="max-w-[80vw] max-md:max-w-[90vw]">
+                <div className="max-w-[85vw] max-md:max-w-[90vw]">
                     <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-white mb-[2vw]">
                         About Amrita Vishwa Vidyapeetham
                     </h1>
@@ -28,7 +28,7 @@ export default function AboutAmrita(){
             <div className="flex-[3] max-md:flex-[4] bg-blue-950 text-white max-md:pt-[5vw] flex justify-center items-center">
                 <div className="h-full flex min-w-[95vw] md:min-w-[80vw]">
                     {/* Contact Content */}
-                    <div className="flex-1 flex max-md:flex-col gap-[2vw] max-md:px-[5vw] py-[2vw]">
+                    <div className="flex-1 flex max-md:flex-col gap-[2vw] max-md:px-[5vw] py-[2vw] min-w-[85vw]">
                         {/* Contact Info */}
                         <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Contact Us</h2>
