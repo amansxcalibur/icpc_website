@@ -32,7 +32,7 @@ export default function AltHero(){
                         rel="noopener noreferrer"
                         className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        View Team Selection Process
+                        Team Selection Process
                     </Link>
                     <p className="md:hidden mt-[1vw]"></p>
                     <Link
@@ -41,7 +41,7 @@ export default function AltHero(){
                         rel="noopener noreferrer"
                         className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        View Contest Guidelines
+                        Contest Guidelines
                     </Link>
                 </div>
             </div>

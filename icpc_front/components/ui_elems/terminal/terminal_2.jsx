@@ -159,13 +159,25 @@ export default function Terminal() {
 
   return (
     <>
-      <button 
-        onClick={toggleTerminal}
-        className="fixed z-20 bottom-0 right-0 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-[5vw] h-[5vw] max-md:w-[20vw] max-md:h-[20vw] flex justify-center items-center m-[1vw] hover:scale-110 transition-all duration-300 ease-in-out shadow-lg"
-        aria-label="Toggle Terminal"
-      >
-        <Image src="/terminal_black.png" width={1} height={1} className="h-[4vw] w-auto max-md:h-[15vw] brightness-0" unoptimized></Image>
-      </button>
+      <div className="fixed z-20 bottom-0 right-0">
+        <div className="text-[1.6vw] font-bold hidden">
+            <p className="transform -translate-x-[.4vw] translate-y-[4vw] -rotate-[85deg]">A</p>
+            <p className="transform -translate-x-[.8vw] translate-y-[2.5vw] -rotate-[60deg]">S</p>
+            <p className="transform -translate-x-[.8vw] translate-y-[1.5vw] -rotate-[30deg]">K</p>
+            <p className="transform translate-x-[1.5vw] -translate-y-[4vw] ">H</p>
+            <p className="transform translate-x-[1.3vw] -translate-y-[1vw] rotate-[85deg]">E</p>
+            <p className="transform -translate-x-[1.5vw] -rotate-45">R</p>
+            <p className="transform translate-x-[1.3vw] -translate-y-[1vw] rotate-[85deg]">E</p>
+        </div>
+        <button 
+          onClick={toggleTerminal}
+          className=" bg-blue-500 hover:bg-blue-600 text-white rounded-full w-[5vw] h-[5vw] max-md:w-[20vw] max-md:h-[20vw] flex justify-center items-center m-[1vw] hover:scale-110 transition-all duration-300 ease-in-out shadow-lg"
+          aria-label="Toggle Terminal"
+        >
+          {/* <Image src="/terminal_black.png" width={1} height={1} className="h-[4vw] w-auto max-md:h-[15vw] brightness-0" unoptimized></Image> */}
+            <p className="text-[1.6vw] font-bold">FAQ</p>
+        </button>
+      </div>
 
       {isOpen && (
         <div 
