@@ -27,7 +27,7 @@ export default function WhatsICPC(){
                 <div className="grid grid-cols-2 gap-[2vw] max-md:grid-cols-1 max-md:px-[2vw]">
                     {/* Benefit 1 */}
                     <div className="flex gap-[2vw] items-start max-md:flex-col max-md:items-center">
-                        <div className="w-[15vw] h-[15vw] max-md:w-[50vw] max-md:h-[50vw] rounded-[1vw] overflow-hidden flex-shrink-0">
+                        <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw] rounded-[1vw] overflow-hidden flex-shrink-0">
                             <Image 
                                 src="/guy_fix_server.webp" 
                                 width={500} 
@@ -48,7 +48,7 @@ export default function WhatsICPC(){
 
                     {/* Benefit 2 */}
                     <div className="flex gap-[2vw] items-start max-md:flex-col max-md:items-center">
-                        <div className="w-[15vw] h-[15vw] max-md:w-[50vw] max-md:h-[50vw] rounded-[1vw] overflow-hidden flex-shrink-0">
+                        <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw] rounded-[1vw] overflow-hidden flex-shrink-0">
                             <Image 
                                 src="/guy_learning.webp" 
                                 width={500} 
@@ -69,7 +69,7 @@ export default function WhatsICPC(){
 
                     {/* Benefit 3 */}
                     <div className="flex gap-[2vw] items-start max-md:flex-col max-md:items-center">
-                        <div className="w-[15vw] h-[15vw] max-md:w-[50vw] max-md:h-[50vw] rounded-[1vw] overflow-hidden flex-shrink-0">
+                        <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw] rounded-[1vw] overflow-hidden flex-shrink-0">
                             <Image 
                                 src="/bagpack.png" 
                                 width={500} 
@@ -90,7 +90,7 @@ export default function WhatsICPC(){
 
                     {/* Benefit 4 */}
                     <div className="flex gap-[2vw] items-start max-md:flex-col max-md:items-center">
-                        <div className="w-[15vw] h-[15vw] max-md:w-[50vw] max-md:h-[50vw] rounded-[1vw] overflow-hidden flex-shrink-0">
+                        <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw] rounded-[1vw] overflow-hidden flex-shrink-0">
                             <Image 
                                 src="/trophy.webp" 
                                 width={500} 
