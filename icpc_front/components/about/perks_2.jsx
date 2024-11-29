@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ExclusivePerks2() {
   return (
     <div className="min-h-screen max-md:py-[5vw] bg-white flex justify-center items-center">
-      <div className="w-[85vw] flex flex-col">
+      <div className="w-[85vw] flex flex-col max-md:w-[90vw]">
         {/* Title */}
         <h1
           id="perks"

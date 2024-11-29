@@ -17,7 +17,7 @@ export default function AltHero(){
             />
         </div>
         <div className="md:min-h-screen min-w-full max-md:min-h-[90vw] bg-black opacity-50 absolute z-[5] top-0 mix-blend-multiply"></div>
-        <div className="md:min-h-screen flex flex-col justify-center items-center w-full max-md:min-h-[90vw] absolute z-10 top-0">
+        <div className="md:min-h-screen flex flex-col justify-center items-center w-full max-md:min-h-[100vw] absolute z-10 top-0">
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-center text-[5vw] max-md:text-[9vw] max-md:leading-[12vw] tracking-tighter max-w-[80vw] max-md:max-w-[90vw] text-white mb-[2vw] font-semibold">
                     Welcome to<br/> ICPC 2024 Regionals

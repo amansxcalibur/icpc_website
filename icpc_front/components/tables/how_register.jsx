@@ -9,7 +9,7 @@ export default function HowToRegister() {
         id="register"
         className="min-w-screen min-h-screen flex justify-center items-center bg-blue-950 py-[5vw] max-md:py-[8vw]"
       >
-        <div className="w-[85vw] flex flex-col">
+        <div className="w-[85vw] max-md:w-[90vw] flex flex-col">
           {/* How to Register Section */}
           <div className="mb-[4vw] max-md:mb-[6vw]">
             <p className="text-[2.5vw] mb-[2vw] max-md:text-[5vw] max-md:mb-[3vw] font-semibold text-white">
@@ -66,7 +66,8 @@ export default function HowToRegister() {
                 </p>
               </div>
             </div>
-            <p className="text-[1vw] text-white mt-[2vw] max-md:mt-[4vw] font-semibold bg-[#a4123f] shadow-[_10px_10px_5px_rgba(20,_18,_59,_1)] p-[1.5vw] rounded-[1vw] max-md:text-[3vw]">
+            {/* Please Note Section */}
+            <p className="text-[1vw] text-white mt-[2vw] max-md:mt-[4vw] font-semibold bg-[#a4123f] shadow-[_10px_10px_5px_rgba(20,_18,_59,_1)] p-[1.5vw] max-md:p-[4vw] rounded-[1vw] max-md:text-[3vw]">
               <span className="font-bold">Please note:</span> There will be a single Preliminary Online Contest for all three Regional Sites in India (i.e., Kanpur, Amritapuri, and Chennai). Each regional site will prepare its own rank list based on the teams registered for that site from the Preliminary Online Contest rankings. Teams participating in multiple regional sites are requested to keep the same team members for each Regional Site.
             </p>
           </div>

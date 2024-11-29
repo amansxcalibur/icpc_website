@@ -175,7 +175,7 @@ export default function Terminal() {
           aria-label="Toggle Terminal"
         >
           {/* <Image src="/terminal_black.png" width={1} height={1} className="h-[4vw] w-auto max-md:h-[15vw] brightness-0" unoptimized></Image> */}
-            <p className="text-[1.6vw] font-bold">FAQ</p>
+            <p className="text-[1.6vw] font-bold max-md:text-[6vw]">FAQ</p>
         </button>
       </div>
 

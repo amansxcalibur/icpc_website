@@ -26,9 +26,9 @@ export default function AboutAmrita(){
 
             {/* Contact Us Section - 30% height */}
             <div className="flex-[3] max-md:flex-[4] bg-blue-950 text-white max-md:pt-[5vw] flex justify-center items-center">
-                <div className="h-full flex min-w-[95vw] md:min-w-[80vw]">
+                <div className="h-full flex min-w-[90vw] md:min-w-[80vw]">
                     {/* Contact Content */}
-                    <div className="flex-1 flex max-md:flex-col gap-[2vw] max-md:px-[5vw] py-[2vw] min-w-[85vw]">
+                    <div className="flex-1 flex max-md:flex-col gap-[2vw]  py-[2vw] min-w-[85vw] max-md:min-w-[90vw]">
                         {/* Contact Info */}
                         <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Contact Us</h2>
