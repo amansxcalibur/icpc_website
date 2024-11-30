@@ -1,7 +1,10 @@
-import React from 'react';
+'use client'
+
+import React, { useState } from 'react';
 import hallOfFameData from '../json/hall_of_fame.json';
 
 export default function HallOfFame() {
+    const [searchedVal, setSearchedVal] = useState("");
     return (
         <div className="min-h-screen flex flex-col items-center bg-[#92133b] pt-[8vw]">
             <div className='flex-1 flex flex-col min-w-[80vw] max-md:min-w-[95=vw] max-md:max-w-[95vw]'>
@@ -14,6 +17,9 @@ export default function HallOfFame() {
                         Celebrating the champions who have made their mark at the ICPC Amritapuri Regionals
                     </p>
                 </div>
+                <div>
+                <input type='text' onChange={(e) => setSearchedVal(e.target.value)} />
+                </div>
 
                 {/* Table Header */}
                 <div className="flex min-h-[4vw] items-center text-[1.2vw] max-md:text-[3vw] font-semibold text-white border-b border-white/30 pb-[1vw]">
@@ -24,7 +30,14 @@ export default function HallOfFame() {
                 
                 {/* Table Content */}
                 <div className="mt-[2vw] space-y-[2vw]">
-                    {hallOfFameData.map((entry, index) => (
+                    {hallOfFameData
+                        .filter((row) =>
+                            // note that I've incorporated the searchedVal length check here
+                            !searchedVal.length || row.team
+                            .toString()
+                            .toLowerCase()
+                            .includes(searchedVal.toString().toLowerCase()))
+                        .map((entry, index) => (
                         <div 
                             key={index}
                             className="flex items-center min-h-[4vw] hover:bg-white/5 rounded-lg transition-all duration-300 p-[1vw]"
