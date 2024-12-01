@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             <div className="max-w-screen md:-mt-[6vw] max-md:-mt-[-9vw] bg-stone-30 bg-white">
                 {children}
                 <Terminal/>
-                {/* <RankCriteria/> */}
+                <RankCriteria/>
             </div>
         </div>
     );
