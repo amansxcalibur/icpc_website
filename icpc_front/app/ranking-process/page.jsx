@@ -21,14 +21,14 @@ export default function Promote() {
                                     </p>
                                     
                                     <p class="text-gray-700 mb-4">
-                                        To address this, we have increased the number of slots and included as many affected teams as possible. This decision wasn't easy and has significantly increased our onsite seat requirements beyond initial estimates. However, we are doing our best to accommodate most of the affected teams.
+                                        To address this, we have increased the number of slots and included as many affected teams as possible. This decision wasn&apos;t easy and has significantly increased our onsite seat requirements beyond initial estimates. However, we are doing our best to accommodate most of the affected teams.
                                     </p>
                                     
                                     <h2 class="text-[1.5vw] max-md:text-[4.5vw] font-semibold text-gray-800 mt-6 mb-4">What we are doing:</h2>
                                     
                                     <ol class="list-decimal pl-6 space-y-4">
                                         <li>
-                                            <strong>"Yet Another GCD Problem" Adjustments:</strong>
+                                            <strong>&quot;Yet Another GCD Problem&quot; Adjustments:</strong>
                                             <ul class="list-disc pl-6">
                                                 <li>We rejudged all non-accepted submissions after removing the K=0 case.</li>
                                                 <li>Penalties were adjusted based on the first accepted submission.</li>
@@ -37,9 +37,9 @@ export default function Promote() {
                                         </li>
                                         
                                         <li>
-                                            <strong>"Small Indices" Problem Removal:</strong>
+                                            <strong>&quot;Small Indices&quot; Problem Removal:</strong>
                                             <ul class="list-disc pl-6">
-                                                <li>After the "Yet Another GCD Problem" rejudge, we then removed the "Small Indices" problem completely and recalculated the ranklist.</li>
+                                                <li>After the &quot;Yet Another GCD Problem&quot; rejudge, we then removed the &quot;Small Indices&quot; problem completely and recalculated the ranklist.</li>
                                             </ul>
                                             <p class="italic text-gray-600 mt-2">This produced, say, <strong>Ranklist R2</strong>.</p>
                                         </li>
@@ -56,7 +56,7 @@ export default function Promote() {
                             </div>
                             {/* <button className="bg-white rounded-[1vw] flex-1">Click</button> */}
                         </div>
-                        <p className="text-[1.2vw] mt-[3vw] max-md:text-[3.5vw]">Click to download the pdf containing the selection details.</p>
+                        <p className="text-[1.2vw] mt-[3vw] max-md:text-[3.5vw]">Click to download the pdf containing the ranking process details.</p>
                     </div>
                     <div className="flex pt-[1vw] flex-wrap max-w-[83vw] max-md:max-w-[90vw] max-md:justify-center max-md:w-[90vw]">
                         <a href="/data/ICPC Selection.pdf" download className="rounded-[1vw] shadow-[0_0px_20px_rgba(0,_0,_0,_0.7)] max-md:shadow-[0_0px_13px_rgba(0,_0,_0,_0.7)] hover:text-blue-500 max-md:mt-[5vw]">
