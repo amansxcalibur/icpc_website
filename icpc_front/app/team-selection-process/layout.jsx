@@ -16,7 +16,7 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
-            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth) || pathname=='/promote' || pathname=='/registered-teams'){
+            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth) || pathname=='/promote' || pathname=='/team-selection-process'){
                 setHero(false);
             }else{
                 setHero(true);

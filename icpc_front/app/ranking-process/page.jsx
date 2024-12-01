@@ -10,7 +10,7 @@ export default function Promote() {
                 {/* <p className="text-[2vw] text-center max-md:text-[6vw]">Promote ICPC Regionals 2024, Amritapuri</p> */}
                 <div className="mt-[3vw] flex flex-col max-md:items-center">
                     <div className="max-md:w-[90vw] md:max-w-[80vw] max-md:min-w-[95vw]">
-                        <p className="font-semibold text-[3vw] max-md:text-[6vw] justify-center flex mb-[2vw] max-md:mb-[4vw] max-md:mt-[8vw]">Contest Selection</p>
+                        <p className="font-semibold text-[3vw] max-md:text-[6vw] justify-center flex mb-[2vw] max-md:mb-[4vw] max-md:mt-[8vw]">ICPC Ranking Process</p>
                         
                         <div className="text-[1.2vw] flex flex-col ">
                             <div class="bg-white w-full max-md:text-[3.5vw]">
@@ -47,7 +47,7 @@ export default function Promote() {
                                         <li>
                                             <strong>Final Selection:</strong>
                                             <ul class="list-disc pl-6">
-                                                <li>For each site, we select N teams from <strong>R1</strong> and N teams from <strong>R2</strong>, where N is the original number of teams announced for that site.</li>
+                                                <li>For each site, we select N teams (as per site specific team selection process) from <strong>R1</strong> and N teams from <strong>R2</strong>, where N is the original number of teams announced for that site.</li>
                                                 <li>We take the union of these two lists of teams and invite them all to the finals.</li>
                                             </ul>
                                         </li>

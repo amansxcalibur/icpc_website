@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Promote() {
     return (
-        <div className="bg-white text-black mt-[5vw] flex justify-center pb-[10vw] min-h-screen flex-col items-center">
+        <div className="bg-white text-black flex justify-center pb-[10vw] min-h-screen flex-col items-center">
             <div className="min-w-[80vw] max-md:min-w-[90vw]">
                 {/* <p className="text-[2vw] text-center max-md:text-[6vw]">Promote ICPC Regionals 2024, Amritapuri</p> */}
                 <div className="mt-[3vw] flex flex-col max-md:items-center">
@@ -15,7 +15,7 @@ export default function Promote() {
                     <div className="flex pt-[1vw] flex-wrap max-w-[83vw] max-md:max-w-[90vw] max-md:justify-center max-md:w-[90vw]">
                         <a href="/data/Amritapuri Site Team Selection Process.pdf" download className="rounded-[1vw] shadow-[0_0px_20px_rgba(0,_0,_0,_0.7)] max-md:shadow-[0_0px_13px_rgba(0,_0,_0,_0.7)] hover:text-blue-500 max-md:mt-[5vw]">
                             <Image 
-                                    src="/teams_preview.png" 
+                                    src="/team-selection-process.png" 
                                     alt="Registered Teams PDF Preview" 
                                     width={1} 
                                     height={1}
@@ -30,8 +30,7 @@ export default function Promote() {
                     </div>
                 </div>
             </div>
-            <div className="min-w-[80vw] max-md:min-w-[90vw]">
-                {/* <p className="text-[2vw] text-center max-md:text-[6vw]">Promote ICPC Regionals 2024, Amritapuri</p> */}
+            {/* <div className="min-w-[80vw] max-md:min-w-[90vw]">
                 <div className="mt-[3vw] flex flex-col max-md:items-center">
                     <div className="max-md:w-[90vw]">
                         <p className="font-semibold text-[3vw] max-md:text-[6vw]">Registered Teams</p>
@@ -54,7 +53,7 @@ export default function Promote() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
