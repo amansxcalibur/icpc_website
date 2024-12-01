@@ -7,7 +7,7 @@ import MagnifyingGlass from '../svg/magnifying-glass';
 export default function SelectedTeams() {
     const [searchedVal, setSearchedVal] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const teamsPerPage = 20;
+    const teamsPerPage = 5;
 
     // Filtered teams
     const filteredTeams = selectedTeamsData.filter((row) =>
