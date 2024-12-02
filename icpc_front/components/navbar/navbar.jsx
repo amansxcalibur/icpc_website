@@ -35,16 +35,16 @@ export default function Navbar({ open, hero, darkSection }) {
                     Why Amrita
                 </Link>
                 <Link 
-                    href="/#register" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    How to register
-                </Link>
-                <Link 
                     href="/halloffame" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Hall of Fame
+                </Link>
+                <Link 
+                    href="/ranking-process" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Ranking Process
                 </Link>
                 <Link 
                     href="/team-selection-process" 

@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import Terminal from "@/components/ui_elems/terminal/terminal_2";
 import Navbar from "@/components/navbar/navbar";
 import Script from "next/script";
-import RankList from "@/components/ui_elems/pop-ups/rank_list";
+import SelectedTeamList from "@/components/ui_elems/pop-ups/selected_team_list";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             <div className="max-w-screen md:-mt-[6vw] max-md:-mt-[-9vw] bg-stone-30 bg-white">
                 {children}
                 <Terminal/>
-                <RankList/>
+                <SelectedTeamList/>
             </div>
         </div>
     );

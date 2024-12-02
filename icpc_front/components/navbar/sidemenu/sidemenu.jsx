@@ -19,8 +19,8 @@ export default function SideMenu({openMenu, setOpenMenu}){
                     <div className="flex flex-col flex-1 justify-center items-start text-[6vw]">
                         <Link href="/" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Home</Link>
                         <Link href="/#perks" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Why Amrita</Link>
-                        <Link href="/#register" className="mx-[1vw] my-[1.5vw] mt-[4vw]">How to register</Link>
                         <Link href="/halloffame" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Hall of Fame</Link>
+                        <Link href="/ranking-process" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Ranking Process</Link>
                         <Link href="/team-selection-process" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Selection Process</Link>
                         <Link href="/promote" className="mx-[1vw] my-[1.5vw] mt-[4vw]">Promote</Link>
                     </div>
