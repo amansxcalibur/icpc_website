@@ -27,21 +27,21 @@ export default function AltHero(){
                 </p>
                 <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
                     <Link
-                        href="/ranking-process" 
+                        href="/ranked-teams"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        Team Ranking Process
+                        View Rank List
                     </Link>
                     <p className="md:hidden mt-[1vw]"></p>
                     <Link
-                        href="/team-selection-process" 
+                        href="/ranking-process"  
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        Team Selection Process
+                        Team Ranking Process
                     </Link>
                 </div>
             </div>
