@@ -16,8 +16,8 @@ export default function SelectedTeamList(){
             <div className="text-[1.2vw] flex">
                 <div className="max-w-[45vw] max-md:max-w-[80vw] max-md:text-[4vw]">
                     <p className="mt-[.3vw]">The list of <span className="font-semibold">teams selected</span> for the Amritapuri site is now <span className="font-semobold">live</span>, featuring both the General Selected Teams and the Women-Only Teams.</p>
-                    <p className="mt-[.2vw]"><Link href="/selected-teams-v1"><span className="font-semibold text-blue-800 hover:text-purple-900 underline mt-[1vw]">Click here</span></Link> the view the <span className="font-semibold">Selected Team List</span>.</p>
-                    <p className="mt-[.2vw]">To accommodate all students from <span className="font-semibold">R1</span> and <span className="font-semibold">R2</span>, we have increased the intake by <span className="font-semibold">19 additional slots</span> than originally published, bringing the total to <span className="font-semibold">239</span>.</p>
+                    <p className="mt-[.2vw]"><Link href="/selected-teams-v1"><span className="font-semibold text-blue-800 hover:text-purple-900 underline mt-[1vw]">Click here</span></Link> the view the <span className="font-semibold">Selected Teams Provisional List</span>.</p>
+                    <p className="mt-[.2vw]">To accommodate all students from <span className="font-semibold">R1</span> and <span className="font-semibold">R2</span>, we have increased the intake by <span className="font-semibold">26 additional slots</span> than originally published, bringing the total to <span className="font-semibold">268</span>.</p>
                     <p className="mt-[.7vw]"><strong>Disclaimer:</strong> <span className="font-semibold"></span> This team list is provisional and subject to change. As we continue to check for plagiarism, teams found guilty of plagiarism will be removed, while those cleared may be reinstated.</p>
                 </div>
                 {/* <button className="bg-white rounded-[1vw] flex-1">Click</button> */}

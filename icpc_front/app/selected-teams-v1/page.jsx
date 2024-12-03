@@ -13,7 +13,7 @@ export default function SelectedTeamsV1() {
                         <p className="text-[1.2vw] -mt-[0.5vw] max-md:text-[4vw]">Click to download the pdf containing the selected team list.</p>
                     </div>
                     <div className="flex pt-[1vw] flex-wrap max-w-[83vw] max-md:max-w-[90vw] max-md:justify-center max-md:w-[90vw]">
-                        <a href="/data/ICPC Selected Teams for Amritapuri Regionals.pdf" download className="rounded-[1vw] shadow-[0_0px_20px_rgba(0,_0,_0,_0.7)] max-md:shadow-[0_0px_13px_rgba(0,_0,_0,_0.7)] hover:text-blue-500 max-md:mt-[5vw]">
+                        <a href="/data/ICPC Selected Teams for Amritapuri Regionals 2024.pdf" download className="rounded-[1vw] shadow-[0_0px_20px_rgba(0,_0,_0,_0.7)] max-md:shadow-[0_0px_13px_rgba(0,_0,_0,_0.7)] hover:text-blue-500 max-md:mt-[5vw]">
                             <Image 
                                     src="/selected-teams-v1.png" 
                                     alt="Registered Teams PDF Preview" 
