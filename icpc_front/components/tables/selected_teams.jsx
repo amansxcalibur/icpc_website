@@ -11,7 +11,7 @@ export default function SelectedTeams() {
     const [searchedVal, setSearchedVal] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [showWomenOnly, setShowWomenOnly] = useState(false);
-    const teamsPerPage = 100;
+    const teamsPerPage = 40;
 
     useEffect(() => {
         const fetchCSVData = async () => {
@@ -68,24 +68,24 @@ export default function SelectedTeams() {
                         Congratulations to all who have been selected to the ICPC Amritapuri Regionals.
                     </p>
                 </div>
-                <div className="flex justify-center items-center mb-[2vw]">
+                <div className="flex justify-center items-center mb-[2vw] max-md:mb-[5vw]">
                     {/* Search Input */}
-                    <div className="flex rounded-l-full min-h-[3vw] min-w-[25vw] px-[.5vw] gap-[.5vw] overflow-hidden bg-white items-center">
+                    <div className="flex rounded-l-full min-h-[3vw] max-md:min-h-[8vw] min-w-[25vw] px-[.5vw] gap-[.5vw] overflow-hidden bg-white items-center">
                         <p className="text-stone-400 size-[2vw]">
                             <MagnifyingGlass />
                         </p>
                         <input
                             type="text"
-                            className="text-[1.1vw] max-md:text-[3vw] text-black flex-1 min-h-[3vw] outline-none"
+                            className="text-[1.1vw] max-md:text-[3.5vw] text-black flex-1 min-h-[3vw] outline-none"
                             placeholder="Search ID or team name"
                             onChange={(e) => setSearchedVal(e.target.value)}
                         />
                     </div>
-                    <div className="relative bg-white rounded-r-full">
+                    <div className="relative bg-white rounded-r-full max-md:text-[3.5vw]">
                         <select
                             onChange={(e) => setShowWomenOnly(e.target.value === 'womenOnly')}
                             value={showWomenOnly ? 'womenOnly' : 'allTeams'}
-                            className="px-[1vw] rounded-full py-[.5vw] min-h-[3vw] bg-gray-800 border border-solid border-gray-800 text-white cursor-pointer"
+                            className="px-[1vw] max-md:px-[2.5vw] rounded-full py-[.5vw] min-h-[3vw] max-md:min-h-[8vw] bg-gray-800 border border-solid border-gray-800 text-white cursor-pointer"
                         >
                             <option value="allTeams" className="bg-gray-800 text-white">
                                 All Teams
@@ -95,11 +95,11 @@ export default function SelectedTeams() {
                             </option>
                         </select>
                     </div>
-                    <Link href="selected-teams-v1" title='Download the pdf containing selected teams' className='mx-[.5vw] p-[.5vw] hover:bg-gray-800 rounded-full min-h-[3vw] min-w-[3vw] flex justify-center items-center'><DownlaodIcon/></Link>
+                    <Link href="selected-teams-v1" title='Download the pdf containing selected teams' className='mx-[.5vw] p-[.5vw] hover:bg-gray-800 rounded-full min-h-[3vw] max-md:min-h-[8vw] max-md:min-w-[8vw] min-w-[3vw] flex justify-center items-center'><DownlaodIcon/></Link>
                 </div>
 
                 {/* Table */}
-                <div className="flex min-h-[4vw] items-center text-[1.2vw] max-md:text-[3vw] font-semibold text-white border-b border-white/30 pb-[1vw]">
+                <div className="flex min-h-[4vw] items-center text-[1.2vw] max-md:text-[3.5vw] font-semibold text-white border-b border-white/30 pb-[1vw]">
                     <div className="flex-1">Team ID</div>
                     <div className="flex-[2]">Team Name</div>
                     <div className="flex-[2]">Institution</div>
@@ -111,20 +111,20 @@ export default function SelectedTeams() {
                             key={index}
                             className="flex items-center min-h-[4vw] hover:bg-white/5 rounded-lg transition-all duration-300 p-[1vw]"
                         >
-                            <div className="flex-1 text-[1.1vw] max-md:text-[3vw] text-gray-300">
+                            <div className="flex-1 text-[1.1vw] max-md:text-[3.5vw] text-gray-300">
                                 {entry.teamId}
                             </div>
-                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw]">
+                            <div className="flex-[2] text-[1.1vw] max-md:text-[3.5vw]">
                                 <span className="font-semibold text-white">{entry.teamName}</span>
                             </div>
-                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw] text-gray-200">
+                            <div className="flex-[2] text-[1.1vw] max-md:text-[3.5vw] text-gray-200">
                                 {entry.institution}
                             </div>
                         </div>
                     ))}
                 </div>
 
-                <div className="flex justify-center items-center my-[2vw] text-white gap-4">
+                <div className="flex justify-center items-center my-[2vw] text-white gap-4 text-[1.1vw] max-md:text-[3.5vw]">
                     <button
                         className={`px-[1vw] py-[.5vw] rounded-[.2vw] ${currentPage === 1 ? 'bg-gray-500 cursor-not-allowed' : 'bg-gray-800 hover:bg-gray-700'}`}
                         onClick={handlePrevPage}
