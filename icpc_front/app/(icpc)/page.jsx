@@ -13,6 +13,7 @@ import AltHero from "@/components/hero/alt_hero";
 import ExclusicePerks2 from "@/components/about/perks_2";
 import WhatsICPC from "@/components/about/icpc";
 import OutreachPartners from "@/components/tables/partners";
+import Sponsors from "@/components/tables/sponsors";
 
 export default function Trial(){
     return(
@@ -25,6 +26,7 @@ export default function Trial(){
             <div className="pt-[8vw] bg-white">
                 <HowToRegister/>
                 <OutreachPartners/>
+                <Sponsors/>
                 <AboutAmrita/>
             </div>
         </div>
