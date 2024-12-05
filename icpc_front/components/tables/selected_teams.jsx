@@ -72,7 +72,7 @@ export default function SelectedTeams() {
                     </h1>
                     <p className="text-[1.2vw] max-md:text-[3.5vw] text-gray-200 mb-[1vw]">
                         Please note that this list is prepared on the basis&nbsp; 
-                        <Link href="/selected-teams"><span className="font-semibold text-blue-500 hover:text-purple-900 underline mt-[1vw]">The Team Selection Criteria</span></Link> 
+                        <Link href="/team-selection-process"><span className="font-semibold text-blue-500 hover:text-purple-900 underline mt-[1vw]">The Team Selection Criteria</span></Link> 
                         &nbsp;for Amritapuri Multi Site and&nbsp;
                         <Link href="/ranking-process"><span className="font-semibold text-blue-500 hover:text-purple-900 underline mt-[1vw]">The Ranking Process</span></Link>. 
                         To accommodate all teams from R1 and R2, we have increased the intake by <span className="font-semibold">38</span> additional slots than originally published, bringing the total to <span className="font-semibold">268</span> slots (220 + 10(all women) + 38).
