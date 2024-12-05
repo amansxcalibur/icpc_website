@@ -84,7 +84,7 @@ export default function SelectedTeams() {
                 </div>
                 <div className="flex justify-center items-center mb-[2vw] max-md:mb-[5vw]">
                     {/* Search Input */}
-                    <div className="flex rounded-l-full min-h-[3vw] max-md:min-h-[8vw] min-w-[25vw] px-[.5vw] gap-[.5vw] overflow-hidden bg-white items-center">
+                    <div className="flex rounded-full min-h-[3vw] max-md:min-h-[8vw] min-w-[25vw] px-[.5vw] gap-[.5vw] overflow-hidden bg-white items-center">
                         <p className="text-stone-400 size-[2vw]">
                             <MagnifyingGlass />
                         </p>
@@ -95,7 +95,7 @@ export default function SelectedTeams() {
                             onChange={(e) => setSearchedVal(e.target.value)}
                         />
                     </div>
-                    <div className="relative bg-white rounded-r-full max-md:text-[3.5vw]">
+                    {/* <div className="relative bg-white rounded-r-full max-md:text-[3.5vw]">
                         <select
                             onChange={(e) => setShowWomenOnly(e.target.value === 'womenOnly')}
                             value={showWomenOnly ? 'womenOnly' : 'allTeams'}
@@ -108,7 +108,7 @@ export default function SelectedTeams() {
                                 Women Only
                             </option>
                         </select>
-                    </div>
+                    </div> */}
                     <Link href="selected-teams-v1" title='Download the pdf containing selected teams' className='mx-[.5vw] p-[.5vw] hover:bg-gray-800 rounded-full min-h-[3vw] max-md:min-h-[8vw] max-md:min-w-[8vw] min-w-[3vw] flex justify-center items-center'><DownlaodIcon/></Link>
                 </div>
 
@@ -121,6 +121,8 @@ export default function SelectedTeams() {
                     <button className={`${selectedSite=="Kollam"?"bg-slate-800":""}`} onClick={()=>{setSelectedSite("Kollam")}}>Kollam</button>
                     <button className={`${selectedSite=="Coimbatore"?"bg-slate-800":""}`} onClick={()=>{setSelectedSite("Coimbatore")}}>Coimbatore</button>
                     <button className={`${selectedSite=="Bengaluru"?"bg-slate-800":""}`} onClick={()=>{setSelectedSite("Bengaluru")}}>Bengaluru</button>
+                    {/* <div className='min-h-full flex items-center min-w-[1px] -mx-[2vw]'>|</div>&nbsp; */}
+                    <button className={`${showWomenOnly?"bg-slate-800":""}`} onClick={()=>{setShowWomenOnly(!showWomenOnly)}}>Women Teams</button>
                 </div>
 
                 {/* Table */}
