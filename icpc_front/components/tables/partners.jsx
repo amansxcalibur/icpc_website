@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OutreachPartners(){
     return(
-        <div className="text-blue-950 flex justify-center flex-col items-center relative overflow-hidden py-[5vw] pb-[6vw] min-h-[50vh]">
+        <div className="text-blue-950 flex justify-center flex-col items-center relative overflow-hidden pb-[5vw] pb-[6vw] min-h-[50vh]">
             <div className="min-w-[85vw] max-md:flex-1 flex relative flex-col justify-center">
                 <div className="text-[2.5vw] max-md:text-[6vw] font-semibold w-full max-md:h-[10vw] flex justify-center items-center pointer-events-none mb-[2vw]">
                     <div className="max-w-[85vw] flex-1">Outreach Partners</div>
