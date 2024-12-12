@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function ContactUs(){
     return(
         <>
-        <div className="min-w-screen min-h-[30vw] max-md:min-h-[70vw] bg-blue-950 flex justify-center items-center">
+        <div className="min-w-screen min-h-[30vw] max-md:min-h-[70vw] flex justify-center items-center">
             <div className="flex max-md:flex-col">
                 <div className="min-w-[60vw] max-w-[50vw] pr-[5vw] max-md:min-w-[90vw] max-md:mb-[5vw]">
                     <p className="text-[2.5vw] font-semibold tracking-tighter max-md:text-[6vw]">ICPC Asia Amritapuri</p>
