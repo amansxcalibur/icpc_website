@@ -9,6 +9,11 @@ export default function Navbar({ open, hero, darkSection }) {
     const [openMenu, setOpenMenu] = useState(false);
     // Use white text for hero section and dark sections, black text otherwise
     const textColor = (hero || darkSection) ? "text-white hover:text-gray-300" : "text-black hover:text-red-500";
+    const locations = [
+        { name: "Amritapuri", href: "/reach-us/amritapuri" },
+        { name: "Bengaluru", href: "/reach-us/bengaluru" },
+        { name: "Coimbatore", href: "/reach-us/coimbatore" }
+      ];
     
     return (
         <>
@@ -40,6 +45,26 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Hall of Fame
                 </Link>
+                <div className="group">
+                    <button
+                        className={`mx-[1vw] ${textColor} transition ease-in duration-300 group`}
+                    >
+                        Reach Us
+                    </button>
+                    <div 
+                    className="absolute -translate-x-[20%] bg-white shadow-lg rounded-md border border-gray-200 z-10 min-w-[8vw] group-hover:block hidden"
+                    >
+                    {locations.map((location, index) => (
+                        <Link
+                        href={location.href} 
+                        key={index} 
+                        className="py-2 hover:bg-gray-100 text-gray-800 hover:text-black flex justify-center"
+                        >
+                        {location.name}
+                        </Link>
+                    ))}
+                    </div>
+                </div>
                 <Link 
                     href="/ranking-process" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}

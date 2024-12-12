@@ -30,7 +30,8 @@ export default function ReachUs() {
                             height="700px" 
                             className=""
                             title="map" 
-                            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20North%20Bridge%20Road%20%2318-03%20High%20Street%20Centre%20Singapore%20179094&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                            src="https://www.google.com/maps/d/embed?mid=108VvwUWjN3osuiL-LvyNqmetGrQ&ehbc=2E312F"
+                            //src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20North%20Bridge%20Road%20%2318-03%20High%20Street%20Centre%20Singapore%20179094&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
                             // style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
                         />
                         </div>
