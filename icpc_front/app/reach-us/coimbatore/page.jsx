@@ -6,7 +6,7 @@ import ContactUs2 from "@/components/footer/contact_us_2";
 
 export default function ReachUs() {
     return (
-        <div className="bg-white text-black pt-[5vw] flex items-center min-h-screen flex-col">
+        <div className="bg-white text-black pt-[3vw] flex items-center min-h-screen flex-col">
             <div className="min-w-[80vw] max-w-[80vw] max-md:min-w-[90vw]">
             <p className="font-semibold text-[3vw] max-md:text-[6vw] flex justify-center mb-[2vw] text-blue-950">Reach Us</p>
                 <div className="w-full flex">
