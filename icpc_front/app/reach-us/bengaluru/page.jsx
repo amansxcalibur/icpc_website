@@ -12,24 +12,13 @@ export default function ReachUs() {
                 <div className="w-full flex">
                     <div className="flex-1">
                         <div className="">
-                            <p className="text-[1.5vw] max-md:text-[4vw] font-bold mb-[0.5vw] text-blue-950">
-                                Directions to arrive at the campus from the North
+                            <p className="text-[1vw] max-md:text-[4vw] font-semibold mb-[0.5vw] text-gray-600">
+                                {Data.Bengaluru.Description}
                             </p>
-                            {Object.keys(Data.Kayamkulam.directions.North).map((key, value)=>(
+                            {Object.keys(Data.Bengaluru.directions).map((key, value)=>(
                                 <>
                                     <p className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] text-blue-950 mt-[2vw]">{key}</p>
-                                    <p className="text-[1vw] max-md:text-[3vw] text-gray-600">{Data.Kayamkulam.directions.North[key]}</p>
-                                </>
-                            ))}
-                        </div>
-                        <div className="mt-[3vw]">
-                            <p className="text-[1.5vw] max-md:text-[4vw] font-bold mb-[0.5vw] text-blue-950">
-                                Directions to arrive at the campus from the South
-                            </p>
-                            {Object.keys(Data.Kayamkulam.directions.South).map((key, value)=>(
-                                <>
-                                    <p className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] text-blue-950 mt-[2vw]">{key}</p>
-                                    <p className="text-[1vw] max-md:text-[3vw] text-gray-600">{Data.Kayamkulam.directions.South[key]}</p>
+                                    <p className="text-[1vw] max-md:text-[3vw] text-gray-600">{Data.Bengaluru.directions[key]}</p>
                                 </>
                             ))}
                         </div>
@@ -51,26 +40,26 @@ export default function ReachUs() {
             </div>
             <div className="w-full bg-blue-950 text-white mt-[5vw] flex justify-center py-[5vw]">
                 <div className="max-w-[80vw] min-w-[80vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Trains to Kayamkulam</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Trains to Bengaluru</div>
                     <div>
-                        {Object.keys(Data.Kayamkulam.Trains).map((key, index)=>(
+                        {Object.keys(Data.Bengaluru.Trains).map((key, index)=>(
                             <p className="text-[1.4vw] max-md:text-[3vw] my-[1vw]">
-                                <span className="font-semibold text-yellow-500">{key}</span> : <span className="font-light">{Data.Kayamkulam.Trains[key]}</span>
+                                <span className="font-semibold text-yellow-500">{key}</span> : <span className="font-light">{Data.Bengaluru.Trains[key]}</span>
                             </p>
                         ))}
                     </div>
                 </div>
             </div>
             {/* Hotels */}
-            <div className="w-full mt-[5vw] flex justify-center py-[5vw]">
+            <div className="w-full flex justify-center py-[5vw]">
                 <div className="max-w-[80vw] min-w-[80vw]">
                     <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Hotels Near Us</div>
                     <div className="flex w-full">
-                        {Object.keys(Data.Kayamkulam.Hotels).map((key, index)=>(
+                        {Object.keys(Data.Bengaluru.Hotels).map((key, index)=>(
                             <div className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
                                 <p className="font-semibold text-blue-950">{key}</p>
                                 <ul>
-                                    {Data.Kayamkulam.Hotels[key].map((key, index)=>(
+                                    {Data.Bengaluru.Hotels[key].map((key, index)=>(
                                         <li key={index} className="font-light">{key}</li>
                                     ))}
                                 </ul>
@@ -84,11 +73,11 @@ export default function ReachUs() {
                 <div className="max-w-[80vw] min-w-[80vw]">
                     <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Restaurants Near Us</div>
                     <div className="flex w-full">
-                        {Object.keys(Data.Kayamkulam.Restaurants).map((key, index)=>(
+                        {Object.keys(Data.Bengaluru.Restaurants).map((key, index)=>(
                             <div className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
                                 <p className="font-semibold text-yellow-500">{key}</p>
                                 <ul>
-                                    {Data.Kayamkulam.Restaurants[key].map((key, index)=>(
+                                    {Data.Bengaluru.Restaurants[key].map((key, index)=>(
                                         <li key={index} className="font-light">{key}</li>
                                     ))}
                                 </ul>
