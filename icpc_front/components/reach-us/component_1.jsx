@@ -1,13 +1,13 @@
 import React from "react";
 import Data from "../json/reach_us.json"; 
 
-export default function Location() {
-  const amritapuriCampus = Data.campuses.find(campus => campus.name === "Amritapuri");
+export default function Component_1({campusName}) {
+  const campus = Data.campuses.find(campus => campus.name === campusName);
 
   return (
     <div className="flex flex-col lg:flex-row gap-20 md:m-[3vw]">
       <div className="flex-[1] max-md:w-[90vw]">
-        {amritapuriCampus.sections.map((section, index) => {
+        {campus.sections.map((section, index) => {
           if (section.title === "REACH US") {
             return (
               <div key={index}>
@@ -32,13 +32,13 @@ export default function Location() {
 
       <div className="flex-1 max-w-full">
         <iframe
-          src={amritapuriCampus.map.src}
-          width={amritapuriCampus.map.width}
-          height={amritapuriCampus.map.height}
+          src={campus.map.src}
+          width={campus.map.width}
+          height={campus.map.height}
           className="border-none"
           allowFullScreen=""
           loading="lazy"
-          title={amritapuriCampus.map.title}
+          title={campus.map.title}
         ></iframe>
       </div>
     </div>

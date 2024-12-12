@@ -3,7 +3,7 @@ import Component_1 from './component_1';
 
 const ReachUs = () => {
   return (
-    <Component_1/>
+    <Component_1 campusName="Amritapuri"/>
   );
 };
 
