@@ -75,7 +75,7 @@ export default function ReachUs() {
                     <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Restaurants Near Us</div>
                     <div className="flex w-full">
                         {Object.keys(Data.Coimbatore.Restaurants).map((key, index)=>(
-                            <div className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
+                            <div key={index} className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
                                 <p className="font-semibold text-yellow-500">{key}</p>
                                 <ul>
                                     {Data.Coimbatore.Restaurants[key].map((key, index)=>(

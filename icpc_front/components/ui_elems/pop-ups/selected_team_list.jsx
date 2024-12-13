@@ -10,7 +10,7 @@ export default function SelectedTeamList(){
             <div className="text-[1.5vw] max-md:text-[7vw] flex">
                 <p className="font-semibold flex items-center">Notice<span className="text-gray-500 text-[1.2vw] max-md:text-[5vw] font-medium">&nbsp;(02-12-2024)</span></p>
                 <div className="flex-1 flex justify-end">
-                    <button onClick={()=>{setOpen(false)}}><X/></button>
+                    <button className="rounded-full border-2 hover:border-blue-400 border-black border-solid" onClick={()=>{setOpen(false)}}><X/></button>
                 </div>
             </div>
             <div className="text-[1.2vw] flex">

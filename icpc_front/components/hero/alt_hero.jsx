@@ -22,8 +22,8 @@ export default function AltHero(){
                 <h1 className="text-center text-[5vw] max-md:text-[9vw] max-md:leading-[12vw] tracking-tighter max-w-[80vw] max-md:max-w-[90vw] text-white mb-[1vw] font-semibold">
                     Welcome to<br/> ICPC 2024 Regionals
                 </h1>
-                <p className="text-[1.4vw] -mt-[1vw] max-md:text-[4vw] max-w-[40vw] max-md:max-w-[90vw] text-center text-white font-medium mb-[2vw]">
-                    Bengaluru | Coimbatore | Kollam
+                <p className="text-[1.4vw] -mt-[1vw] max-md:text-[4vw] max-w-[40vw] max-md:max-w-[90vw] text-center text-white font-medium mb-[2vw] [&>*]:duration-300">
+                    <Link href={'/reach-us/bengaluru'} className="hover:text-blue-400">Bengaluru</Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-400">Coimbatore</Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-400">Kollam</Link>
                 </p>
                 <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
                     <Link

@@ -93,7 +93,7 @@ export default function Navbar({ open, hero, darkSection }) {
                 </button>
             </div>
         </nav>
-        <SideMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <SideMenu openMenu={openMenu} setOpenMenu={setOpenMenu} locations={locations}/>
         </>
     );
 } 
