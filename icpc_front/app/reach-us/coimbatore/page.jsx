@@ -45,7 +45,7 @@ export default function ReachUs() {
                         <div>
                         {Object.keys(Data.Coimbatore.Trains).map((key, index) => (
                             <div key={index} className="text-[1.4vw] max-md:text-[3vw] my-[2vw]">
-                                <p className="font-semibold text-yellow-500 pb-[2vw]">{key}</p>
+                                <p className="font-semibold text-yellow-500 pb-[1.5vw]">{key}</p>
                                 <ul className="list-none">
                                     {Data.Coimbatore.Trains[key].map((train, subIndex) => (
                                         <li key={subIndex} className="font-light py-[0.7vw]">{train}</li>

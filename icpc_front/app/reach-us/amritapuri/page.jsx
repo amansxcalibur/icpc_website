@@ -54,7 +54,7 @@ export default function ReachUs() {
                     <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold flex justify-center pb-[1.5vw]">Trains to Kayamkulam</div>
                     <div>
                         {Object.keys(Data.Kayamkulam.Trains).map((key, index)=>(
-                            <p key={index} className="text-[1.4vw] max-md:text-[3vw] my-[1vw]">
+                            <p key={index} className="text-[1.4vw] max-md:text-[3vw] my-[1.5vw]">
                                 <span className="font-semibold text-yellow-500">{key}</span> : <span className="font-light">{Data.Kayamkulam.Trains[key]}</span>
                             </p>
                         ))}
