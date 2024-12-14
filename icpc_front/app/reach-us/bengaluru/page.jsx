@@ -41,10 +41,10 @@ export default function ReachUs() {
             </div>
             <div className="w-full bg-blue-950 text-white mt-[5vw] flex justify-center py-[5vw]">
                 <div className="max-w-[80vw] min-w-[80vw] max-md:max-w-[90vw] max-md:min-w-[90vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Trains to Bengaluru</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold pb-[1.5vw] flex justify-center">Trains to Bengaluru</div>
                     <div>
                         {Object.keys(Data.Bengaluru.Trains).map((key, index)=>(
-                            <p key={index} className="text-[1.4vw] max-md:text-[3vw] my-[1vw]">
+                            <p key={index} className="text-[1.4vw] max-md:text-[3vw] my-[1.5vw]">
                                 <span className="font-semibold text-yellow-500">{key}</span> : <span className="font-light">{Data.Bengaluru.Trains[key]}</span>
                             </p>
                         ))}
@@ -54,7 +54,7 @@ export default function ReachUs() {
             {/* Hotels */}
             <div className="w-full flex justify-center py-[5vw]">
                 <div className="max-w-[80vw] min-w-[80vw] max-md:max-w-[90vw] max-md:min-w-[90vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Hotels Near Us</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold pb-[1.5vw] flex justify-center">Restaurants Near Us</div>
                     <div className="flex w-full">
                         {Object.keys(Data.Bengaluru.Hotels).map((key, index)=>(
                             <div key={index} className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
@@ -72,7 +72,7 @@ export default function ReachUs() {
             {/* Restaurants */}
             <div className="w-full bg-blue-950 text-white mt-[5vw] flex justify-center py-[7vw]">
                 <div className="max-w-[80vw] min-w-[80vw] max-md:max-w-[90vw] max-md:min-w-[90vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Restaurants Near Us</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold pb-[1.5vw] flex justify-center">Hotels Near Us</div>
                     <div className="flex w-full">
                         {Object.keys(Data.Bengaluru.Restaurants).map((key, index)=>(
                             <div key={index} className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
