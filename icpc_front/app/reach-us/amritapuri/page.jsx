@@ -64,13 +64,13 @@ export default function ReachUs() {
             {/* Hotels */}
             <div className="w-full mt-[5vw] flex justify-center py-[5vw]">
                 <div className="max-w-[80vw] min-w-[80vw] max-md:max-w-[90vw] max-md:min-w-[90vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Hotels Near Us</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Restaurants Near Us</div>
                     <div className="flex w-full">
-                        {Object.keys(Data.Kayamkulam.Hotels).map((key, index)=>(
+                        {Object.keys(Data.Kayamkulam.Restaurants).map((key, index)=>(
                             <div key={index} className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
                                 <p className="font-semibold text-blue-950">{key}</p>
                                 <ul>
-                                    {Data.Kayamkulam.Hotels[key].map((key, index)=>(
+                                    {Data.Kayamkulam.Restaurants[key].map((key, index)=>(
                                         <li key={index} className="font-light">{key}</li>
                                     ))}
                                 </ul>
@@ -82,13 +82,13 @@ export default function ReachUs() {
             {/* Restaurants */}
             <div className="w-full bg-blue-950 text-white mt-[5vw] flex justify-center py-[7vw]">
                 <div className="max-w-[80vw] min-w-[80vw] max-md:max-w-[90vw] max-md:min-w-[90vw]">
-                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Restaurants Near Us</div>
+                    <div className="w-full text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] flex justify-center">Hotels Near Us</div>
                     <div className="flex w-full">
-                        {Object.keys(Data.Kayamkulam.Restaurants).map((key, index)=>(
+                        {Object.keys(Data.Kayamkulam.Hotels).map((key, index)=>(
                             <div key={index} className="text-[1.4vw] flex-1 max-md:text-[3vw] my-[1vw]">
                                 <p className="font-semibold text-yellow-500">{key}</p>
                                 <ul>
-                                    {Data.Kayamkulam.Restaurants[key].map((key, index)=>(
+                                    {Data.Kayamkulam.Hotels[key].map((key, index)=>(
                                         <li key={index} className="font-light">{key}</li>
                                     ))}
                                 </ul>
