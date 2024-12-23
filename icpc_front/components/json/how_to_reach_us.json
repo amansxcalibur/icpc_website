@@ -58,9 +58,9 @@
     "Coimbatore":{
         "Description":"Located near the border of Tamil Nadu and Kerala, about 2.5 km north of the Coimbatore-Palakkad highway (NH 47), the campus is ensconced by the Western Ghats on its three sides. It is 16 kms from Coimbatore City and 32 kms from Palakkad.",
         "directions":{
-            "By Air and Taxi":" The closest airport is Coimbatore, located about 27 kilometers from the campus. Most airlines operate flights to Coimbatore from all major cities in India.",
-            "By Train":" The nearest major bus terminals are at Gandhipuram (about 22 kms) and Ukkadam (about 18 kms.). There are regular bus services from Gandhipuram (Bus Nos. 96, A3 and 3G) and Ukkadam (Bus Nos. 96, 48, S2, 3G and A3). Alight at Ettimadai Piruvu Bus Stop (Amrita College) and hire an auto rickshaw to the campus (3 kms). A3 bus will come upto the college Gate. The travel time from Ukkadam to Ettimadai Piruvu is around 45 minutes.",
-            "By Bus":" Kayamkulam is the closest train station situated 12 kilometres north of the campus. After disembarking, one can hire an autorickshaw to come to the campus. The ride takes about 20 minutes. Buses are also available from Kayamkulam Bus-Stand to Vallickavu Junction, which is about a five-minute walk from the campus."
+            "By Air and Taxi":"The closest airport is Coimbatore, located about 27 kilometers from the campus. Most airlines operate flights to Coimbatore from all major cities in India.",
+            "By Train":"Ettimadai Railway Station, just 500m from campus, is easily accessible by trains from Coimbatore Junction and Palghat Junction. Coimbatore also connects to major cities like Chennai, Bengaluru, Mumbai, and Delhi.",
+            "By Bus":"The nearest major bus terminals are at Gandhipuram (about 22 kms) and Ukkadam (about 18 kms.). There are regular bus services from Gandhipuram (Bus Nos. 96, A3 and 3G) and Ukkadam (Bus Nos. 96, 48, S2, 3G and A3). Alight at Ettimadai Piruvu Bus Stop (Amrita College) and hire an auto rickshaw to the campus (3 kms). A3 bus will come upto the college Gate. The travel time from Ukkadam to Ettimadai Piruvu is around 45 minutes."
         },
         "Trains":{
             "From Coimbatore Junction to Ettimadai":["CBE MAQ EXPRESS", "ED-PGTN MEMU EXP SPL", "CBE-SRR MEMU EXP SPL"],
