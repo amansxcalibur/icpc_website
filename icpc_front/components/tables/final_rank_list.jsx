@@ -108,7 +108,7 @@ export default function FinalRankList() {
                             </option>
                         </select>
                     </div> */}
-                    <Link href="selected-teams-v1" title='Download the pdf containing selected teams' className='mx-[.5vw] p-[.5vw] hover:bg-gray-800 rounded-full min-h-[3vw] max-md:min-h-[8vw] max-md:min-w-[8vw] min-w-[3vw] flex justify-center items-center'><DownlaodIcon/></Link>
+                    {/* <Link href="selected-teams-v1" title='Download the pdf containing selected teams' className='mx-[.5vw] p-[.5vw] hover:bg-gray-800 rounded-full min-h-[3vw] max-md:min-h-[8vw] max-md:min-w-[8vw] min-w-[3vw] flex justify-center items-center'><DownlaodIcon/></Link> */}
                 </div>
 
                 {/* <div className='md:hidden flex min-h-[1vh] justify-center'>
