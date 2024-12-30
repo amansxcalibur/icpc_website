@@ -35,14 +35,14 @@ export default function AltHero(){
                         View Final Rank List
                     </Link>
                     <p className="md:hidden mt-[1vw]"></p>
-                    {/* <Link
-                        href="/selected-teams"  
+                    <Link
+                        href="/problem-set"  
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        View Selected Teams
-                    </Link> */}
+                        View Problem Set
+                    </Link>
                 </div>
             </div>
         </div>
