@@ -35,7 +35,7 @@ rank,teamName,institution,problemsSolved,totalTime,penalty
 34,WeirdFishes,Indian Institute of Technology Hyderabad,7,09:54:20,2
 35,LockedIn,"International Institute of Information Technology, Hyderabad",7,10:31:30,2
 36,Null Pointers,Indian Institute Of Technology - Kanpur,7,10:40:57,4
-37,Bugs sabke niklenge,"Indian Institute of Information Technology, Lucknow",7,10:50:30,1
+37,Bugs sabke niklenge,"Institute of Information Technology, Lucknow",7,10:50:30,1
 38,While (Not Winning);,Indian Institute of Technology Dhanbad,7,10:50:59,1
 39,Bhakarwadi,Indian Institute of Technology Indore,7,10:56:45,2
 40,using namespace icpc;,Indian Institute Of Technology - Kanpur,7,11:01:49,3
@@ -151,7 +151,7 @@ rank,teamName,institution,problemsSolved,totalTime,penalty
 149,The Forkers,National Institute of Technology Raipur,5,07:23:56,3
 150,Damodar,"Jawaharlal Nehru University, New Delhi",5,07:25:23,2
 151,EXCEPTION EXORCISTS,"Indian Institute of Technology, Tirupati",5,08:07:29,4
-152,Compile and Conquer,"School Of Computer Engineering, KIIT",5,08:32:29,2
+152,Compile and Conquer,"Indian Institute of Technology, Bhubaneswar",5,08:32:29,2
 153,Verbatim,"Vishwakarma Institute of Technology, Pune",5,09:07:12,4
 154,TLE_ka O(mlette),Chennai Mathematical Institute,5,09:15:09,5
 155,__O(3)__,Pimpri Chinchwad College of Engineering,5,09:42:09,2
