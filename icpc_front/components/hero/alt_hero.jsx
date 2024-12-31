@@ -50,7 +50,7 @@ export default function AltHero(){
                             rel="noopener noreferrer"
                             className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                         >
-                            View Director's Report
+                            View Director&apos;s Report
                         </Link>
                     </div>
                 </div>
