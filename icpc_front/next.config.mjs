@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  images: {
+    domains: ['picsum.photos'],  // Place holder images used in gallery page
+  },
   async redirects() {
     return [
       {
