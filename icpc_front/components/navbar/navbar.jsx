@@ -83,6 +83,12 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Promote
                 </Link>
+                <Link 
+                    href="/gallery" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Gallery
+                </Link>
             </div>
             <button className={`py-[0.5vw] px-[1vw] max-md:pr-[2vw] mx-[1vw] hover:bg-white hover:text-black rounded-full transition duration-300 ease max-md:hidden invisible ${textColor}`}>
                 Login
