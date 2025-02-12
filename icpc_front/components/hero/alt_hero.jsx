@@ -1,5 +1,3 @@
-import Terminal from "../ui_elems/terminal/terminal";
-import CustomButton from "../ui_elems/buttons/color_onhover_button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +26,6 @@ export default function AltHero(){
                     <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
                         <Link
                             href="/final-rank-list"
-                            target="_blank" 
                             rel="noopener noreferrer"
                             className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                         >
@@ -36,8 +33,7 @@ export default function AltHero(){
                         </Link>
                         <p className="md:hidden mt-[1vw]"></p>
                         <Link
-                            href="/problem-set"  
-                            target="_blank" 
+                            href="/problem-set"
                             rel="noopener noreferrer"
                             className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                         >
@@ -45,8 +41,7 @@ export default function AltHero(){
                         </Link>
                         <p className="md:hidden mt-[1vw]"></p>
                         <Link
-                            href="/directors-report"  
-                            target="_blank" 
+                            href="/directors-report"
                             rel="noopener noreferrer"
                             className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                         >

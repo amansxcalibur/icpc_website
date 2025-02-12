@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function AboutAmrita(){
     return(
         <div id="about_amrita" className="min-h-screen flex flex-col">
@@ -43,9 +45,9 @@ export default function AboutAmrita(){
                         <div className="flex-1">
                             <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Quick Links</h2>
                             <div className="text-[1vw] max-md:text-[3vw] text-gray-300 space-y-[0.5vw]">
-                                <p className="hover:text-blue-300 cursor-pointer">ICPC Global</p>
+                                <Link href={'https://icpc.global/'} className="hover:text-blue-300 cursor-pointer">ICPC Global</Link>
                                 <p className="hover:text-blue-300 cursor-pointer">Registration</p>
-                                <p className="hover:text-blue-300 cursor-pointer">Important Dates</p>
+                                <Link href={'/#important_dates'} className="hover:text-blue-300 cursor-pointer">Important Dates</Link>
                             </div>
                         </div>
 

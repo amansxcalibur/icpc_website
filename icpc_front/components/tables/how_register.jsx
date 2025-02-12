@@ -73,7 +73,7 @@ export default function HowToRegister() {
           </div>
 
           {/* Important Dates Section */}
-          <div>
+          <div id="important_dates">
             <p className="text-[2.5vw] mb-[4vw] max-md:text-[5vw] max-md:mb-[4vw] font-semibold text-white">
               Important Dates
             </p>
