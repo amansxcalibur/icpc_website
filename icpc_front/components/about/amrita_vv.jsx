@@ -1,27 +1,43 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutAmrita(){
     return(
         <div id="about_amrita" className="min-h-screen flex flex-col">
             {/* About Amrita Section - 70% height */}
-            <div className="flex-[7] max-md:flex-[6] max-md:py-[5vw] bg-[#92133b] flex justify-center items-center">
-                <div className="max-w-[85vw] max-md:max-w-[90vw]">
-                    <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-white mb-[2vw]">
-                        About Amrita Vishwa Vidyapeetham
-                    </h1>
-                    <div className="text-[1.1vw] max-md:text-[3vw] text-gray-100 space-y-[1vw]">
-                        <p>
-                            Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, 
-                            educating a vibrant student population of over 24,000 by 1700+ strong faculty. 
-                            Accredited with the highest possible &apos;A++&apos; grade by NAAC, Amrita offers more than 250 UG, PG, 
-                            and Ph.D. programs in Engineering, Management, Medical Sciences including Ayurveda, Life Sciences, 
-                            Physical Sciences, Agriculture Sciences, Arts & Humanities, and Social & Behavioral Sciences.
-                        </p>
-                        <p>
-                            With its extensive network of nine campuses spread across Amaravati, Amritapuri, Bengaluru, 
-                            Chennai, Coimbatore, Kochi, Mysuru, Nagercoil(*) and NCR Delhi (Faridabad), Amrita University 
-                            stands as one of India&apos;s preeminent private educational institutions.
-                        </p>
+            <div className="flex-[7] max-md:flex-[6] max-md:py-[5vw] bg-[#92133b] flex justify-center items-center bg-white">
+                <div className="flex flex-col md:flex-row items-center gap-8 max-w-[85vw] max-md:max-w-[90vw]">
+                    {/* Left side - Image */}
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <Image 
+                            src="/AMRITA.png" // Replace with your image path
+                            width={600}
+                            height={400}
+                            alt="Amrita Vishwa Vidyapeetham Campus"
+                            className="object-cover w-full h-full"
+                            unoptimized
+                        />
+                    </div>
+                    
+                    {/* Right side - Text content */}
+                    <div className="w-full md:w-1/2">
+                        <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-black mb-[2vw] text-black">
+                            About Amrita Vishwa Vidyapeetham
+                        </h1>
+                        <div className="text-[1.1vw] max-md:text-[3vw] text-gray-100 space-y-[1vw]">
+                            <p className="text-black">
+                                Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, 
+                                educating a vibrant student population of over 24,000 by 1700+ strong faculty. 
+                                Accredited with the highest possible &apos;A++&apos; grade by NAAC, Amrita offers more than 250 UG, PG, 
+                                and Ph.D. programs in Engineering, Management, Medical Sciences including Ayurveda, Life Sciences, 
+                                Physical Sciences, Agriculture Sciences, Arts & Humanities, and Social & Behavioral Sciences.
+                            </p>
+                            <p className="text-black">
+                                With its extensive network of nine campuses spread across Amaravati, Amritapuri, Bengaluru, 
+                                Chennai, Coimbatore, Kochi, Mysuru, Nagercoil(*) and NCR Delhi (Faridabad), Amrita University 
+                                stands as one of India&apos;s preeminent private educational institutions.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +80,7 @@ export default function AboutAmrita(){
             </div>
             {/* Copyright */}
             <div className="text-center py-[1vw] text-[0.9vw] max-md:text-[2.5vw] bg-blue-950 text-gray-300">
-                &copy; 2024 ICPC Asia Amritapuri Regional Contest. All rights reserved.
+                &copy; 2025 ICPC Asia Amritapuri Regional Contest. All rights reserved.
             </div>
         </div>
     )

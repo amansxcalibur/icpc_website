@@ -20,7 +20,7 @@ export default function ImpDates(){
                         <div className="bg-blue-500 rounded-full min-h-[12vw] min-w-[12vw] max-md:min-w-[28vw] max-md:min-h-[28vw] flex justify-center items-center">
                             <div className="text-white m-[1vw]">
                                 <div className=" flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">10</span></div>
-                                <div className="text-[1.2vw] max-md:text-[3vw]">Oct 2024</div>
+                                <div className="text-[1.2vw] max-md:text-[3vw]">TBA</div>
                             </div>
                         </div>
                         <p className="text-black text-[1.5vw] max-md:text-[4vw] max-md:ml-[4vw]">Registration opens</p>
@@ -29,7 +29,7 @@ export default function ImpDates(){
                         <div className="bg-yellow-500 rounded-full min-h-[12vw] min-w-[12vw] max-md:min-w-[28vw] max-md:min-h-[28vw] flex justify-center items-center">
                             <div className="text-white">
                                 <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">31</span></div>
-                                <div className="text-[1.2vw] max-md:text-[3vw]">Oct 2024</div>
+                                <div className="text-[1.2vw] max-md:text-[3vw]">TBA</div>
                             </div>
                         </div>
                         <p className="text-black text-[1.5vw] max-md:text-[4vw] max-md:ml-[4vw]">Registration closes</p>
@@ -38,7 +38,7 @@ export default function ImpDates(){
                         <div className="bg-red-700 rounded-full min-h-[12vw] min-w-[12vw] max-md:min-w-[28vw] max-md:min-h-[28vw] flex justify-center items-center">
                             <div className="text-white">
                                 <div className="flex justify-center items-end"><span className="text-[5.5vw] -mb-[1.7vw] -m-[1vw] max-md:text-[12vw]">16</span></div>
-                                <div className="text-[1.2vw] max-md:text-[3vw]">Nov 2024</div>
+                                <div className="text-[1.2vw] max-md:text-[3vw]">TBA</div>
                             </div>
                         </div>
                         <p className="text-black text-[1.5vw] max-md:text-[4vw] max-md:ml-[4vw]">Contest Date</p>

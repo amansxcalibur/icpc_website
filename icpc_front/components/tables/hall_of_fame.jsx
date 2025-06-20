@@ -1,48 +1,53 @@
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import hallOfFameData from '../json/hall_of_fame.json';
 
 export default function HallOfFame() {
     return (
-        <div className="min-h-screen flex flex-col items-center bg-[#92133b] pt-[8vw] pb-[4vw]">
-            <div className='flex-1 flex flex-col min-w-[80vw] max-md:min-w-[95=vw] max-md:max-w-[95vw]'>
-                {/* Title Section */}
-                <div className="text-center mb-[4vw]">
-                    <h1 className="text-[4vw] font-bold mb-[1vw] max-md:text-[8vw] text-white">
-                        Hall of Fame
-                    </h1>
-                    <p className='text-[1.2vw] max-md:text-[3.5vw] text-gray-200'>
-                        Celebrating the champions who have made their mark at the ICPC Amritapuri Regionals
-                    </p>
-                </div>
-
-                {/* Table Header */}
-                <div className="flex min-h-[4vw] items-center text-[1.2vw] max-md:text-[3vw] font-semibold text-white border-b border-white/30 pb-[1vw]">
-                    <div className="flex-1">Year</div>
-                    <div className="flex-[2]">Team Name</div>
-                    <div className="flex-[2]">College</div>
-                </div>
+        <div className="min-h-screen flex flex-col items-center justify-start px-4 py-8 md:px-6 lg:px-8">
+            <div className="w-full max-w-7xl">
+                <h1 className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6 text-black mt-[70px]">
+                    Hall of Fame
+                </h1>
+                <p className="text-center text-sm md:text-base lg:text-lg xl:text-xl text-black mb-6 md:mb-8 px-4">
+                    Celebrating the champions who have made their mark at the ICPC Amritapuri Regionals
+                </p>
                 
-                {/* Table Content */}
-                <div className="mt-[2vw] space-y-[2vw]">
-                    {hallOfFameData
-                        .map((entry, index) => (
-                        <div 
-                            key={index}
-                            className="flex items-center min-h-[4vw] hover:bg-white/5 rounded-lg transition-all duration-300 p-[1vw]"
-                        >
-                            <div className="flex-1 text-[1.1vw] max-md:text-[3vw] text-gray-300">
-                                {entry.year}
-                            </div>
-                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw]">
-                                <span className="font-semibold text-white">{entry.team}</span>
-                            </div>
-                            <div className="flex-[2] text-[1.1vw] max-md:text-[3vw] text-gray-200">
-                                {entry.college}
-                            </div>
-                        </div>
-                    ))}
+                <div className="w-full overflow-x-auto rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                    <table className="w-full min-w-full text-xs md:text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead className="text-xs md:text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" className="px-3 md:px-6 py-3 min-w-[80px]">
+                                    Year
+                                </th>
+                                <th scope="col" className="px-3 md:px-6 py-3 min-w-[150px]">
+                                    Team Name
+                                </th>
+                                <th scope="col" className="px-3 md:px-6 py-3 min-w-[200px]">
+                                    College
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {hallOfFameData.map((entry, index) => (
+                                <tr
+                                    key={index}
+                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                                >
+                                    <td className="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900 dark:text-white">
+                                        {entry.year}
+                                    </td>
+                                    <td className="px-3 md:px-6 py-3 md:py-4 text-gray-900 dark:text-white">
+                                        {entry.team}
+                                    </td>
+                                    <td className="px-3 md:px-6 py-3 md:py-4 text-gray-900 dark:text-white">
+                                        {entry.college}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

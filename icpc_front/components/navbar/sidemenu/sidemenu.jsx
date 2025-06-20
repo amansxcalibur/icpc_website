@@ -50,6 +50,9 @@ export default function SideMenu({openMenu, setOpenMenu, locations}){
                         <Link href="/team-selection-process" className="mx-[1vw] my-[1.5vw] mt-[4vw] hover:text-blue-400">Selection Process</Link>
                         <Link href="/promote" className="mx-[1vw] my-[1.5vw] mt-[4vw] hover:text-blue-400">Promote</Link>
                         <Link href="/gallery" className="mx-[1vw] my-[1.5vw] mt-[4vw] hover:text-blue-400">Gallery</Link>
+                        <Link href="/archive/icpc_Amritapuri_2024" className="mx-[1vw] my-[1.5vw] mt-[4vw] hover:text-blue-400">Archive</Link>
+
+
                     </div>
                     {/* <ul className="flex justify-center flex-col text-4xl mt-3">
                         {options.map(option=>

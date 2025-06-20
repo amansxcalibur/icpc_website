@@ -13,7 +13,8 @@ export default function HowToRegister() {
           {/* How to Register Section */}
           <div className="mb-[4vw] max-md:mb-[6vw]">
             <p className="text-[2.5vw] mb-[2vw] max-md:text-[5vw] max-md:mb-[3vw] font-semibold text-white">
-              <span className="line-through">How to Register?</span> <span className="font-light">(closed)</span>
+              <span className="">How to Register?</span>
+               {/* <span className="font-light">(closed)</span> */}
             </p>
             <div className="grid grid-cols-2 gap-x-[5vw] gap-y-[2vw] max-md:grid-cols-1 max-md:gap-y-[3vw]">
               <div className="group">
@@ -67,9 +68,12 @@ export default function HowToRegister() {
               </div>
             </div>
             {/* Please Note Section */}
-            <p className="text-[1vw] text-white mt-[2vw] max-md:mt-[4vw] font-semibold bg-[#a4123f] shadow-[_10px_10px_5px_rgba(20,_18,_59,_1)] p-[1.5vw] max-md:p-[4vw] rounded-[1vw] max-md:text-[3vw]">
-              <span className="font-bold">Please note:</span> There will be a single Preliminary Online Contest for all three Regional Sites in India (i.e., Kanpur, Amritapuri, and Chennai). Each regional site will prepare its own rank list based on the teams registered for that site from the Preliminary Online Contest rankings. Teams participating in multiple regional sites are requested to keep the same team members for each Regional Site.
-            </p>
+           <p className="text-sm mt-3 md:text-base lg:text-lg text-white/95 leading-relaxed">
+                        <span className="inline-block px-2 py-1 bg-white/20 rounded-md font-semibold text-white mr-2 mb-2">
+                            Please note:
+                        </span>
+                        There will be a single Preliminary Online Contest for all three Regional Sites in India (i.e., Kanpur, Amritapuri, and Chennai). Each regional site will prepare its own rank list based on the teams registered for that site from the Preliminary Online Contest rankings. Teams participating in multiple regional sites are requested to keep the same team members for each Regional Site.
+                    </p>
           </div>
 
           {/* Important Dates Section */}
@@ -83,10 +87,10 @@ export default function HowToRegister() {
                 <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      08
+                     
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      OCT 2024
+                      TBA
                     </div>
                   </div>
                 </div>
@@ -100,10 +104,10 @@ export default function HowToRegister() {
                 <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      12
+                      {/* 12 */}
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      NOV 2024
+                     TBA
                     </div>
                   </div>
                 </div>
@@ -112,7 +116,7 @@ export default function HowToRegister() {
                     Registration Deadline
                   </p>
                   <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    8:00 PM
+                    TBA
                   </p>
                 </div>
               </div>
@@ -122,10 +126,10 @@ export default function HowToRegister() {
                 <div className="bg-red-700 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      23
+                      {/* 23 */}
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      NOV 2024
+                      TBA
                     </div>
                   </div>
                 </div>
@@ -134,7 +138,7 @@ export default function HowToRegister() {
                     Online Round
                   </p>
                   <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    9:00 PM - 11:30 PM
+                    TBA
                   </p>
                 </div>
               </div>
@@ -144,10 +148,10 @@ export default function HowToRegister() {
                 <div className="bg-blue-600 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      28
+                      
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      DEC 2024
+                      TBA
                     </div>
                   </div>
                 </div>
@@ -156,7 +160,7 @@ export default function HowToRegister() {
                     Onsite Round
                   </p>
                   <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    Till <span className="font-bold">29th</span> Dec
+                    <span className="font-bold">TBA</span> 
                   </p>
                 </div>
               </div>
