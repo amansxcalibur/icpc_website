@@ -20,7 +20,7 @@ export default function AltHero(){
                         href=""
                         className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-md transition duration-300 ease-in-out transform hover:scale-105"
                     >
-                        Registration coming soon
+                        Registration coming soon!
                     </Link> 
                     {/* <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
                         <Link
