@@ -201,7 +201,7 @@ export default function Navbar({ open, hero, darkSection }) {
                     <div 
                     className="absolute -translate-x-[20%] bg-white shadow-lg rounded-md border border-gray-200 z-10 min-w-[8vw] group-hover:block hidden"
                     >
-                    {archiveweblinks.map((archiveweblinks, index) => (
+                    {archiveweblinks?.map((archiveweblinks, index) => (
                         <Link
                         href={archiveweblinks.href} 
                         key={index} 

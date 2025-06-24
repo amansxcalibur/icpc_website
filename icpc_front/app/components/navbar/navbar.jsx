@@ -24,9 +24,9 @@ export default function Navbar({ open, hero, darkSection }) {
         { name: "Coimbatore", href: "/archive/icpc_Amritapuri_2024/reach-us/coimbatore" }
     ];
     
-    // const archiveweblinks = [
-    //     {name: "ICPC 2024", href: "/archive/icpc_Amritapuri_2024"},
-    // ];
+    const archiveweblinks = [
+        {name: "ICPC 2024", href: "/archive/icpc_Amritapuri_2024"},
+    ];
 
     return (
         <>
