@@ -17,8 +17,8 @@ export default function SideMenu({openMenu, setOpenMenu, locations}){
             <div className={`fixed z-[1000] bg-[rgba(20,20,20,0.5)] backdrop-blur-sm h-full w-full left-0 top-0 flex justify-end ${openMenu?'':'hidden'}`}>
                 <div className={`
                 ${/*bg-[#4b82c4]*/ true}
-                bg-blue-950
-                 w-[70vw] p-4 rounded-l-[2vw]`}>
+                bg-blue-600
+                 w-[70vw] p-4 rounded-l-[2vw] text-white`}>
                     <button className="text-5xl" onClick={()=>{setOpenMenu(false)}}>
                         <p className="text-white"><X/></p>
                     </button>

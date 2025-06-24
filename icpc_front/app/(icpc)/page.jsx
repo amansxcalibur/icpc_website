@@ -17,8 +17,8 @@ export default function Trial(){
             <ExclusicePerks2/>
             <div className="pt-[8vw] bg-white">
                 <HowToRegister/>
-                <Sponsors/>
-                <OutreachPartners/>
+                {/* <Sponsors/>
+                <OutreachPartners/> */}
                 <AboutAmrita/>
             </div>
         </div>

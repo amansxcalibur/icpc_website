@@ -83,7 +83,7 @@ export default function Navbar({ open, hero, darkSection }) {
                     ))}
                     </div>
                 </div>
-                <Link 
+                {/* <Link 
                     href="/archive/icpc_Amritapuri_2024/ranking-process" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
@@ -100,7 +100,7 @@ export default function Navbar({ open, hero, darkSection }) {
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Promote
-                </Link>
+                </Link> */}
                 <Link 
                     href="/archive/icpc_Amritapuri_2024/gallery" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
@@ -168,7 +168,7 @@ export default function Navbar({ open, hero, darkSection }) {
                     ))}
                     </div>
                 </div>
-                <Link 
+                {/* <Link 
                     href="/ranking-process" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
@@ -185,7 +185,7 @@ export default function Navbar({ open, hero, darkSection }) {
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Promote
-                </Link>
+                </Link> */}
                 <Link 
                     href="/gallery" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}

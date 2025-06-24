@@ -16,6 +16,12 @@ export default function AltHero(){
                     <p className="text-[4vw] md:text-[1.8vw] lg:text-[1.4vw] xl:text-[1.2vw] -mt-[1vw] md:-mt-[1vw] max-w-[90vw] md:max-w-[50vw] lg:max-w-[40vw] text-center md:text-left text-black font-medium mb-[4vw] md:mb-[2vw] [&>*]:duration-300">
                         <Link href={'/reach-us/bengaluru'} className="hover:text-blue-400">Bengaluru</Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-400">Coimbatore</Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-400">Kollam</Link>
                     </p>
+                        <Link
+                        href=""
+                        className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                    >
+                        Registration coming soon
+                    </Link> 
                     {/* <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
                         <Link
                             href="/final-rank-list"
@@ -43,24 +49,24 @@ export default function AltHero(){
                     </div> */}
                 </div>
 
-                <div className="flex flex-col items-center md:items-start justify-center mt-[4vw] md:mt-0 w-full md:w-1/2 lg:w-2/5">
+                <div className="flex flex-col items-center md:items-start justify-center mt-[4vw] md:mt-0 w-full md:w-1/2 lg:w-2/5 mb-10 ">
                     <Image
                         src="/3df2.png"
                         alt="ICPC 2025 Logo"
                         width={1}
                         height={1}
-                        className="w-[50vw] h-[50vw] md:w-[45vw] md:h-[45vw] lg:w-[40vw] lg:h-[40vw] xl:w-[35vw] xl:h-[35vw] 2xl:w-[30vw] 2xl:h-[30vw] object-contain mb-[2vw] md:-mr-[5vw]"
+                        className="w-[50vw] h-[50vw] md:w-[45vw] md:h-[45vw] lg:w-[40vw] lg:h-[40vw] xl:w-[35vw] xl:h-[35vw] 2xl:w-[30vw] 2xl:h-[30vw] object-contain mb-[2vw] md:-mr-[5vw] "
                         unoptimized
                     />
-                    {/* <p className="text-[1.4vw] max-md:text-[4vw] text-black font-medium mb-[2vw]">
+                     {/* <p className="text-[1.4vw] max-md:text-[4vw] text-black font-medium mb-[2vw]">
                         ICPC 2025 Regionals, Amritapuri
-                    </p>
-                    <Link
+                    </p> */}
+                    {/* <Link
                         href="/register"
                         className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
                     >
                         Register Now
-                    </Link> */}
+                    </Link>  */}
                 </div>
             </div>
         </>
