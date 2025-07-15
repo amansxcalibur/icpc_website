@@ -6,7 +6,6 @@ import ExclusicePerks2 from "../../components/about/perks_2";
 import WhatsICPC from "../../components/about/icpc";
 import OutreachPartners from "../../components/tables/partners";
 import Sponsors from "../../components/tables/sponsors";
-import Pastsponsors from "@/components/tables/past_sponsors";
 
 export default function Trial(){
     return(
