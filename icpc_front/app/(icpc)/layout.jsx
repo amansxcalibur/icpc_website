@@ -1,7 +1,9 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
-import Terminal from "../../components/ui_elems/terminal/terminalnew";
-import Navbar from "../../components/navbar/navbar";
+// import Terminal from "../../components/ui_elems/terminal/terminalnew";
+// import Navbar from "../../components/navbar/navbar";
+import Navbar from "@/components/navbar/navbar";
+import Terminal from "@/components/ui_elems/terminal/terminalnew";
 import Script from "next/script";
 
 export default function Layout({ children }) {

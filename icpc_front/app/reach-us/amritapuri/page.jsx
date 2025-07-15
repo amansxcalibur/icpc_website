@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image"
-import Data from "../../components/json/how_to_reach_us.json"
-import ContactUs2 from "../../components/footer/contact_us_2";
+import Data from "@/components/json/how_to_reach_us.json"
+import ContactUs2 from "@/components/footer/contact_us_2";
 
 export default function ReachUs() {
     return (
