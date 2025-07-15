@@ -11,7 +11,7 @@ export default function Navbar({ open, hero, darkSection }) {
     const [openMenu, setOpenMenu] = useState(false);
     
     // Use white text for hero section and dark sections, black text otherwise
-    const textColor = (hero || darkSection) ? "text-white hover:text-gray-300" : "text-black hover:text-red-500";
+    const textColor = (hero || darkSection) ? "text-black hover:text-gray-300" : "text-black hover:text-red-500";
     
     const locations = [
         { name: "Amritapuri", href: "/reach-us/amritapuri" },

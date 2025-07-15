@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
-import Terminal from "@/components/ui_elems/terminal/terminal_2";
+// import Terminal from "@/app-components/components/ui_elems/terminal/terminal_2";
+import Terminal from "@/app/components/ui_elems/terminal/terminal_2";
 import Navbar from "@/app/components/navbar/navbar";
 import Script from "next/script";
 

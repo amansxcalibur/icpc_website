@@ -6,7 +6,7 @@ export default function OutreachPartners(){
         <div className="text-blue-950 flex justify-center flex-col items-center relative overflow-hidden pb-[5vw] pb-[6vw] min-h-[50vh]">
             <div className="min-w-[85vw] max-md:flex-1 flex relative flex-col justify-center">
                 <div className="text-[2.5vw] max-md:text-[6vw] font-semibold w-full max-md:h-[10vw] flex justify-center items-center pointer-events-none mb-[2vw]">
-                    <div className="max-w-[85vw] flex-1">Outreach Partners</div>
+                    <div className="max-w-[85vw] flex-1">Past Outreach Partners</div>
                 </div>
                 <div className="flex w-full justify-center max-w-[100vw] overflow-hidden items-center py-[1vw] max-md:w-[90vw] max-md:px-[1.5vw]">
                     <div className="flex-1 flex max-md:flex-col max-w-[65vw] md:gap-x-[8vw] max-md:gap-y-[2vh] max-md:min-w-full min-h-[15vw]">

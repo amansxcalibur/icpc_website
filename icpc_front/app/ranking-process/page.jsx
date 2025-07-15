@@ -1,6 +1,6 @@
 'use client'
 
-import X from "@/components/svg/x";
+import X from "@/app/components/svg/x";
 import Image from "next/image"
 
 export default function Promote() {

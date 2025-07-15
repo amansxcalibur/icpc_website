@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import SideMenu from "@/components/navbar/sidemenu/sidemenu";
+import SideMenu from "./sidemenu/sidemenu";  // Changed from @/components/navbar/sidemenu/sidemenu
 import Bars from "../svg/bars-3";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
@@ -186,6 +186,18 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Promote
                 </Link> */}
+                  <Link 
+                    href="/promote" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Promote
+                </Link> 
+                  <Link 
+                    href="/why-sponsor-us" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Why Sponsor Us
+                </Link>
                 <Link 
                     href="/gallery" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}

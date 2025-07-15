@@ -1,74 +1,275 @@
+// import Image from "next/image";
+// import Link from "next/link";
+
+// export default function AltHero(){
+//     return(
+//         <div className="relative w-full min-h-screen overflow-hidden bg-gray-100">
+//             {/* Optional Background Pattern or Images */}
+//             {/* You can add background images here when you have the actual image sources */}
+            
+//             {/* Main Content Container */}
+//             <div className="relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20">
+                
+//                 {/* Text Content */}
+//                 <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 xl:w-3/5 mb-8 lg:mb-0">
+//                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-semibold text-blue-500 text-center lg:text-left leading-tight tracking-tighter mb-4 sm:mb-6 md:mb-8 max-w-full">
+//                         ICPC 2025 Regionals
+//                     </h1>
+                    
+//                     <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center lg:text-left text-black font-medium mb-6 sm:mb-8 md:mb-10 max-w-full">
+//                         <Link href={'/reach-us/bengaluru'} className="hover:text-blue-400 transition-colors duration-300">
+//                             Bengaluru
+//                         </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-400 transition-colors duration-300">
+//                             Coimbatore
+//                         </Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-400 transition-colors duration-300">
+//                             Kollam
+//                         </Link>
+//                     </p>
+                    
+//                     <Link
+//                         href=""
+//                         className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 sm:py-4 md:py-5 lg:py-6 px-6 sm:px-8 md:px-10 lg:px-12 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+//                     >
+//                         Registration coming soon!
+//                     </Link>
+//                 </div>
+
+//                 {/* Image Content */}
+//                 <div className="flex flex-col items-center lg:items-end justify-center w-full lg:w-1/2 xl:w-2/5 mt-8 lg:mt-0">
+//                     <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl aspect-square">
+//                         <Image
+//                             src="/3df2.png"
+//                             alt="ICPC 2025 Logo"
+//                             fill
+//                             className="object-contain"
+//                             unoptimized
+//                             priority
+//                         />
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
+
+// 'use client';
+// import Image from "next/image";
+// import Link from "next/link";
+
+// export default function AltHero() {
+//     const images = [
+//         { id: '1', src: '/ICPC_Photos/Latest_pic/1.jpg', alt: 'ICPC 2025 Regionals - Image 1' },
+//         { id: '2', src: '/ICPC_Photos/Latest_pic/2.jpg', alt: 'ICPC 2025 Regionals - Image 2' },
+//         { id: '3', src: '/ICPC_Photos/Latest_pic/3.jpg', alt: 'ICPC 2025 Regionals - Image 3' },
+//         { id: '4', src: '/ICPC_Photos/Latest_pic/4.jpg', alt: 'ICPC 2025 Regionals - Image 4' },
+//         { id: '5', src: '/ICPC_Photos/Latest_pic/5.jpg', alt: 'ICPC 2025 Regionals - Image 5' },
+//     ];
+
+//     return (
+//         <div className="relative w-full min-h-screen overflow-hidden">
+//             {/* Hide scrollbar with custom CSS */}
+//             <style jsx>{`
+//                 .scrollbar-hide {
+//                     -ms-overflow-style: none;
+//                     scrollbar-width: none;
+//                 }
+//                 .scrollbar-hide::-webkit-scrollbar {
+//                     display: none;
+//                 }
+//             `}</style>
+//             {/* Background Image Carousel */}
+//             <div className="absolute inset-0 w-full h-full">
+//                 {images.length > 0 ? (
+//                     <>
+//                         <div className="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide">
+//                             {images.map((image) => (
+//                                 <div key={image.id} className="relative flex-shrink-0 w-full h-full snap-start">
+//                                     <Image
+//                                         id={image.id}
+//                                         src={image.src}
+//                                         alt={image.alt}
+//                                         fill
+//                                         className="object-cover"
+//                                         priority={image.id === '1'}
+//                                     />
+//                                 </div>
+//                             ))}
+//                         </div>
+                        
+//                         {/* Navigation Dots */}
+//                         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+//                             {images.map((image) => (
+//                                 <a
+//                                     key={image.id}
+//                                     href={`#${image.id}`}
+//                                     className="w-4 h-4 rounded-full bg-white/60 hover:bg-white transition-all duration-300 shadow-lg border-2 border-white/30"
+//                                 />
+//                             ))}
+//                         </div>
+//                     </>
+//                 ) : (
+//                     <div className="flex items-center justify-center w-full h-full bg-gray-200">
+//                         <p className="text-gray-500">Loading images...</p>
+//                     </div>
+//                 )}
+//             </div>
+
+//             {/* Dark Overlay for better text readability */}
+//             <div className="absolute inset-0 bg-black/40 z-5"></div>
+            
+//             {/* Main Content Container */}
+//             <div className="relative z-10 flex flex-col justify-center items-center w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20">
+                
+//                 {/* Text Content */}
+//                 <div className="flex flex-col justify-center items-center text-center max-w-4xl">
+//                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-semibold text-white mb-4 sm:mb-6 md:mb-8 leading-tight tracking-tighter">
+//                         ICPC 2025 Regionals
+//                     </h1>
+                    
+//                     <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white font-medium mb-6 sm:mb-8 md:mb-10">
+//                         <Link href={'/reach-us/bengaluru'} className="hover:text-blue-300 transition-colors duration-300">
+//                             Bengaluru
+//                         </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-300 transition-colors duration-300">
+//                             Coimbatore
+//                         </Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-300 transition-colors duration-300">
+//                             Kollam
+//                         </Link>
+//                     </p>
+                    
+//                     <Link
+//                         href=""
+//                         className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 sm:py-4 md:py-5 lg:py-6 px-6 sm:px-8 md:px-10 lg:px-12 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+//                     >
+//                         Registration coming soon!
+//                     </Link>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
+
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
-export default function AltHero(){
-    return(
-        <>
-            <div className="bg-gray-100 md:min-h-screen max-md:min-h-[90vw] rounded-bg-full max-md:-mt-[24vw]">
-                {/* Optional: Add content here if needed */}
+export default function AltHero() {
+    // const images = [
+    //     { id: '1', src: '/ICPC_Photos/Latest_pic/1.jpg', alt: 'ICPC 2025 Regionals - Image 1' },
+    //     { id: '2', src: '/ICPC_Photos/Latest_pic/2.jpg', alt: 'ICPC 2025 Regionals - Image 2' },
+    //     { id: '3', src: '/ICPC_Photos/Latest_pic/3.jpg', alt: 'ICPC 2025 Regionals - Image 3' },
+    //     { id: '4', src: '/ICPC_Photos/Latest_pic/4.jpg', alt: 'ICPC 2025 Regionals - Image 4' },
+    //     { id: '5', src: '/ICPC_Photos/Latest_pic/5.jpg', alt: 'ICPC 2025 Regionals - Image 5' },
+    // ];
+
+    
+ const IMAGE_PATH = '/ICPC_Photos/Latest_pic/';
+    const IMAGE_COUNT = 12;
+    const IMAGE_EXTENSION = '.jpg';
+    
+    // Generate images array dynamically
+    const images = Array.from({ length: IMAGE_COUNT }, (_, index) => ({
+        id: String(index + 1),
+        src: `${IMAGE_PATH}${index + 1}${IMAGE_EXTENSION}`,
+        alt: `ICPC 2025 Regionals - Image ${index + 1}`
+    }));
+
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    // Auto-change images every 4 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => 
+                prevIndex === images.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    const goToImage = (index) => {
+        setCurrentImageIndex(index);
+    };
+
+    return (
+        <div className="relative w-full min-h-screen overflow-hidden">
+            {/* Background Image Carousel with Auto-Change */}
+            <div className="absolute inset-0 w-full h-full">
+                {images.length > 0 ? (
+                    <>
+                        {/* Image Container */}
+                        <div className="relative w-full h-full">
+                            {images.map((image, index) => (
+                                <div
+                                    key={image.id}
+                                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                                        index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                    }`}
+                                >
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        className="object-cover"
+                                        priority={index === 0}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                        
+                        {/* Navigation Dots */}
+                        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+                            {images.map((image, index) => (
+                                <button
+                                    key={image.id}
+                                    onClick={() => goToImage(index)}
+                                    className={`w-4 h-4 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30 ${
+                                        index === currentImageIndex 
+                                            ? 'bg-white scale-110' 
+                                            : 'bg-white/60 hover:bg-white/80'
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                    </>
+                ) : (
+                    <div className="flex items-center justify-center w-full h-full bg-gray-200">
+                        <p className="text-gray-500">Loading images...</p>
+                    </div>
+                )}
             </div>
-            {/* <div className="md:min-h-screen min-w-full max-md:min-h-[90vw] bg-black opacity-50 absolute z-[5] top-0 mix-blend-multiply"></div> */}
-            <div className="md:min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center w-full max-md:min-h-[100vw] absolute z-10 top-0 px-4 md:px-5 pt-[10vw] md:pt-[8vw] lg:pt-[6vw] max-md:pt-[20vw]">
-                <div className="flex flex-col justify-center items-center md:items-center w-full md:w-1/2 lg:w-3/5">
-                    <h1 className="text-[8vw] md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw] max-md:text-center max-md:leading-[10vw] md:leading-[6vw] lg:leading-[5vw] tracking-tighter max-w-[95vw] md:max-w-[80vw] lg:max-w-[70vw] text-blue-500 mb-[2vw] md:mb-[1vw] font-semibold text-center md:text-left">
+
+            {/* Dark Overlay for better text readability */}
+            <div className="absolute inset-0 bg-black/40 z-5"></div>
+            
+            {/* Main Content Container */}
+            <div className="relative z-10 flex flex-col justify-center items-center w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20">
+                
+                {/* Text Content */}
+                <div className="flex flex-col justify-center items-center text-center max-w-4xl">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-semibold text-white mb-4 sm:mb-6 md:mb-8 leading-tight tracking-tighter">
                         ICPC 2025 Regionals
                     </h1>
-                    <p className="text-[4vw] md:text-[1.8vw] lg:text-[1.4vw] xl:text-[1.2vw] -mt-[1vw] md:-mt-[1vw] max-w-[90vw] md:max-w-[50vw] lg:max-w-[40vw] text-center md:text-left text-black font-medium mb-[4vw] md:mb-[2vw] [&>*]:duration-300">
-                        <Link href={'/reach-us/bengaluru'} className="hover:text-blue-400">Bengaluru</Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-400">Coimbatore</Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-400">Kollam</Link>
+                    
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white font-medium mb-6 sm:mb-8 md:mb-10">
+                        <Link href={'/reach-us/bengaluru'} className="hover:text-blue-300 transition-colors duration-300">
+                            Bengaluru
+                        </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-300 transition-colors duration-300">
+                            Coimbatore
+                        </Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-300 transition-colors duration-300">
+                            Kollam
+                        </Link>
                     </p>
-                        <Link
+                    
+                    <Link
                         href=""
-                        className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                        className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 sm:py-4 md:py-5 lg:py-6 px-6 sm:px-8 md:px-10 lg:px-12 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
                     >
                         Registration coming soon!
-                    </Link> 
-                    {/* <div className="gap-x-[1vw] flex max-md:flex-col max-md:justify-center max-md:items-center">
-                        <Link
-                            href="/final-rank-list"
-                            rel="noopener noreferrer"
-                            className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
-                        >
-                            View Final Rank List
-                        </Link>
-                        <p className="md:hidden mt-[1vw]"></p>
-                        <Link
-                            href="/problem-set"
-                            rel="noopener noreferrer"
-                            className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
-                        >
-                            View Problem Set
-                        </Link>
-                        <p className="md:hidden mt-[1vw]"></p>
-                        <Link
-                            href="/directors-report"
-                            rel="noopener noreferrer"
-                            className="bg-blue-500 ml-[1vw] hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
-                        >
-                            View Director&apos;s Report
-                        </Link>
-                    </div> */}
-                </div>
-
-                <div className="flex flex-col items-center md:items-start justify-center mt-[4vw] md:mt-0 w-full md:w-1/2 lg:w-2/5 mb-10 ">
-                    <Image
-                        src="/3df2.png"
-                        alt="ICPC 2025 Logo"
-                        width={1}
-                        height={1}
-                        className="w-[50vw] h-[50vw] md:w-[45vw] md:h-[45vw] lg:w-[40vw] lg:h-[40vw] xl:w-[35vw] xl:h-[35vw] 2xl:w-[30vw] 2xl:h-[30vw] object-contain mb-[2vw] md:-mr-[5vw] "
-                        unoptimized
-                    />
-                     {/* <p className="text-[1.4vw] max-md:text-[4vw] text-black font-medium mb-[2vw]">
-                        ICPC 2025 Regionals, Amritapuri
-                    </p> */}
-                    {/* <Link
-                        href="/register"
-                        className="bg-blue-500 hover:bg-blue-600 text-white text-[1.2vw] max-md:text-[4vw] py-[1vw] px-[3vw] rounded-full transition duration-300 ease-in-out transform hover:scale-105"
-                    >
-                        Register Now
-                    </Link>  */}
+                    </Link>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

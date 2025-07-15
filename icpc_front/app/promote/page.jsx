@@ -6,7 +6,7 @@ export default function Promote() {
     return (
         <div className="bg-white text-black mt-[5vw] flex justify-center pb-[10vw] min-h-screen">
             <div className="min-w-[80vw] max-md:min-w-[90vw]">
-                <p className="text-[2vw] text-center max-md:text-[6vw]">Promote ICPC Regionals 2024, Amritapuri</p>
+                <p className="text-[2vw] text-center max-md:text-[6vw]">Promote ICPC Regionals 2025, Amritapuri</p>
                 <div className="mt-[3vw] flex flex-col max-md:items-center">
                     <div className="max-md:w-[90vw]">
                         <p className="font-semibold text-[3vw] max-md:text-[6vw]">Posters</p>
