@@ -1,3 +1,4 @@
+'use client'
 export default function ExclusicePerks(){
     return(
         <div className="flex w-screen justify-center items-center flex-col my-[5vw] text-black">
