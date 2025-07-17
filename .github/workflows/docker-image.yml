@@ -39,3 +39,4 @@ jobs:
           file: ${{ github.workspace }}/icpc_front/Dockerfile
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/icpc_web:latest
+          no-cache: true
