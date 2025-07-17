@@ -163,8 +163,8 @@ export default function AltHero() {
     // ];
 
     
- const IMAGE_PATH = '/ICPC_Photos/Latest_pic/';
-    const IMAGE_COUNT = 12;
+ const IMAGE_PATH = '/coursel_images/';
+    const IMAGE_COUNT = 36;
     const IMAGE_EXTENSION = '.jpg';
     
     // Generate images array dynamically
