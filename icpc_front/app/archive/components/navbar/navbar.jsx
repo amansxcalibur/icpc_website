@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import SideMenu from "@/app/components/navbar/sidemenu/sidemenu";
+import SideMenu from "@/app/archive/components/navbar/sidemenu/sidemenu";
 import Bars from "../svg/bars-3";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';

@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import Bars from "../../svg/bars-3"
 import Logo from "@/app/_assets/logo2.png"
-import X from "@/app/components/svg/x"
+import X from "@/app/archive/components/svg/x"
 import { usePathname } from 'next/navigation';
 
 export default function SideMenu({openMenu, setOpenMenu, locations}){

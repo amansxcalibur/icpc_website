@@ -1,11 +1,11 @@
-import HowToRegister from "@/app/components/tables/how_register";
-import WhyParticipate from "@/app/components/about/why_participate";
-import AboutAmrita from "@/app/components/about/amrita_vv";
-import AltHero from "@/app/components/hero/alt_hero";
-import ExclusivePerks2 from "@/app/components/about/perks_2";
-import WhatsICPC from "@/app/components/about/icpc";
-import OutreachPartners from "@/app/components/tables/partners";
-import Sponsors from "@/app/components/tables/sponsors";
+import HowToRegister from "@/app/archive/components/tables/how_register";
+import WhyParticipate from "@/app/archive/components/about/why_participate";
+import AboutAmrita from "@/app/archive/components/about/amrita_vv";
+import AltHero from "@/app/archive/components/hero/alt_hero";
+import ExclusivePerks2 from "@/app/archive/components/about/perks_2";
+import WhatsICPC from "@/app/archive/components/about/icpc";
+import OutreachPartners from "@/app/archive/components/tables/partners";
+import Sponsors from "@/app/archive/components/tables/sponsors";
 
 export default function Trial(){
     return(

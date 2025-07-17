@@ -1,4 +1,4 @@
-import SelectedTeams from "@/components/tables/selected_teams";
+import SelectedTeams from "@/app/archive/components/tables/selected_teams";
 
 export default function page2(){
     return(

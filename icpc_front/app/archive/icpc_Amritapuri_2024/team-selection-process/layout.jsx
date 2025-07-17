@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
-import Navbar from "@/app/components/navbar/navbar";
+import Navbar from "@/app/archive/components/navbar/navbar";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 
