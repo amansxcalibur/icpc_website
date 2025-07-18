@@ -164,7 +164,7 @@ export default function AltHero() {
 
     
  const IMAGE_PATH = '/coursel_images/';
-    const IMAGE_COUNT = 36;
+    const IMAGE_COUNT = 5;
     const IMAGE_EXTENSION = '.jpg';
     
     // Generate images array dynamically
@@ -219,19 +219,20 @@ export default function AltHero() {
                         </div>
                         
                         {/* Navigation Dots */}
-                        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
-                            {images.map((image, index) => (
-                                <button
-                                    key={image.id}
-                                    onClick={() => goToImage(index)}
-                                    className={`w-4 h-4 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30 ${
-                                        index === currentImageIndex 
-                                            ? 'bg-white scale-110' 
-                                            : 'bg-white/60 hover:bg-white/80'
-                                    }`}
-                                />
-                            ))}
-                        </div>
+                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+    {images.map((image, index) => (
+        <button
+            key={image.id}
+            onClick={() => goToImage(index)}
+            className={`w-6 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30
+                ${index === currentImageIndex 
+                    ? 'bg-white scale-110' 
+                    : 'bg-white/60 hover:bg-white/80'
+                }`}
+        />
+    ))}
+</div>
+
                     </>
                 ) : (
                     <div className="flex items-center justify-center w-full h-full bg-gray-200">

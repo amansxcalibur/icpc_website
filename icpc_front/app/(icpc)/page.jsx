@@ -1,6 +1,6 @@
 import HowToRegister from "@/components/tables/how_register";
 import WhyParticipate from "@/components/about/why_participate";
-import AboutAmrita from "@/components/about/amrita_vv";
+import AboutAmrita from "@/components/about/amrita_vv2";
 import AltHero from "@/components/hero/alt_hero";
 import ExclusivePerks2 from "@/components/about/perks_2";
 import WhatsICPC from "@/components/about/icpc";
