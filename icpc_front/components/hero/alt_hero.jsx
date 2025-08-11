@@ -264,10 +264,10 @@ export default function AltHero() {
                     </p>
                     
                     <Link
-                        href=""
+                        href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
                         className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 sm:py-4 md:py-5 lg:py-6 px-6 sm:px-8 md:px-10 lg:px-12 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
                     >
-                        Registration coming soon!
+                        Registration Open
                     </Link>
                 </div>
             </div>
