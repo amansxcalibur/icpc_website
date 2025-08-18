@@ -41,21 +41,21 @@ const Faq = () => {
       question: "Should they register again for regional as they only registered for online?",
       answer: "Selected teams are promoted from Preliminary round to Regional Round. There is NO need to register the team again for the Regional Round."
     },
-    {
-      question: "Guidelines for Registration to Online Contest",
-      answer: [
-        "Teams shall first register in Baylor Site.",
-        "Each team shall have a coach.",
-        "Coach is the faculty member from the same college as that of the team.",
-        "Coach creates a team in the Baylor Site under \"Asia Amritapuri First Round Online Programming Contest\" Online contest.",
-        "Coach is expected to create a team with their email id.",
-        "While creating teams, the coach shall invite the contestants and reserve.",
-        "There should be three members in a team, apart from a reserve person.",
-        "It is not mandatory to keep a reserve person.",
-        "Team members (contestants) shall complete their profile in Baylor Site.",
-        "It is mandatory that all the details as required in the Baylor system shall be completed before the last date."
-      ]
-    },
+    // {
+    //   question: "Guidelines for Registration to Online Contest",
+    //   answer: [
+    //     "Teams shall first register in Baylor Site.",
+    //     "Each team shall have a coach.",
+    //     "Coach is the faculty member from the same college as that of the team.",
+    //     "Coach creates a team in the Baylor Site under \"Asia Amritapuri First Round Online Programming Contest\" Online contest.",
+    //     "Coach is expected to create a team with their email id.",
+    //     "While creating teams, the coach shall invite the contestants and reserve.",
+    //     "There should be three members in a team, apart from a reserve person.",
+    //     "It is not mandatory to keep a reserve person.",
+    //     "Team members (contestants) shall complete their profile in Baylor Site.",
+    //     "It is mandatory that all the details as required in the Baylor system shall be completed before the last date."
+    //   ]
+    // },
     {
       question: "Do all team members need to pay the registration fee individually, or should it be paid only once per team?",
       answer: [
