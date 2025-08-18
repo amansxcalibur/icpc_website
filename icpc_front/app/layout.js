@@ -47,7 +47,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "ICPC Asia Amritapuri Regional Contest",
-  description: "Website for ICPC Amritapuri Regionals 2024",
+  description: "Website for ICPC Amritapuri Regionals 2025",
   icons: {
     icon: '/icon.png',
   },

@@ -83,7 +83,7 @@ export default function HowToRegister() {
             </p>
             <div className="flex justify-center gap-[3vw] px-[5vw] max-md:flex-col max-md:items-center max-md:gap-[4vw] max-md:px-0">
               {/* Registration Opens */}
-              <div className="flex flex-col items-center">
+              {/* <div className="flex flex-col items-center">
                 <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
@@ -97,17 +97,32 @@ export default function HowToRegister() {
                 <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">
                   Registration Opens
                 </p>
+              </div> */}
+                  <div className="flex flex-col items-center">
+                <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
+                  <div className="text-white text-center">
+                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
+                      11
+                    </div>
+                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+                      August 2025
+                    </div>
+                  </div>
+                </div>
+                <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">
+                  Registration Opens
+                </p>
               </div>
 
               {/* Registration Deadline */}
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
                 <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
                   <div className="text-white text-center">
                     <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      {/* 12 */}
+                      8
                     </div>
                     <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                     TBA
+                      OCT 2025
                     </div>
                   </div>
                 </div>
@@ -115,9 +130,9 @@ export default function HowToRegister() {
                   <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
                     Registration Deadline
                   </p>
-                  <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    TBA
-                  </p>
+                  {/* <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
+                    8:00 PM
+                  </p> */}
                 </div>
               </div>
 

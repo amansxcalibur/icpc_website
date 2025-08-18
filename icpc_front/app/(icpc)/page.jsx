@@ -6,6 +6,7 @@ import ExclusivePerks2 from "@/components/about/perks_2";
 import WhatsICPC from "@/components/about/icpc";
 import OutreachPartners from "@/components/tables/partners";
 import Sponsors from "@/components/tables/sponsors";
+import Faq from "@/components/tables/faq";
 
 export default function Trial(){
     return(
@@ -19,7 +20,8 @@ export default function Trial(){
                 <HowToRegister/>
                 <Sponsors/>
                 <OutreachPartners/>
-                <AboutAmrita/>
+                <Faq/>          {/* Moved FAQ before AboutAmrita */}
+                <AboutAmrita/>  {/* Contact section now comes last */}
             </div>
         </div>
     )

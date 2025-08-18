@@ -1,13 +1,14 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import SideMenu from "./sidemenu/sidemenu";  // Changed from @/components/navbar/sidemenu/sidemenu
+import SideMenu from "./sidemenu/sidemenu";
 import Bars from "../svg/bars-3";
 import { useState } from "react";
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navbar({ open, hero, darkSection }) {
     const currentPath = usePathname();
+    const router = useRouter();
     const [openMenu, setOpenMenu] = useState(false);
     
     // Use white text for hero section and dark sections, black text otherwise
@@ -18,7 +19,8 @@ export default function Navbar({ open, hero, darkSection }) {
         { name: "Bengaluru", href: "/reach-us/bengaluru" },
         { name: "Coimbatore", href: "/reach-us/coimbatore" }
     ];
-      const locations24 = [
+    
+    const locations24 = [
         { name: "Amritapuri", href: "/archive/icpc_Amritapuri_2024/reach-us/amritapuri" },
         { name: "Bengaluru", href: "/archive/icpc_Amritapuri_2024/reach-us/bengaluru" },
         { name: "Coimbatore", href: "/archive/icpc_Amritapuri_2024/reach-us/coimbatore" }
@@ -26,8 +28,26 @@ export default function Navbar({ open, hero, darkSection }) {
     
     const archiveweblinks = [
         {name: "ICPC 2024", href: "/archive/icpc_Amritapuri_2024"},
-    
     ];
+
+    // Function to handle smooth scrolling to sections
+    const handleSmoothScroll = (e, targetId, basePath = "/") => {
+        e.preventDefault();
+        
+        // If we're already on the correct page, just scroll
+        if (currentPath === basePath) {
+            const element = document.getElementById(targetId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        } else {
+            // Navigate to the page first, then scroll
+            router.push(`${basePath}#${targetId}`);
+        }
+    };
 
     return (
         <>
@@ -51,12 +71,20 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Home
                 </Link>
-                <Link 
-                    href="/archive/icpc_Amritapuri_2024/#perks" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                <a 
+                    href="#perks" 
+                    onClick={(e) => handleSmoothScroll(e, 'perks', '/archive/icpc_Amritapuri_2024')}
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300 cursor-pointer`}
                 >
                     Why Amrita
-                </Link>
+                </a>
+                <a 
+                    href="#faq" 
+                    onClick={(e) => handleSmoothScroll(e, 'faq', '/archive/icpc_Amritapuri_2024')}
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300 cursor-pointer`}
+                >
+                    FAQ
+                </a>
                 <Link 
                     href="/archive/icpc_Amritapuri_2024/halloffame" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
@@ -83,24 +111,6 @@ export default function Navbar({ open, hero, darkSection }) {
                     ))}
                     </div>
                 </div>
-                {/* <Link 
-                    href="/archive/icpc_Amritapuri_2024/ranking-process" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Ranking Process
-                </Link>
-                <Link 
-                    href="/archive/icpc_Amritapuri_2024/team-selection-process" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Selection Process
-                </Link>
-                <Link 
-                    href="/archive/icpc_Amritapuri_2024/promote" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Promote
-                </Link> */}
                 <Link 
                     href="/archive/icpc_Amritapuri_2024/gallery" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
@@ -136,12 +146,20 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Home
                 </Link>
-                <Link 
-                    href="/#perks" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                <a 
+                    href="#perks" 
+                    onClick={(e) => handleSmoothScroll(e, 'perks')}
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300 cursor-pointer`}
                 >
                     Why Amrita
-                </Link>
+                </a>
+                <a 
+                    href="#faq" 
+                    onClick={(e) => handleSmoothScroll(e, 'faq')}
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300 cursor-pointer`}
+                >
+                    FAQ
+                </a>
                 <Link 
                     href="/halloffame" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
@@ -168,31 +186,13 @@ export default function Navbar({ open, hero, darkSection }) {
                     ))}
                     </div>
                 </div>
-                {/* <Link 
-                    href="/ranking-process" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Ranking Process
-                </Link>
                 <Link 
-                    href="/team-selection-process" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Selection Process
-                </Link>
-                <Link 
-                    href="/promote" 
-                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
-                >
-                    Promote
-                </Link> */}
-                  <Link 
                     href="/promote" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
                     Promote
                 </Link> 
-                  <Link 
+                <Link 
                     href="/why-sponsor-us" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
                 >
