@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import { Trophy, Users, Target, Star, Award, Gift, CheckCircle, MessageCircle,Crown } from "lucide-react"
+import { Trophy, Users, Target, Star, Award, Gift, CheckCircle, MessageCircle, Crown } from "lucide-react"
 import { Check, User, Rocket } from "lucide-react";
-
+import Image from "next/image"; // Add this import
 
 const steps = [
   {
@@ -38,10 +38,12 @@ export default function AmbassadorPage() {
           <div className="flex flex-col lg:flex-row lg:items-top gap-8">
             {/* Image column - Left side on desktop */}
             <div className="lg:w-1/2 order-2 lg:order-1">
-              <img
+              <Image
                 src="/coursel_images/2.jpg"
                 alt="ICPC Championship Event"
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
+                width={600}
+                height={400}
               />
             </div>
             
@@ -66,7 +68,7 @@ export default function AmbassadorPage() {
                   The title of Champion Ambassador and our grand prize await the single top performer who inspires over 2,000
                   teams to register for the ICPC Asia West Amritapuri regionals.
                 </p>
-                  <a 
+                <a 
   href="https://docs.google.com/forms/d/e/1FAIpQLSdv6guD9QPe64vxsrSmtG6UHLes5RW9LHdZaD5HL3rp3_lWhA/viewform" 
   target="_blank" 
   rel="noopener noreferrer" 
@@ -99,10 +101,12 @@ export default function AmbassadorPage() {
               </p>
             </div>
             <div className="order-first lg:order-last">
-              <img
+              <Image
                 src="/title_image.svg"
                 alt="Ambassador Program"
                 className="rounded-lg shadow-md w-full h-auto"
+                width={600}
+                height={400}
               />
             </div>
           </div>
@@ -160,7 +164,7 @@ export default function AmbassadorPage() {
         <section className="mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Gift className="h-8 w-8 text-blue-600" />
-            <h2 className="text-2xl sm:text-3xl font-bold">This is More Than a Title. It's Your Launchpad.</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold">This is More Than a Title. It&apos;s Your Launchpad.</h2>
           </div>
           <p className="text-base sm:text-lg mb-6">
             While the grand prize is the ultimate goal, the journey of an ambassador is filled with invaluable rewards
@@ -191,7 +195,7 @@ export default function AmbassadorPage() {
             <div className="flex items-start gap-3 p-4 border rounded-lg">
               <Users className="h-6 w-6 text-purple-500 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold mb-2">Network with the Region's Best:</h4>
+                <h4 className="font-semibold mb-2">Network with the Region&apos;s Best:</h4>
                 <p className="text-sm sm:text-base">
                   Gain access to the ICPC Asia West core community, connecting with top minds, mentors, and future tech
                   leaders.
@@ -217,7 +221,7 @@ export default function AmbassadorPage() {
             <h2 className="text-2xl sm:text-3xl font-bold">Your Journey of Rewards</h2>
           </div>
           <p className="text-base sm:text-lg mb-8 leading-relaxed">
-            We believe in celebrating every milestone. As you inspire more teams, you'll unlock an incredible ladder of
+            We believe in celebrating every milestone. As you inspire more teams, you&apos;ll unlock an incredible ladder of
             rewards, with each level including all perks from the previous ones.
           </p>
 
@@ -397,6 +401,7 @@ export default function AmbassadorPage() {
             </div>
           </div>
         </section>
+        
         {/* Application Process */}
         <section className="mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-6">
@@ -404,7 +409,7 @@ export default function AmbassadorPage() {
             <h2 className="text-2xl sm:text-3xl font-bold">Ready to Begin? Apply in 3 Simple Steps.</h2>
           </div>
           <p className="text-base sm:text-lg mb-8">
-            Your journey to becoming a Champion Ambassador starts now. We've made the application process quick and
+            Your journey to becoming a Champion Ambassador starts now. We&apos;ve made the application process quick and
             easy.
           </p>
           
@@ -459,13 +464,13 @@ export default function AmbassadorPage() {
 
           <div className="text-center mt-8">
             <a 
-  href="https://docs.google.com/forms/d/e/1FAIpQLSdv6guD9QPe64vxsrSmtG6UHLes5RW9LHdZaD5HL3rp3_lWhA/viewform" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto rounded-md transition-colors inline-block"
->
-  APPLY NOW TO BECOME AN AMRITAPURI AMBASSADOR
-</a>
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdv6guD9QPe64vxsrSmtG6UHLes5RW9LHdZaD5HL3rp3_lWhA/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto rounded-md transition-colors inline-block"
+            >
+              APPLY NOW TO BECOME AN AMRITAPURI AMBASSADOR
+            </a>
           </div>
         </section>
 
