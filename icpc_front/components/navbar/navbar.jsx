@@ -192,6 +192,13 @@ export default function Navbar({ open, hero, darkSection }) {
                 >
                     Promote
                 </Link> 
+
+                 <Link 
+                    href="/ambassador-program" 
+                    className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
+                >
+                    Ambassador Program
+                </Link> 
                 <Link 
                     href="/why-sponsor-us" 
                     className={`mx-[1vw] ${textColor} transition ease-in duration-300`}
