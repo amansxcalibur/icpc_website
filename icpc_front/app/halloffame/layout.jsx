@@ -3,11 +3,13 @@ import { useEffect, useState, useRef } from "react";
 import Terminal from "@/components/ui_elems/terminal/terminalnew";
 import Navbar from "@/components/navbar/navbar";
 import Script from "next/script";
+import { usePathname } from "next/navigation";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
     const scrollDir = useRef("scrolling down");
     const [hero, setHero] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -15,9 +17,9 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
-            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth)){
+            if (scrollY > window.innerHeight || (window.innerWidth < 680 && scrollY > window.innerWidth) || pathname == '/halloffame') {
                 setHero(false);
-            }else{
+            } else {
                 setHero(true);
             }
             if (scrollY < lastScrollY) {
@@ -41,7 +43,7 @@ export default function Layout({ children }) {
 
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    }, [pathname]);
 
     return (
         <div className="w-full">
@@ -66,7 +68,7 @@ export default function Layout({ children }) {
                     style={{ display: 'none', visibility: 'hidden' }}
                 />
             </noscript>
-            <Navbar open={open} hero={hero} darkSection={true} />
+            <Navbar open={open} hero={hero} darkSection={false} />
             <div className="max-w-screen md:-mt-[6vw] max-md:-pt-[-9vw] bg-stone-30 bg-white">
                 {children}
                 {/* <Terminal/> */}

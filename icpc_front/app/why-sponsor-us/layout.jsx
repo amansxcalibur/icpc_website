@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
     const scrollDir = useRef("scrolling down");
     const [hero, setHero] = useState(false);
-    const pathname = usePathname()
+    const pathname = usePathname();
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -16,9 +16,10 @@ export default function Layout({ children }) {
 
         const updateScrollDir = () => {
             const scrollY = window.scrollY;
-            if (scrollY>window.innerHeight || (window.innerWidth<680 && scrollY>window.innerWidth) || pathname=='/promote' || pathname=='/team-selection-process'){
+            if (scrollY > window.innerHeight || (window.innerWidth < 680 && scrollY > window.innerWidth) || 
+                pathname == '/promote' || pathname == '/team-selection-process' || pathname == '/why-sponsor-us'){
                 setHero(false);
-            }else{
+            } else {
                 setHero(true);
             }
             if (scrollY < lastScrollY) {
@@ -42,7 +43,7 @@ export default function Layout({ children }) {
 
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    }, [pathname]); // Add pathname to the dependency array
 
     return (
         <div className="w-full bg-white">
