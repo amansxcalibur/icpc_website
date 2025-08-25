@@ -1,9 +1,7 @@
 # 🌐 ICPC Website  
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/amansxcalibur/icpc_website/ci.yml?branch=main)](https://github.com/amansxcalibur/icpc_website/actions)  
 [![Contributors](https://img.shields.io/github/contributors/amansxcalibur/icpc_website)](https://github.com/amansxcalibur/icpc_website/graphs/contributors)  
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.x-brightgreen)](https://nodejs.org/)  
-[![License](https://img.shields.io/github/license/amansxcalibur/icpc_website)](LICENSE)  
+
 
 Official website of **ICPC Amrita**.  
 
@@ -16,8 +14,6 @@ Created by **[@amanxcalibur](https://github.com/amansxcalibur)**, maintained by 
 Make sure you have the following installed before running the project:  
 
 - [Node.js](https://nodejs.org/) (>=22.x recommended)  
-- 
-- [Git](https://git-scm.com/)  
 
 ---
 
@@ -55,7 +51,7 @@ icpc_website/
 │── icpc_front/             # Frontend (Next.js + Tailwind CSS)
 │── .github/workflows/      # CI/CD workflows
 │── README.md               # Documentation
-│── ...
+│
 ```
 
 ---
