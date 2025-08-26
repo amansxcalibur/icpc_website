@@ -131,7 +131,7 @@ export default function SideMenu({ openMenu, setOpenMenu, locations, navigationI
             }`}>
                 
                 {/* Header - Fixed height */}
-                <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-gradient-to-r from-blue-600 to-blue-700 shrink-0">
+                <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-blue-950 shrink-0">
                     <h2 className="text-xl font-bold text-white">Menu</h2>
                     <button 
                         onClick={() => setOpenMenu(false)}

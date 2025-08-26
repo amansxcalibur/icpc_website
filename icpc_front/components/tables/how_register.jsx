@@ -78,109 +78,86 @@ export default function HowToRegister() {
 
           {/* Important Dates Section */}
           <div id="important_dates">
-            <p className="text-[2.5vw] mb-[4vw] max-md:text-[5vw] max-md:mb-[4vw] font-semibold text-white">
-              Important Dates
-            </p>
-            <div className="flex justify-center gap-[3vw] px-[5vw] max-md:flex-col max-md:items-center max-md:gap-[4vw] max-md:px-0">
-              {/* Registration Opens */}
-              {/* <div className="flex flex-col items-center">
-                <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                  <div className="text-white text-center">
-                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                     
-                    </div>
-                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      TBA
-                    </div>
-                  </div>
-                </div>
-                <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">
-                  Registration Opens
-                </p>
-              </div> */}
-                  <div className="flex flex-col items-center">
-                <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                  <div className="text-white text-center">
-                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      11
-                    </div>
-                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      August 2025
-                    </div>
-                  </div>
-                </div>
-                <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">
-                  Registration Opens
-                </p>
-              </div>
-
-              {/* Registration Deadline */}
-            <div className="flex flex-col items-center">
-                <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                  <div className="text-white text-center">
-                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      8
-                    </div>
-                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      OCT 2025
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
-                    Registration Deadline
-                  </p>
-                  {/* <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    8:00 PM
-                  </p> */}
-                </div>
-              </div>
-
-              {/* Online Round */}
-              <div className="flex flex-col items-center">
-                <div className="bg-red-700 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                  <div className="text-white text-center">
-                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      {/* 23 */}
-                    </div>
-                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      TBA
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
-                    Online Round
-                  </p>
-                  <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    TBA
-                  </p>
-                </div>
-              </div>
-
-              {/* Onsite Round */}
-              <div className="flex flex-col items-center">
-                <div className="bg-blue-600 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
-                  <div className="text-white text-center">
-                    <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-                      
-                    </div>
-                    <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
-                      TBA
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
-                    Onsite Round
-                  </p>
-                  <p className="text-[1vw] max-md:text-[2.5vw] text-gray-300">
-                    <span className="font-bold">TBA</span> 
-                  </p>
-                </div>
-              </div>
-            </div>
+  <p className="text-[2.5vw] mb-[4vw] max-md:text-[5vw] max-md:mb-[4vw] font-semibold text-white">
+    Important Dates
+  </p>
+  <div className="flex justify-center gap-[3vw] px-[5vw] max-md:flex-col max-md:items-center max-md:gap-[4vw] max-md:px-0">
+    {/* Registration Opens */}
+    <div className="flex flex-col items-center">
+      <div className="bg-blue-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
+        <div className="text-white text-center">
+          <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
+            11
           </div>
+          <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+            August 2025
+          </div>
+        </div>
+      </div>
+      <p className="text-[1.2vw] max-md:text-[3.5vw] text-white text-center">
+        Registration Opens
+      </p>
+    </div>
+
+    {/* Registration Deadline */}
+    <div className="flex flex-col items-center">
+      <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
+        <div className="text-white text-center">
+          <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
+            8
+          </div>
+          <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+            OCT 2025
+          </div>
+        </div>
+      </div>
+      <div className="text-center">
+        <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
+          Registration Deadline
+        </p>
+      </div>
+    </div>
+
+    {/* Online Round */}
+    <div className="flex flex-col items-center">
+      <div className="bg-red-700 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
+        <div className="text-white text-center">
+          <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
+            11
+          </div>
+          <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+            OCT 2025
+          </div>
+        </div>
+      </div>
+      <div className="text-center">
+        <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
+          Online Qualifiers
+        </p>
+      </div>
+    </div>
+
+    {/* Onsite Round - Single Circle */}
+    <div className="flex flex-col items-center">
+      <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
+        <div className="text-white text-center">
+          <div className="text-[2.5vw] max-md:text-[6vw] font-bold leading-none">
+            19-20
+          </div>
+          <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+            DEC 2025
+          </div>
+        </div>
+      </div>
+      <div className="text-center">
+        <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
+          Onsite Qualifiers
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </>
