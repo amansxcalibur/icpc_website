@@ -1,6 +1,6 @@
 'use client'
 
-import { Trophy, Users, Target, Star, Award, Gift, CheckCircle, MessageCircle, Crown } from "lucide-react"
+import { Trophy, Users, Target, Star, Award, Gift, CheckCircle, MessageCircle, Crown, CrossIcon, CheckSquare, SkipBack, X, CrownIcon, Medal, StarIcon, StarOff } from "lucide-react"
 import { Check, User, Rocket } from "lucide-react";
 import Image from "next/image"; // Add this import
 
@@ -239,6 +239,10 @@ export default function AmbassadorPage() {
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
                     <span className="text-sm">Official ICPC Ambassador Certificate</span>
                   </div>
+                   <div className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                    <span className="text-sm">Official ICPC T-Shirt</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,13 +254,13 @@ export default function AmbassadorPage() {
               <div className="mb-4">
                 <p className="text-sm text-gray-600 mb-3">Everything in Kickstart, plus essential tools.</p>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2">
+                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">Certificate</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">Official ICPC T-Shirt</span>
+                    <span className="text-sm">ICPC Bag</span>
                   </div>
                 </div>
               </div>
@@ -269,13 +273,13 @@ export default function AmbassadorPage() {
               <div className="mb-4">
                 <p className="text-sm text-gray-600 mb-3">Everything in Growing, plus collaboration tools.</p>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2">
+                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">ICPC Bag</span>
+                    <span className="text-sm">ICPC Bottle</span>
                   </div>
                 </div>
               </div>
@@ -291,11 +295,11 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">ICPC Bottle</span>
+                    <span className="text-sm">Special invitation to ICPC Amritapuri Onsite Finals</span>
                   </div>
                 </div>
               </div>
@@ -310,11 +314,11 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">Special invitation to ICPC Amritapuri Onsite Finals</span>
+                    <span className="text-sm">Tech Gadget worth ₹2,000</span>
                   </div>
                 </div>
               </div>
@@ -327,33 +331,41 @@ export default function AmbassadorPage() {
               <div className="mb-4">
                 <p className="text-sm text-gray-600 mb-3">Premium rewards and tech gadgets.</p>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2">
+                 <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">Tech Gadget worth ₹2,000</span>
+                    <span className="text-sm">Tech Gadget worth ₹3,000</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {/* <X className="h-4 w-4 text-blue-600 flex-shrink-0" /> */}
+                    <span className="text-sm text-gray-400">* Note: Previous Gadget is not included</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Level 7-9 - Maintain special styling but reduce animations */}
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-5 sm:p-6 hover:border-purple-400 transition-colors duration-200">
-              <h3 className="text-lg font-bold mb-2 text-purple-700">Power Ambassador</h3>
-              <div className="text-3xl font-bold mb-1 text-purple-600">250</div>
+            <div className="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-lg p-5 sm:p-6 hover:border-red-400 transition-colors duration-200">
+              <h3 className="text-lg font-bold mb-2 text-red-700">Power Ambassador</h3>
+              <div className="text-3xl font-bold mb-1 text-red-600">250</div>
               <div className="text-gray-600 mb-4">Teams</div>
               <div className="mb-4">
                 <p className="text-sm text-gray-600 mb-3">Advanced rewards for power users.</p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-purple-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <CheckCircle className="h-4 w-4 text-red-600 flex-shrink-0" />
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-purple-600 flex-shrink-0" />
-                    <span className="text-sm">Tech Gadget worth ₹3,000</span>
+                    <CheckCircle className="h-4 w-4 text-red-600 flex-shrink-0" />
+                    <span className="text-sm">Premium Gadget worth ₹5,000</span>
+                  </div>
+                   <div className="flex items-center gap-2">
+                    {/* <X className="h-4 w-4 text-red-600 flex-shrink-0" /> */}
+                    <span className="text-sm text-gray-400">* Note: Previous Gadget is not included</span>
                   </div>
                 </div>
               </div>
@@ -366,13 +378,17 @@ export default function AmbassadorPage() {
               <div className="mb-4">
                 <p className="text-sm text-gray-600 mb-3">Elite level with premium gadgets.</p>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2">
+                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-orange-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-orange-600 flex-shrink-0" />
-                    <span className="text-sm">Premium Gadget worth ₹5,000</span>
+                    <span className="text-sm font-semibold ">Premium Gadget worth ₹10,000</span>
+                  </div>
+                   <div className="flex items-center gap-2">
+                    {/* <X className="h-4 w-4 text-orange-600 flex-shrink-0" /> */}
+                    <span className="text-sm text-gray-400">* Note: Previous Gadget is not included</span>
                   </div>
                 </div>
               </div>
@@ -390,11 +406,40 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-yellow-600 flex-shrink-0" />
-                    <span className="text-sm">All the above</span>
+                    <span className="text-sm">All the Above *</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-yellow-600 flex-shrink-0" />
-                    <span className="text-sm font-semibold">Premium Gadget worth ₹10,000</span>
+                    <span className="text-sm font-semibold">Premium Gadget worth ₹20,000</span>
+                  </div>
+                   <div className="flex items-center gap-2">
+                    {/* <StarOff className="h-4 w-4 text-yellow-600 flex-shrink-0" /> */}
+                    <span className="text-sm text-gray-400">* Note: Previous Gadget is not included</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div className="bg-gradient-to-br from-purple-100 to-purple-50 border-2 border-purple-300 rounded-lg p-5 sm:p-6 hover:border-purple-400 transition-colors duration-200 relative overflow-hidden">
+              <div className="absolute top-2 right-2">
+                <Medal className="h-6 w-6 text-legend" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-legend">Champion Ambassador</h3>
+              <div className="text-3xl font-bold mb-1 text-legend">2,000</div>
+              <div className="text-gray-600 mb-4">Teams</div>
+              <div className="mb-4">
+                <p className="text-sm text-gray-600 mb-3">Ultimate achievement with maximum rewards.</p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-legend flex-shrink-0" />
+                    <span className="text-sm">All the Above *</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-legend flex-shrink-0" />
+                    <span className="text-sm font-semibold">Grand Cash Prize of ₹1,00,000</span>
+                  </div>
+                   <div className="flex items-center gap-2">
+                    {/* <X className="h-4 w-4 text-legend flex-shrink-0" /> */}
+                    <span className="text-sm text-gray-400">* Note: Previous Gadget is not included</span>
                   </div>
                 </div>
               </div>

@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        legend: "#6d3bbe",
       },
       animation: {
         'infinite-scroll-y': 'infinite-scroll-y 25s linear infinite',
