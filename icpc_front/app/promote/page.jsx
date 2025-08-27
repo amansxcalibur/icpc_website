@@ -127,6 +127,15 @@ export default function Promote() {
                                 alt="ICPC Promotional Poster 4"
                             />
                         </a>
+                         <a href="/socials_5.png" download className="transition-all duration-300 hover:opacity-80 hover:scale-[0.98] block">
+                            <Image
+                                src="/socials_5.png"
+                                className="rounded-[1vw] w-full h-auto bg-stone-100 shadow-md"
+                                width={400}
+                                height={400}
+                                alt="ICPC Promotional Poster 5"
+                            />
+                        </a>
                     </div>
                 </div>
                 
