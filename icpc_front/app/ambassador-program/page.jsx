@@ -256,7 +256,7 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                    <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the Above *</span>
+                    <span className="text-sm">All the Above </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
@@ -275,7 +275,7 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                    <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the Above *</span>
+                    <span className="text-sm">All the Above </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
@@ -295,7 +295,7 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the Above *</span>
+                    <span className="text-sm">All the Above </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
@@ -314,7 +314,7 @@ export default function AmbassadorPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm">All the Above *</span>
+                    <span className="text-sm">All the Above </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-blue-600 flex-shrink-0" />
