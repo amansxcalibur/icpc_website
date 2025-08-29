@@ -19,7 +19,7 @@ export default function Trial(){
             <div className="pt-[8vw] bg-white">
                 <HowToRegister/>
                 <Sponsors/>
-                <OutreachPartners/>
+                {/* <OutreachPartners/> */}
                 <Faq/>          {/* Moved FAQ before AboutAmrita */}
                 <AboutAmrita/>  {/* Contact section now comes last */}
             </div>

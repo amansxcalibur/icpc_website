@@ -1,87 +1,135 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export default function AboutAmrita(){
-    return(
-        <div id="about_amrita" className="min-h-screen flex flex-col">
-            {/* About Amrita Section - 70% height */}
-            <div className="flex-[7] max-md:flex-[6] max-md:py-[5vw] bg-[#92133b] flex justify-center items-center bg-white">
-                <div className="flex flex-col md:flex-row items-center gap-8 max-w-[85vw] max-md:max-w-[90vw]">
-                    {/* Left side - Image */}
-                    <div className="w-full md:w-1/2 flex justify-center">
-                        <Image 
-                            src="/AMRITA.png" // Replace with your image path
-                            width={600}
-                            height={400}
-                            alt="Amrita Vishwa Vidyapeetham Campus"
-                            className="object-cover w-full h-full"
-                            unoptimized
-                        />
-                    </div>
-                    
-                    {/* Right side - Text content */}
-                    <div className="w-full md:w-1/2">
-                        <h1 className="text-[2.5vw] max-md:text-[6vw] font-semibold text-black mb-[2vw] text-black">
-                            About Amrita Vishwa Vidyapeetham
-                        </h1>
-                        <div className="text-[1.1vw] max-md:text-[3vw] text-gray-100 space-y-[1vw]">
-                            <p className="text-black">
-                                Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, 
-                                educating a vibrant student population of over 24,000 by 1700+ strong faculty. 
-                                Accredited with the highest possible &apos;A++&apos; grade by NAAC, Amrita offers more than 250 UG, PG, 
-                                and Ph.D. programs in Engineering, Management, Medical Sciences including Ayurveda, Life Sciences, 
-                                Physical Sciences, Agriculture Sciences, Arts & Humanities, and Social & Behavioral Sciences.
-                            </p>
-                            <p className="text-black">
-                                With its extensive network of nine campuses spread across Amaravati, Amritapuri, Bengaluru, 
-                                Chennai, Coimbatore, Kochi, Mysuru, Nagercoil(*) and NCR Delhi (Faridabad), Amrita University 
-                                stands as one of India&apos;s preeminent private educational institutions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+export default function AboutAmrita() {
+  return (
+    <div id="about_amrita" className="min-h-screen flex flex-col">
+      {/* About Section */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+          <div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            className="grid items-center gap-8 md:grid-cols-2"
+          >
+            {/* Copy (LEFT SIDE) */}
+            <div custom={1} className="flex flex-col gap-4">
+              <h2 className="text-balance text-3xl font-semibold text-blue-900 md:text-5xl">
+                About Amrita Vishwa Vidyapeetham
+              </h2>
+
+              <p className="text-pretty text-base leading-relaxed text-gray-700 md:text-lg">
+                Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private
+                university, educating a vibrant student population of over 24,000 by 1700+ strong
+                faculty. Accredited with the highest possible &#39;A++&#39; grade by NAAC, Amrita
+                offers more than 250 UG, PG, and Ph.D. programs in Engineering, Management, Medical
+                Sciences including Ayurveda, Life Sciences, Physical Sciences, Agriculture Sciences,
+                Arts &amp; Humanities, and Social &amp; Behavioral Sciences.
+              </p>
+
+              <p className="text-pretty text-base leading-relaxed text-gray-700 md:text-lg">
+                With its extensive network of nine campuses spread across Amaravati, Amritapuri,
+                Bengaluru, Chennai, Coimbatore, Kochi, Mysuru, Nagercoil(*) and NCR Delhi
+                (Faridabad), Amrita University stands as one of India&#39;s preeminent private
+                educational institutions.
+              </p>
             </div>
 
-            {/* Contact Us Section - 30% height */}
-            <div className="flex-[3] max-md:flex-[4] bg-blue-950 text-white max-md:pt-[5vw] flex justify-center items-center">
-                <div className="h-full flex min-w-[90vw] md:min-w-[80vw]">
-                    {/* Contact Content */}
-                    <div className="flex-1 flex max-md:flex-col gap-[2vw]  py-[2vw] min-w-[85vw] max-md:min-w-[90vw]">
-                        {/* Contact Info */}
-                        <div className="flex-1">
-                            <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Contact Us</h2>
-                            <div className="text-[1vw] max-md:text-[3vw] text-gray-300">
-                                <p>Amrita School of Engineering</p>
-                                <p>Amritapuri, Kollam</p>
-                                <p>Kerala, India - 690525</p>
-                            </div>
-                        </div>
-
-                        {/* Quick Links */}
-                        <div className="flex-1">
-                            <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Quick Links</h2>
-                            <div className="text-[1vw] max-md:text-[3vw] text-gray-300 space-y-[0.5vw]">
-                                <Link href={'https://icpc.global/'} className="hover:text-blue-300 cursor-pointer">ICPC Global</Link>
-                                <p className="hover:text-blue-300 cursor-pointer">Registration</p>
-                                <Link href={'/#important_dates'} className="hover:text-blue-300 cursor-pointer">Important Dates</Link>
-                            </div>
-                        </div>
-
-                        {/* Contact Details */}
-                        <div className="flex-1">
-                            <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[1vw]">Get in Touch</h2>
-                            <div className="text-[1vw] max-md:text-[3vw] text-gray-300">
-                                <p>Email: icpc@am.amrita.edu</p>
-                                <p>Phone: +91 476 280 1111</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* Copyright */}
-            <div className="text-center py-[1vw] text-[0.9vw] max-md:text-[2.5vw] bg-blue-950 text-gray-300">
-                &copy; 2025 ICPC Asia Amritapuri Regional Contest. All rights reserved.
-            </div>
+            {/* Image (RIGHT SIDE) */}
+            <figure className="group relative overflow-hidden rounded-xl shadow-md">
+              <Image
+                src="/amritacampus.jpg"
+                alt="Amrita Vishwa Vidyapeetham campus courtyard and main building"
+                width={1200}
+                height={800}
+                sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw"
+                priority
+                className="h-full w-full object-cover transition-transform duration-500 ease-out will-change-transform group-hover:scale-[1.03]"
+              />
+              <figcaption className="sr-only">Campus view</figcaption>
+            </figure>
+          </div>
         </div>
-    )
+      </section>
+
+      {/* Contact Us Section */}
+     <footer className="mt-auto bg-blue-950 text-white" aria-labelledby="site-footer-heading">
+        <h2 id="site-footer-heading" className="sr-only">
+          Footer
+        </h2>
+
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Contact Info */}
+            <section aria-labelledby="contact-heading">
+              <h3 id="contact-heading" className="text-lg font-semibold">
+                Contact Us
+              </h3>
+              <address className="mt-4 not-italic text-gray-300 leading-relaxed">
+                <p>Amrita School of Engineering</p>
+                <p>Amritapuri, Kollam</p>
+                <p>Kerala, India - 690525</p>
+              </address>
+            </section>
+
+            {/* Quick Links */}
+            <nav aria-labelledby="quick-links-heading">
+              <h3 id="quick-links-heading" className="text-lg font-semibold">
+                Quick Links
+              </h3>
+              <ul className="mt-4 space-y-3 text-gray-300">
+                <li>
+                  <Link
+                    href="https://icpc.global/"
+                    className="transition-colors hover:text-sky-400"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ICPC Global
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026" className="transition-colors hover:text-sky-400">
+                    Registration
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#important_dates" className="transition-colors hover:text-sky-400">
+                    Important Dates
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+
+            {/* Get in Touch */}
+            <section aria-labelledby="get-in-touch-heading">
+              <h3 id="get-in-touch-heading" className="text-lg font-semibold">
+                Get in Touch
+              </h3>
+              <ul className="mt-4 space-y-3 text-gray-300">
+                <li>
+                  <a href="mailto:icpc@am.amrita.edu" className="transition-colors hover:text-sky-400">
+                    icpc@am.amrita.edu
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+914762801111" className="transition-colors hover:text-sky-400">
+                    +91 476 280 1111
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10">
+          <div className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-gray-300">
+            &copy; 2025 ICPC Asia Amritapuri Regional Contest. All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  )
 }
