@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
-// import Terminal from "../../components/ui_elems/terminal/terminalnew";
+// import Terminal from "../../components/ui_elems/terminal/terminalnew"
 // import Navbar from "../../components/navbar/navbar";
 import Navbar from "@/components/navbar/navbar";
 import Terminal from "@/components/ui_elems/terminal/terminalnew";
@@ -104,6 +104,14 @@ export default function Layout({ children }) {
                     style={{ display: 'none', visibility: 'hidden' }}
                 />
             </noscript>
+
+            {/* Noupe Chatbot Embed */}
+            <Script
+                id="noupe-chatbot"
+                strategy="afterInteractive"
+                src="https://www.noupe.com/embed/0198fb050ab07bf3a1521a18638011a8b539.js"
+            />
+            
             <Navbar open={open} hero={hero} darkSection={darkSection} />
             <div className="max-w-screen md:-mt-[6vw] max-md:-mt-[-9vw] bg-stone-30 bg-white">
                 {children}
