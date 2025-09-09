@@ -103,7 +103,20 @@ export default function PosterGallery() {
 	// Social share functions
 	const shareOnWhatsApp = (poster: Poster) => {
 		const url = `https://amritaicpc.in/poster/${poster.id}`
-		const text = "Promote ICPC Regionals 2025, Amritapuri!"
+		  const text = `🚀 Get Ready, Coders!
+The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
+
+🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+
+💡 Why you shouldn't miss this:
+✅ Compete with the best coding minds across the country
+✅ Sharpen your problem-solving & algorithmic skills
+✅ Unlock internship & career opportunities with top tech firms
+
+👉 Register today and choose Amritapuri as your regionals site!
+🔗 https://amritaicpc.in/
+
+⏳ Don't wait — the journey to the ICPC Finals starts here!`
 		window.open(`https://wa.me/?text=${encodeURIComponent(text + " " + url)}`, "_blank")
 	}
 

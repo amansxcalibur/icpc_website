@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+// Move this to a shared constants file
 const samplePosters = [
  	{
 		id: 1,
@@ -76,30 +77,63 @@ export async function generateMetadata({ params }) {
 
   return {
     title: poster.title,
-    description: "Promote ICPC Regionals 2025, Amritapuri",
+    description: `🚀 Get Ready, Coders!
+The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
+
+🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+
+💡 Why you shouldn't miss this:
+✅ Compete with the best coding minds across the country
+✅ Sharpen your problem-solving & algorithmic skills
+✅ Unlock internship & career opportunities with top tech firms
+
+👉 Register today and choose Amritapuri as your regionals site!
+🔗 https://amritaicpc.in/
+
+⏳ Don't wait — the journey to the ICPC Finals starts here!`,
     openGraph: {
       title: poster.title,
-      description: "Promote ICPC Regionals 2025, Amritapuri",
+      description: `🚀 Get Ready, Coders!
+The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
+
+🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+
+💡 Why you shouldn't miss this:
+✅ Compete with the best coding minds across the country
+✅ Sharpen your problem-solving & algorithmic skills
+✅ Unlock internship & career opportunities with top tech firms
+
+👉 Register today and choose Amritapuri as your regionals site!
+🔗 https://amritaicpc.in/
+
+⏳ Don't wait — the journey to the ICPC Finals starts here!`,
       images: [
         {
-          url: poster.imageUrl,  // absolute URL
+          url: `https://amritaicpc.in${poster.imageUrl}`,  // Use your actual domain
           width: 1200,
           height: 630,
         },
       ],
       type: "website",
-      url: `https://localhost:3000/poster/${poster.id}`,
+      url: `https://amritaicpc.in/poster/${poster.id}`,  // Use your actual domain
     },
   };
 }
 
 export default function PosterPage({ params }) {
   const poster = samplePosters.find(p => p.id === Number(params.id));
-  if (!poster) return <p>Poster not found</p>;
+  
+  if (!poster) {
+    notFound(); // This will show a proper 404 page
+  }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <img src={poster.imageUrl} alt={poster.title} className="max-w-full rounded-lg" />
+      <img 
+        src={poster.imageUrl} 
+        alt={poster.title} 
+        className="max-w-full rounded-lg"
+      />
     </div>
   );
 }
