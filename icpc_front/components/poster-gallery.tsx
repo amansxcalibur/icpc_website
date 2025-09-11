@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { X, Share2, Download } from "lucide-react"
-import { FaWhatsapp, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaWhatsapp, FaLinkedin, FaTwitter, FaShare } from "react-icons/fa"
 
 
 // Sample poster data
@@ -174,10 +174,12 @@ The first phase of the world's biggest and oldest coding competition is here –
 								className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
 							<div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-								<Share2
-									className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-									size={24}
-								/>
+								<div className="absolute bottom-2 right-2 bg-black/70 rounded-full w-8 h-8 flex items-center justify-center">
+									<FaShare
+										className="text-white"
+										size={16}
+									/>
+								</div>
 							</div>
 						</div>
 						<div className="p-4">
