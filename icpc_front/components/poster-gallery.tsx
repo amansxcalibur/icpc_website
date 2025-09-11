@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -167,19 +168,22 @@ The first phase of the world's biggest and oldest coding competition is here –
 						className="group cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105"
 						onClick={() => setSelectedPoster(poster)}
 					>
-						<div className="relative">
-							<img
+						<div className="relative h-64">
+							<Image
 								src={poster.imageUrl || "/placeholder.svg"}
 								alt={poster.title}
-								className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+								priority={poster.id <= 4} // Prioritize first 4 images
+								placeholder="blur"
+								blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
 							/>
-							<div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-								<div className="absolute bottom-2 right-2 bg-black/70 rounded-full w-8 h-8 flex items-center justify-center">
-									<FaShare
-										className="text-white"
-										size={16}
-									/>
-								</div>
+							<div className="absolute bottom-2 right-2 bg-black/70 rounded-full w-8 h-8 flex items-center justify-center">
+								<FaShare
+									className="text-white"
+									size={16}
+								/>
 							</div>
 						</div>
 						<div className="p-4">
@@ -209,12 +213,15 @@ The first phase of the world's biggest and oldest coding competition is here –
 						</Button>
 
 						<div className="text-center mb-6">
-							<img
-								src={selectedPoster.imageUrl || "/placeholder.svg"}
-								alt={selectedPoster.title}
-								className="w-32 h-40 object-cover rounded-lg mx-auto mb-4"
-							/>
-							{/* <h3 className="text-lg font-semibold text-card-foreground mb-2">{selectedPoster.title}</h3> */}
+							<div className="relative w-32 h-40 mx-auto mb-4">
+								<Image
+									src={selectedPoster.imageUrl || "/placeholder.svg"}
+									alt={selectedPoster.title}
+									fill
+									className="object-cover rounded-lg"
+									sizes="128px"
+								/>
+							</div>
 							<p className="text-muted-foreground text-sm">Share this poster</p>
 						</div>
 
