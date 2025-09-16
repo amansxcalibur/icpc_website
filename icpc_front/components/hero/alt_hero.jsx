@@ -100,7 +100,9 @@ export default function AltHero() {
                             Coimbatore
                         </Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-300 transition-colors duration-300">
                             Kollam
-                        </Link>
+                        </Link> | <p className="hover:text-blue-300 transition-colors duration-300">
+                            Mysuru
+                        </p>
                     </p>
                     
                     <Link

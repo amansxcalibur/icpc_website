@@ -351,6 +351,7 @@ export default function Navbar({ open, hero, darkSection }) {
                 { label: "Reach Us", type: "dropdown", items: locations },
                 { label: "Promote", href: "/promote", type: "link" },
                 { label: "Ambassador Program", href: "/ambassador-program", type: "link" },
+                { label: "Organizers", href: "/organizers", type: "link" },
                 { label: "Why Sponsor Us", href: "/why-sponsor-us", type: "link" },
                 { label: "Gallery", href: "/gallery", type: "link" },
                 { label: "Archive", type: "dropdown", items: archiveweblinks }
