@@ -10,133 +10,153 @@ import { FaLinkedin, FaTwitter, FaGithub, FaFemale } from "react-icons/fa"
 const TEAM_DATA = [
   {
     title: "Core Organising Team",
-    members: [
+    subsections: [
       {
-        id: "acd-1",
-        name: "Prashant Nair",
-        role: "Associate Contest Director",
-        bio: "",
-        image: "/organisers/prashant.jpg",
-        campus: "coimbatore", // Fixed campus name to match filter
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
+        subtitle: "Regional Contest Director",
+        members: [
+          {
+            id: "rcd-1",
+            name: "Vipin Pavithran",
+            role: "Regional Contest Director",
+            bio: "",
+            image: "/organisers/vipin.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          }
+        ]
       },
       {
-        id: "acd-2",
-        name: "Vineetha Jain",
-        role: "Associate Contest Director",
-        bio: "",
-        image: "/organisers/vineetha.jpg",
-        campus: "bangalore", // Fixed campus name to match filter
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
+        subtitle: "Associate Contest Directors",
+        members: [
+          {
+            id: "acd-1",
+            name: "Prashant Nair",
+            role: "Associate Contest Director | Coimbatore",
+            bio: "",
+            image: "/organisers/prashant.jpg",
+            campus: "coimbatore",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+          {
+            id: "acd-2",
+            name: "Vineetha Jain",
+            role: "Associate Contest Director | Bangalore",
+            bio: "",
+            image: "/organisers/vineetha.jpg",
+            campus: "bangalore",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+          {
+            id: "acd-3",
+            name: "Binu P K",
+            role: "Associate Contest Director | Amritapuri",
+            bio: "",
+            image: "/organisers/binu.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+          {
+            id: "acd-4",
+            name: "Adwitiya Mukhopadhyay",
+            role: "Associate Contest Director | Mysuru",
+            bio: "",
+            image: "/organisers/adwitiya.jpg",
+            campus: "mysuru",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          }
+        ]
       },
       {
-        id: "rcd-1",
-        name: "Vipin Pavithran",
-        role: "Regional Contest Director",
-        bio: "",
-        image: "/organisers/vipin.jpg",
-        campus: "amritapuri",
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
-      },
-      {
-        id: "acd-3",
-        name: "Binu P K",
-        role: "Associate Contest Director",
-        bio: "",
-        image: "/organisers/binu.jpg",
-        campus: "amritapuri",
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
-      },
-      {
-        id: "hmo-1", // Keep this one - it's the correct Aravind B L
-        name: "Aravind B L",
-        role: "Head, Marketing and Operations",
-        bio: "",
-        image: "/organisers/aravind_bl.jpg",
-        campus: "amritapuri",
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
-      },
-      {
-        id: "hc-1",
-        name: "Rajan Sundaravaradan",
-        role: "Head Coach",
-        bio: "",
-        image: "/organisers/rajan.jpg",
-        campus: "amritapuri",
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
-      },
-      
-      {
-        id: "acd-4",
-        name: "Adwitiya Mukhopadhyay",
-        role: "Associate Contest Director",
-        bio: "",
-        image: "/organisers/adwitiya.jpg",
-        campus: "mysuru", // Fixed campus name
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
-      },
-      {
-        id: "rcd-2",
-        name: "Ramaguru Radhakrishnan",
-        role: "Head, Outreach and Communication",
-        bio: "",
-        image: "/organisers/ramaguru.jpg",
-        campus: "amritapuri",
-        socialLinks: {
-          linkedin: "",
-          email: ""
-        }
+        subtitle: "Leadership Team",
+        members: [
+          {
+            id: "hmo-1",
+            name: "Aravind B L",
+            role: "Head, Marketing and Operations",
+            bio: "",
+            image: "/organisers/aravindbl.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+           {
+            id: "hco-1",
+            name: "Arjun T U ",
+            role: "Head,  Contest Environment",
+            bio: "",
+            image: "/avatar.svg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+
+          {
+            id: "hc-1",
+            name: "Rajan Sundaravaradan",
+            role: "Head Coach",
+            bio: "",
+            image: "/organisers/rajan.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          },
+          {
+            id: "rcd-2",
+            name: "Ramaguru Radhakrishnan",
+            role: "Head, Outreach and Communication",
+            bio: "",
+            image: "/organisers/ramaguru.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "",
+              email: ""
+            }
+          }
+        ]
       }
     ]
   },
   {
-    title: "Technical Team",
+    title: "Campus Leads",
     members: [
       {
-        id: "tech-1",
+        id: "campus-lead-1",
         name: "Aswin J",
-        role: "Technical Lead",
+        role: "Technical Support Lead | Amritapuri",
         bio: "",
         image: "/organisers/aswinj.jpg",
-        campus: "amritapuri", // Already correct
+        campus: "amritapuri",
         socialLinks: {
           linkedin: "",
           github: "",
           email: ""
         }
       },
-      
-      
-    ]
-  },
-  {
-    title: "Venue & Infrastructure",
-    members: [
       {
-        id: "venue-1",
+        id: "campus-lead-2",
         name: "Ranjan Kananan",
-        role: "Venue & Infrastructure Lead",
+        role: "Venue & Infrastructure Lead | Amritapuri",
         bio: "",
         image: "/organisers/ranjan.jpg",
         campus: "amritapuri",
@@ -146,17 +166,10 @@ const TEAM_DATA = [
           email: ""
         }
       },
-    
-     
-    ]
-  },
-   {
-    title: "Media & Documentation Team",
-    members: [
       {
-        id: "media-1",
+        id: "campus-lead-3",
         name: "Athul S",
-        role: "Media & Documentation Lead",
+        role: "Media & Documentation Lead | Amritapuri",
         bio: "",
         image: "/organisers/athul.png",
         campus: "amritapuri",
@@ -165,17 +178,11 @@ const TEAM_DATA = [
           twitter: "",
           email: ""
         }
-      }
-     
-    ]
-  },
-  {
-    title: "Outreach & Communications",
-    members: [
+      },
       {
-        id: "outreach-1",
+        id: "campus-lead-4",
         name: "Arun Kumar",
-        role: "Outreach & Communications Lead",
+        role: "Outreach & Communication Lead | Amritapuri",
         bio: "",
         image: "/organisers/arun.jpeg",
         campus: "amritapuri",
@@ -183,11 +190,9 @@ const TEAM_DATA = [
           linkedin: "https://linkedin.com/in/arun-kumar",
           email: "arun@amrita.edu"
         }
-      },
-     
+      }
     ]
-  },
-
+  }
 ]
 
 // Campus filter options
@@ -386,6 +391,18 @@ const MemberCard = ({ member, isHovered, onHover, animationDelay }) => {
   )
 }
 
+// SubsectionHeader component
+const SubsectionHeader = ({ subtitle, isVisible }) => (
+  <div className={`mb-8 sm:mb-12 transition-all duration-500 ease-out transform ${
+    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+  }`}>
+    <h3 className="text-xl sm:text-2xl font-medium text-black tracking-tight text-center">
+      {subtitle}
+    </h3>
+    <div className="w-8 sm:w-12 h-px bg-gray-300 mx-auto mt-4 opacity-50" aria-hidden="true" />
+  </div>
+)
+
 // Team Section Header - responsive typography
 const TeamSectionHeader = ({ title, isVisible }) => (
   <header className={`text-center mb-12 sm:mb-16 transition-all duration-700 ease-out transform ${
@@ -416,10 +433,30 @@ export default function TeamSection() {
   const filteredTeamSections = useMemo(() => {
     if (selectedCampus === "all") return TEAM_DATA
 
-    return TEAM_DATA.map(section => ({
-      ...section,
-      members: section.members.filter(member => member.campus === selectedCampus)
-    })).filter(section => section.members.length > 0)
+    return TEAM_DATA.map(section => {
+      if (section.subsections) {
+        // Handle sections with subsections
+        const filteredSubsections = section.subsections.map(subsection => {
+          // Always show Regional Contest Director regardless of campus filter
+          if (subsection.subtitle === "Regional Contest Director") {
+            return subsection
+          }
+          // For other subsections, filter by campus
+          return {
+            ...subsection,
+            members: subsection.members.filter(member => member.campus === selectedCampus)
+          }
+        }).filter(subsection => 
+          subsection.subtitle === "Regional Contest Director" || subsection.members.length > 0
+        )
+        
+        return filteredSubsections.length > 0 ? { ...section, subsections: filteredSubsections } : null
+      } else {
+        // Handle regular sections
+        const filteredMembers = section.members.filter(member => member.campus === selectedCampus)
+        return filteredMembers.length > 0 ? { ...section, members: filteredMembers } : null
+      }
+    }).filter(Boolean)
   }, [selectedCampus])
 
   // Trigger section animations
@@ -468,23 +505,56 @@ export default function TeamSection() {
                   isVisible={visibleSections.has(sectionIndex)}
                 />
 
-                {/* Responsive Grid */}
-                <div 
-                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12" 
-                  role="list" 
-                  aria-label={`${section.title} members`}
-                >
-                  {section.members.map((member, memberIndex) => (
-                    <div key={member.id} className="h-full">
-                      <MemberCard
-                        member={member}
-                        isHovered={hoveredMember === member.id}
-                        onHover={handleMemberHover}
-                        animationDelay={(sectionIndex * 200) + (memberIndex * 100) + 300}
+                {/* Handle subsections */}
+                {section.subsections ? (
+                  section.subsections.map((subsection, subsectionIndex) => (
+                    <div key={`subsection-${subsectionIndex}`} className={`${subsectionIndex > 0 ? "mt-12 sm:mt-16" : ""}`}>
+                      <SubsectionHeader 
+                        subtitle={subsection.subtitle}
+                        isVisible={visibleSections.has(sectionIndex)}
                       />
+                      
+                      <div 
+                        className={`grid gap-6 sm:gap-8 lg:gap-12 ${
+                          subsection.subtitle === "Regional Contest Director" 
+                            ? "grid-cols-1 justify-items-center max-w-sm mx-auto" 
+                            : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                        }`}
+                        role="list" 
+                        aria-label={`${subsection.subtitle} members`}
+                      >
+                        {subsection.members.map((member, memberIndex) => (
+                          <div key={member.id} className="h-full">
+                            <MemberCard
+                              member={member}
+                              isHovered={hoveredMember === member.id}
+                              onHover={handleMemberHover}
+                              animationDelay={(sectionIndex * 200) + (subsectionIndex * 150) + (memberIndex * 100) + 300}
+                            />
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  ))}
-                </div>
+                  ))
+                ) : (
+                  /* Handle regular sections without subsections */
+                  <div 
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12" 
+                    role="list" 
+                    aria-label={`${section.title} members`}
+                  >
+                    {section.members.map((member, memberIndex) => (
+                      <div key={member.id} className="h-full">
+                        <MemberCard
+                          member={member}
+                          isHovered={hoveredMember === member.id}
+                          onHover={handleMemberHover}
+                          animationDelay={(sectionIndex * 200) + (memberIndex * 100) + 300}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </section>
             ))}
           </main>
