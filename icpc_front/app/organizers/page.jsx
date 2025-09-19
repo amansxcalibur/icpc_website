@@ -190,6 +190,18 @@ const TEAM_DATA = [
           linkedin: "https://linkedin.com/in/arun-kumar",
           email: "arun@amrita.edu"
         }
+      },
+        {
+        id: "campus-lead-5",
+        name: "Vishnu V Thayyil",
+        role: "Food Lead | Amritapuri",
+        bio: "",
+        image: "/organisers/vishnu.jpg",
+        campus: "amritapuri",
+        socialLinks: {
+          linkedin: "https://linkedin.com/in/arun-kumar",
+          email: "arun@amrita.edu"
+        }
       }
     ]
   }
