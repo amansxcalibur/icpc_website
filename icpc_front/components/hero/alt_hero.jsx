@@ -111,6 +111,22 @@ export default function AltHero() {
                     >
                         Registration Open
                     </Link>
+                   {/* Highlighted Timeline */}
+<div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-center">
+  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
+    <span className="block text-white">8 OCT</span>
+    <span>Registration Ends</span>
+  </div> 
+  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
+    <span className="block text-white">11 OCT</span>
+    <span>Online Regionals</span>
+  </div>
+  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
+    <span className="block text-white">2–3 JAN</span>
+    <span>Onsite Regionals</span>
+  </div>
+</div>
+
                 </div>
             </div>
         </div>
