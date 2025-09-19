@@ -82,7 +82,7 @@ const TEAM_DATA = [
         ]
       },
       {
-        subtitle: "",
+        subtitle: "Leadership Team",
         members: [
           {
             id: "hmo-1",
