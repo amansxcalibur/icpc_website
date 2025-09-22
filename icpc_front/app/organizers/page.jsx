@@ -194,7 +194,7 @@ const TEAM_DATA = [
         {
         id: "campus-lead-5",
         name: "Vishnu V Thayyil",
-        role: "Food Lead | Amritapuri",
+        role: "Hospitality Lead | Amritapuri",
         bio: "",
         image: "/organisers/vishnu.jpg",
         campus: "amritapuri",
