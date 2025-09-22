@@ -77,6 +77,36 @@ const samplePosters = [
 		imageUrl: "/socials_11.jpeg",
 		date: new Date("2025-09-09"),
 	},
+	{
+		id: 12,
+		title: "Poster 12",
+		imageUrl: "/socials_12.png",
+		date: new Date("2025-09-22"),
+	},
+	{
+		id: 13,
+		title: "Poster 13",
+		imageUrl: "/socials_13.jpg",
+		date: new Date("2025-09-22"),
+	},
+	{
+		id: 14,
+		title: "Poster 14",
+		imageUrl: "/socials_14.jpg",
+		date: new Date("2025-09-22"),
+	},
+	{
+		id: 15,
+		title: "Poster 15",
+		imageUrl: "/socials_15.jpg",
+		date: new Date("2025-09-22"),
+	},
+	{
+		id: 16,
+		title: "Poster 16",
+		imageUrl: "/socials_16.png",
+		date: new Date("2025-09-22"),
+	}
 ]
 
 type SortOption = "newest" | "oldest"
