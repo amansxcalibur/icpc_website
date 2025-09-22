@@ -175,6 +175,37 @@ The first phase of the world's biggest and oldest coding competition is here –
             copyImageToClipboard(poster)
         }
     }
+	const shareToOtherAppsMobile = async (poster: Poster) => {
+    try {
+        setCopying(true)
+        
+        const text = `🚀 Get Ready, Coders!
+The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
+
+🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+
+💡 Why you shouldn't miss this:
+✅ Compete with the best coding minds across the country
+✅ Sharpen your problem-solving & algorithmic skills
+✅ Unlock internship & career opportunities with top tech firms
+
+👉 Register today and choose Amritapuri as your regionals site!
+🔗 https://amritaicpc.in/
+
+⏳ Don't wait — the journey to the ICPC Finals starts here!`
+
+        // Copy text to clipboard
+        await navigator.clipboard.writeText(text)
+        
+        setCopying(false)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 5000)
+        
+    } catch (error) {
+        console.error('Error copying text:', error)
+        setCopying(false)
+    }
+}
 
     // Improved copy image to clipboard function
     const copyImageToClipboard = async (poster: Poster) => {
@@ -514,7 +545,6 @@ The first phase of the world's biggest and oldest coding competition is here –
                             )}
                             {copied && (
                                 <p className="text-xs text-green-600 mt-2">
-                                    Image copied! Paste in the app that opened (Ctrl+V)
                                 </p>
                             )}
 						</div>
@@ -529,6 +559,16 @@ The first phase of the world's biggest and oldest coding competition is here –
 									<Share2 className="w-5 h-5" />
 									Share
 								</Button>
+								  <Button
+                variant="outline"
+                className="flex flex-col items-center justify-center gap-1 h-20 p-2"
+                onClick={() => shareToOtherAppsMobile(selectedPoster)}
+                disabled={copying}
+            >
+                <Copy className="w-6 h-6 text-gray-600" />
+                <span className="text-xs">Copy Promotional Text</span>
+                {copied && !copying && <span className="text-xs text-green-600">Copied!</span>}
+            </Button>
 								<Button
 									variant="outline"
 									className="flex items-center justify-center gap-2 h-12"
@@ -537,6 +577,12 @@ The first phase of the world's biggest and oldest coding competition is here –
 									<Download className="w-5 h-5" />
 									Download Only
 								</Button>
+								<p className="text-xs text-muted-foreground mt-2 text-center">
+									{copied 
+										? 'Now paste in your social media app!' 
+										: 'Copy the text, share the poster, and paste the promo text on social media.'
+									}
+								</p>
 							</div>
 						) : (
 							/* Desktop: Smart Copy + Share */
