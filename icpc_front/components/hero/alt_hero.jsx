@@ -119,7 +119,7 @@ export default function AltHero() {
   </div> 
   <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
     <span className="block text-white">11 OCT</span>
-    <span>Online Regionals</span>
+    <span>Online Prelims</span>
   </div>
   <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
     <span className="block text-white">2–3 JAN</span>

@@ -168,7 +168,7 @@ const TEAM_DATA = [
       },
       {
         id: "campus-lead-3",
-        name: "Athul S",
+        name: "Athul R",
         role: "Media & Documentation Lead | Amritapuri",
         bio: "",
         image: "/organisers/athul.png",

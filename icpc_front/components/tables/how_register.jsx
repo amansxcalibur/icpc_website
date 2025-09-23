@@ -132,7 +132,7 @@ export default function HowToRegister() {
       </div>
       <div className="text-center">
         <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
-          Online Qualifiers
+          Online Prelims
         </p>
       </div>
     </div>
