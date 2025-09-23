@@ -68,7 +68,6 @@ const EventSponsors = () => {
                                             />
                                             </a>
                                         </div>
-                                        
                                     
                                 </div>
                                 
