@@ -33,8 +33,8 @@ export default function AltHero() {
     };
 
     return (
-        // Remove top padding and make it stick to the top
-        <div className="relative w-full h-screen overflow-hidden -mt-[5vw] md:-mt-[5vw] max-md:-mt-[15vw]">
+        // Reduced height from h-screen to h-[80vh] for smaller container
+        <div className="relative w-full h-[80vh] overflow-hidden -mt-[5vw] md:-mt-[5vw] max-md:-mt-[15vw]">
             {/* Background Image Carousel with Auto-Change */}
             <div className="absolute inset-0 w-full h-full">
                 {images.length > 0 ? (
@@ -60,12 +60,12 @@ export default function AltHero() {
                         </div>
                         
                         {/* Navigation Dots */}
-                        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
                             {images.map((image, index) => (
                                 <button
                                     key={image.id}
                                     onClick={() => goToImage(index)}
-                                    className={`w-6 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30
+                                    className={`w-5 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30
                                         ${index === currentImageIndex 
                                             ? 'bg-white scale-110' 
                                             : 'bg-white/60 hover:bg-white/80'
@@ -84,16 +84,16 @@ export default function AltHero() {
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40 z-5"></div>
             
-            {/* Main Content Container - Adjusted padding to account for navbar */}
-            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-[8vw] md:pt-[6vw] max-md:pt-[18vw] pb-8">
+            {/* Main Content Container - Reduced padding and margins */}
+            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-[6vw] md:pt-[4vw] max-md:pt-[16vw] pb-6">
                 
-                {/* Text Content */}
-                <div className="flex flex-col justify-center items-center text-center max-w-4xl">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-semibold text-white mb-4 sm:mb-6 md:mb-8 leading-tight tracking-tighter">
+                {/* Text Content - Reduced font sizes and spacing */}
+                <div className="flex flex-col justify-center items-center text-center max-w-3xl">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 leading-tight tracking-tighter">
                         ICPC 2025 Regionals
                     </h1>
                     
-                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white font-medium mb-6 sm:mb-8 md:mb-10">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white font-medium mb-4 sm:mb-6 md:mb-8">
                         <Link href={'/reach-us/bengaluru'} className="hover:text-blue-300 transition-colors duration-300">
                             Bengaluru
                         </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-300 transition-colors duration-300">
@@ -107,26 +107,26 @@ export default function AltHero() {
                     
                     <Link
                         href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
-                        className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl py-3 sm:py-4 md:py-5 lg:py-6 px-6 sm:px-8 md:px-10 lg:px-12 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 lg:py-5 px-5 sm:px-6 md:px-8 lg:px-10 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
                     >
                         Registration Open
                     </Link>
-                   {/* Highlighted Timeline */}
-<div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-center">
-  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
-    <span className="block text-white">8 OCT</span>
-    <span>Registration Ends</span>
-  </div> 
-  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
-    <span className="block text-white">11 OCT</span>
-    <span>Online Prelims</span>
-  </div>
-  <div className=" px-4 py-2 rounded-xl text-white text-base sm:text-lg md:text-xl font-semibold ">
-    <span className="block text-white">2–3 JAN</span>
-    <span>Onsite Regionals</span>
-  </div>
-</div>
-
+                    
+                    {/* Highlighted Timeline - Reduced spacing and font sizes */}
+                    <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-center">
+                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
+                            <span className="block text-white">8 OCT</span>
+                            <span>Registration Ends</span>
+                        </div> 
+                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
+                            <span className="block text-white">11 OCT</span>
+                            <span>Online Prelims</span>
+                        </div>
+                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
+                            <span className="block text-white">2–3 JAN</span>
+                            <span>Onsite Regionals</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

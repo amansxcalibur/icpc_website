@@ -74,7 +74,7 @@ const samplePosters = [
 	{
 		id: 11,
 		title: "Poster 11",
-		imageUrl: "/socials_11.jpeg",
+		imageUrl: "/socials_11.png",
 		date: new Date("2025-09-09"),
 	},
 	{
@@ -86,19 +86,19 @@ const samplePosters = [
 	{
 		id: 13,
 		title: "Poster 13",
-		imageUrl: "/socials_13.jpg",
+		imageUrl: "/socials_13.png",
 		date: new Date("2025-09-22"),
 	},
 	{
 		id: 14,
 		title: "Poster 14",
-		imageUrl: "/socials_14.jpg",
+		imageUrl: "/socials_14.png",
 		date: new Date("2025-09-22"),
 	},
 	{
 		id: 15,
 		title: "Poster 15",
-		imageUrl: "/socials_15.jpg",
+		imageUrl: "/socials_15.png",
 		date: new Date("2025-09-22"),
 	},
 	{

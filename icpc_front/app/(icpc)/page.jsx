@@ -7,12 +7,13 @@ import WhatsICPC from "@/components/about/icpc";
 import OutreachPartners from "@/components/tables/partners";
 import Sponsors from "@/components/tables/sponsors";
 import Faq from "@/components/tables/faq";
-
+import WebinarBanner from "@/components/tables/webinarbanner";
 export default function Trial(){
     return(
         <div className="min-h-[100vh]">
             {/* <Hero/> */}
             <AltHero/>
+            <WebinarBanner/>
             <WhatsICPC/>
             <WhyParticipate/>
             <ExclusivePerks2/>
