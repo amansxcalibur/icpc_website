@@ -55,7 +55,8 @@ const EventSponsors = () => {
                                         <h4 className=" font-black mb-6 text-xl text-center">
                                             Community Partner
                                         </h4>
-                                        <div className="flex justify-center">
+                                        <div className="flex flex-wrap gap-12 items-center justify-center">
+                                        <div className="flex  items-center justify-center">
                                             <a href="https://www.asksenior.in/">
                                             <Image
                                                 alt="Ask Senior"
@@ -68,12 +69,30 @@ const EventSponsors = () => {
                                             />
                                             </a>
                                         </div>
-                                    
+                                <div className="flex items-center justify-center">
+                                    <a
+                                        href="https://maang.in/"
+                                        className="flex items-center gap-2" // makes image & text inline
+                                    >
+                                        <Image
+                                        alt="Algo Zenith"
+                                        draggable="false"
+                                        src="/algozenith.png"
+                                        className="max-h-[150px] w-auto object-contain   "
+                                        width={100}
+                                        height={100}
+                                        unoptimized
+                                        />
+                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
+                                    </a>
+                                    </div>
+
+                                    </div>
                                 </div>
                                 
                                 {/* Past Sponsors Section */}
                                 <div className="mb-12">
-                                        <h4 className="text-blue-800 font-black mb-6 text-xl text-center">
+                                        <h4 className=" font-black mb-6 text-xl text-center">
                                             Past Sponsors
                                         </h4>
                                   
@@ -106,7 +125,7 @@ const EventSponsors = () => {
                                 {/* Past Outreach Sponsors Section */}
                                 <div className="mb-6">
                                   
-                                        <h4 className="text-blue-800 font-black mb-6 text-xl text-center">
+                                        <h4 className=" font-black mb-6 text-xl text-center">
                                             Past Outreach Sponsors
                                         </h4>
                                   

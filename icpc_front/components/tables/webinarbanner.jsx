@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, Sparkles, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const WebinarBanner = () => {
 
@@ -45,11 +46,13 @@ const WebinarBanner = () => {
             {/* Right Section - With more gaps */}
             <div className="flex items-center justify-center gap-8 md:gap-8">
               {/* Profile Image */}
-              <div className="relative">
-                <img 
-                  src="/vivek_gupta.jpg" 
-                  alt="Vivek Gupta - ICPC Mentor" 
-                  className="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full shadow-lg ring-2 ring-white/20"
+              <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0 shadow-lg ring-2 ring-white/20">
+                <Image
+                  src="/vivek_gupta.jpg"
+                  alt="Vivek Gupta - ICPC Mentor"
+                  fill
+                  className="object-cover"
+                  priority
                 />
               </div>
               
