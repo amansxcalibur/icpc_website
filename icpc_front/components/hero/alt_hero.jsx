@@ -33,7 +33,6 @@ export default function AltHero() {
     };
 
     return (
-        // Reduced height from h-screen to h-[80vh] for smaller container
         <div className="relative w-full h-[80vh] overflow-hidden -mt-[5vw] md:-mt-[5vw] max-md:-mt-[15vw]">
             {/* Background Image Carousel with Auto-Change */}
             <div className="absolute inset-0 w-full h-full">
@@ -84,10 +83,10 @@ export default function AltHero() {
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40 z-5"></div>
             
-            {/* Main Content Container - Reduced padding and margins */}
+            {/* Main Content Container */}
             <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-[6vw] md:pt-[4vw] max-md:pt-[16vw] pb-6">
                 
-                {/* Text Content - Reduced font sizes and spacing */}
+                {/* Text Content */}
                 <div className="flex flex-col justify-center items-center text-center max-w-3xl">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 leading-tight tracking-tighter">
                         ICPC 2025 Regionals
@@ -104,6 +103,9 @@ export default function AltHero() {
                             Mysuru
                         </span>
                     </p>
+                     <p className="text-[0.9vw] max-md:text-[2.2vw] text-white mb-7">
+          ~350+ Onsite Slots Available 
+        </p>
                     
                     <Link
                         href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
@@ -112,7 +114,7 @@ export default function AltHero() {
                         Registration Open
                     </Link>
                     
-                    {/* Highlighted Timeline - Reduced spacing and font sizes */}
+                    {/* Timeline */}
                     <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-center">
                         <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
                             <span className="block text-white">8 OCT</span>
@@ -125,6 +127,29 @@ export default function AltHero() {
                         <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
                             <span className="block text-white">2–3 JAN</span>
                             <span>Onsite Regionals</span>
+                        </div>
+                    </div>
+
+                    {/* Sponsored by section */}
+                    <div className="mt-8 flex flex-col items-center">
+                        <p className="text-white/80 text-xs sm:text-sm font-medium mb-4 uppercase tracking-wider">
+                            Sponsored by
+                        </p>
+                        <div className="flex items-center gap-8">
+                            <Image
+                                src="/JetBrains_white_logo.svg"
+                                alt="ICPC"
+                                width={80}
+                                height={40}
+                                className="h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                            />
+                            <Image
+                                src="/janestreet_white2.png"
+                                alt="Jane Street"
+                                width={100}
+                                height={40}
+                                className="h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                     </div>
                 </div>

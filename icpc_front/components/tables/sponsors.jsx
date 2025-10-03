@@ -55,10 +55,10 @@ const EventSponsors = () => {
                                 <div className="text-center mb-12">
                                   
                                         <h4 className=" font-black mb-6 text-xl text-center">
-                                            Sponsors
+                                            Our Sponsors
                                         </h4>
                                         <div className="flex flex-wrap gap-12 items-center justify-center">
-                                        <div className="flex  items-center justify-center">
+                                        {/* <div className="flex  items-center justify-center">
                                             <a href="https://icpc.global/">
                                             <Image
                                                 alt="ICPC Logo"
@@ -70,7 +70,7 @@ const EventSponsors = () => {
                                                 unoptimized
                                             />
                                             </a>
-                                        </div>
+                                        </div> */}
                                 <div className="flex items-center justify-center">
                                     <a
                                         href="https://www.janestreet.com/"
@@ -80,7 +80,7 @@ const EventSponsors = () => {
                                         alt="Jane Street Logo"
                                         draggable="false"
                                         src="/jane2.png"
-                                        className="max-h-[70px] w-auto object-contain   "
+                                        className="max-h-[80px] w-auto object-contain   "
                                         width={100}
                                         height={100}
                                         unoptimized
@@ -96,8 +96,8 @@ const EventSponsors = () => {
                                         <Image
                                         alt="JetBrains Logo"
                                         draggable="false"
-                                        src="/jetbrains_logo.svg"
-                                        className="max-h-[55px] w-auto object-contain   "
+                                        src="/jetbrains-logo.png"
+                                        className="max-h-[170px] w-auto object-contain   "
                                         width={100}
                                         height={100}
                                         unoptimized
@@ -114,16 +114,31 @@ const EventSponsors = () => {
                                 <div className="text-center mb-12">
                                   
                                         <h4 className=" font-black mb-6 text-xl text-center">
-                                            Community Partner
+                                            Community Partners
                                         </h4>
                                         <div className="flex flex-wrap gap-12 items-center justify-center">
+
+
+                                             <div className="flex items-center justify-center">
+                                                <a href="https://www.codechef.com/">
+                                            <Image
+                                                alt="CodeChef"
+                                                draggable="false" 
+                                                src="https://cdn.codechef.com/images/cc-logo.svg"
+                                                className="max-h-12 w-auto object-contain  opacity-70 hover:opacity-80 transition-opacity"
+                                                width={56}
+                                                height={56}
+                                                unoptimized
+                                            />
+                                            </a>
+                                        </div>
                                         <div className="flex  items-center justify-center">
                                             <a href="https://www.asksenior.in/">
                                             <Image
                                                 alt="Ask Senior"
                                                 draggable="false" 
                                                 src="/senior.png"
-                                                className="max-h-[200px] w-auto object-contain"
+                                                className="max-h-[100px] w-auto object-contain"
                                                 width={200}
                                                 height={200}
                                                 unoptimized
@@ -139,7 +154,7 @@ const EventSponsors = () => {
                                         alt="Algo Zenith"
                                         draggable="false"
                                         src="/algozenith.png"
-                                        className="max-h-[150px] w-auto object-contain   "
+                                        className="max-h-[100px] w-auto object-contain   "
                                         width={100}
                                         height={100}
                                         unoptimized
@@ -152,7 +167,7 @@ const EventSponsors = () => {
                                 </div>
                                 
                                 {/* Past Sponsors Section */}
-                                <div className="mb-12">
+                                {/* <div className="mb-12">
                                         <h4 className=" font-black mb-6 text-xl text-center">
                                             Past Sponsors
                                         </h4>
@@ -170,7 +185,7 @@ const EventSponsors = () => {
                                                 unoptimized
                                             />
                                             </a>
-                                        </div>
+                                        </div> */}
                                         
                                         {/* <div className="flex items-center justify-center">
                                             <img
@@ -180,11 +195,11 @@ const EventSponsors = () => {
                                                 className="max-h-14 w-auto object-contain  hover:opacity-80 transition-opacity"
                                             />
                                         </div> */}
-                                    </div>
-                                </div>
+                                    {/* </div>
+                                </div> */}
                                 
                                 {/* Past Outreach Sponsors Section */}
-                                <div className="mb-6">
+                                {/* <div className="mb-6">
                                   
                                         <h4 className=" font-black mb-6 text-xl text-center">
                                             Past Outreach Sponsors
@@ -214,7 +229,7 @@ const EventSponsors = () => {
                                             />
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                         </Fade>
                     </div>
                 </div>

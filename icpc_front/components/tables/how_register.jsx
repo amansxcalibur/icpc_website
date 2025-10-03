@@ -153,6 +153,9 @@ export default function HowToRegister() {
         <p className="text-[1.2vw] max-md:text-[3.5vw] text-white">
           Onsite Regionals
         </p>
+         {/* <p className="text-[0.7vw] max-md:text-[1.5vw] text-white">
+          ~360+ Onsite Slots Available for the Amritapuri Regionals
+        </p> */}
       </div>
     </div>
   </div>

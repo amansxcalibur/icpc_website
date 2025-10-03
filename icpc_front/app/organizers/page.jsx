@@ -45,10 +45,10 @@ const TEAM_DATA = [
           },
           {
             id: "acd-2",
-            name: "Vineetha Jain",
+            name: "Gopalakrishnan E. A.",
             role: "Associate Contest Director | Bangalore",
             bio: "",
-            image: "/organisers/vineetha.jpg",
+            image: "/organisers/gopalakrishnan.jpg",
             campus: "bangalore",
             socialLinks: {
               linkedin: "",
@@ -101,7 +101,7 @@ const TEAM_DATA = [
             name: "Arjun T U ",
             role: "Head,  Contest Environment",
             bio: "",
-            image: "/avatar.svg",
+            image: "/organisers/Arjun_TU.jpeg",
             campus: "amritapuri",
             socialLinks: {
               linkedin: "",
@@ -112,7 +112,7 @@ const TEAM_DATA = [
           {
             id: "hc-1",
             name: "Rajan Sundaravaradan",
-            role: "Head Coach",
+            role: "Head, Problem Setting",
             bio: "",
             image: "/organisers/rajan.jpg",
             campus: "amritapuri",

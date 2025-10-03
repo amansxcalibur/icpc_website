@@ -32,8 +32,10 @@ export default function ExclusivePerks2() {
                 Expanded On-Site Participation
               </h2>
               <p className="text-[1vw] max-md:text-[3vw] text-gray-600">
-                We have increased our on-site capacity, offering more students
-                the chance to get selected for the regionals.
+                {/* We have increased our on-site capacity, offering more students
+                the chance to get selected for the regionals. */}
+                We have added an extra site in <strong>Mysuru</strong> and increased our on-site slot to <strong>~350 teams</strong>,
+                offering more students the chance to get selected for the regionals.
               </p>
             </div>
           </div>
