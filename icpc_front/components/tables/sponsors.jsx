@@ -49,6 +49,67 @@ const EventSponsors = () => {
                 <div className="flex w-full justify-center max-w-[100vw] overflow-hidden items-center py-[1vw] max-md:w-[90vw] max-md:px-[1.5vw]">
                     <div className="bg-white p-4 rounded-xl w-full shadow-lg border border-gray-200 max-w-[80vw] md:max-w-[60vw] lg:max-w-[50vw] xl:max-w-[45vw]">
                         <Fade>
+
+
+                               {/* Community Partner Section */}
+                                <div className="text-center mb-12">
+                                  
+                                        <h4 className=" font-black mb-6 text-xl text-center">
+                                            Sponsors
+                                        </h4>
+                                        <div className="flex flex-wrap gap-12 items-center justify-center">
+                                        <div className="flex  items-center justify-center">
+                                            <a href="https://icpc.global/">
+                                            <Image
+                                                alt="ICPC Logo"
+                                                draggable="false" 
+                                                src="/icpc.svg"
+                                                className="max-h-[120px] w-auto object-contain"
+                                                width={200}
+                                                height={200}
+                                                unoptimized
+                                            />
+                                            </a>
+                                        </div>
+                                <div className="flex items-center justify-center">
+                                    <a
+                                        href="https://www.janestreet.com/"
+                                        className="flex items-center gap-2" // makes image & text inline
+                                    >
+                                        <Image
+                                        alt="Jane Street Logo"
+                                        draggable="false"
+                                        src="/jane2.png"
+                                        className="max-h-[70px] w-auto object-contain   "
+                                        width={100}
+                                        height={100}
+                                        unoptimized
+                                        />
+                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
+                                    </a>
+                                    </div>
+                                    <div className="flex items-center justify-center">
+                                    <a
+                                        href="https://www.jetbrains.com/"
+                                        className="flex items-center gap-2" // makes image & text inline
+                                    >
+                                        <Image
+                                        alt="JetBrains Logo"
+                                        draggable="false"
+                                        src="/jetbrains_logo.svg"
+                                        className="max-h-[55px] w-auto object-contain   "
+                                        width={100}
+                                        height={100}
+                                        unoptimized
+                                        />
+                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
+                                    </a>
+                                    </div>
+
+                                    </div>
+                                </div>
+
+
                                 {/* Community Partner Section */}
                                 <div className="text-center mb-12">
                                   
