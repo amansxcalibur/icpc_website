@@ -58,16 +58,16 @@ export default function AltHero() {
                             ))}
                         </div>
                         
-                        {/* Navigation Dots */}
-                        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+                        {/* Navigation Dots - moved higher to avoid overlap */}
+                        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
                             {images.map((image, index) => (
                                 <button
                                     key={image.id}
                                     onClick={() => goToImage(index)}
-                                    className={`w-5 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/30
+                                    className={`w-5 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/20
                                         ${index === currentImageIndex 
-                                            ? 'bg-white scale-110' 
-                                            : 'bg-white/60 hover:bg-white/80'
+                                            ? 'bg-white/70 scale-110' 
+                                            : 'bg-white/30 hover:bg-white/50'
                                         }`}
                                 />
                             ))}
@@ -84,7 +84,7 @@ export default function AltHero() {
             <div className="absolute inset-0 bg-black/40 z-5"></div>
             
             {/* Main Content Container */}
-            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-[6vw] md:pt-[4vw] max-md:pt-[16vw] pb-6">
+            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-[6vw] md:pt-[4vw] max-md:pt-[16vw] pb-16">
                 
                 {/* Text Content */}
                 <div className="flex flex-col justify-center items-center text-center max-w-3xl">
@@ -92,7 +92,7 @@ export default function AltHero() {
                         ICPC 2025 Regionals
                     </h1>
                     
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white font-medium mb-4 sm:mb-6 md:mb-8">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white font-medium mb-2 sm:mb-2 md:mb-3">
                         <Link href={'/reach-us/bengaluru'} className="hover:text-blue-300 transition-colors duration-300">
                             Bengaluru
                         </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-300 transition-colors duration-300">
@@ -103,7 +103,7 @@ export default function AltHero() {
                             Mysuru
                         </span>
                     </p>
-                     <p className="text-[0.9vw] max-md:text-[2.2vw] text-white mb-7">
+                     <p className="text-[1vw] max-md:text-[2.9vw] text-white pb-3">
           ~350+ Onsite Slots Available 
         </p>
                     
@@ -131,7 +131,7 @@ export default function AltHero() {
                     </div>
 
                     {/* Sponsored by section */}
-                    <div className="mt-8 flex flex-col items-center">
+                    <div className="mt-8 flex flex-col items-center ">
                         <p className="text-white/80 text-xs sm:text-sm font-medium mb-4 uppercase tracking-wider">
                             Sponsored by
                         </p>

@@ -113,11 +113,11 @@ export default function AboutAmrita() {
                     icpc@am.amrita.edu
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="tel:+914762801111" className="transition-colors hover:text-sky-400">
                     +91 476 280 1111
                   </a>
-                </li>
+                </li> */}
               </ul>
             </section>
           </div>

@@ -51,118 +51,96 @@ const EventSponsors = () => {
                         <Fade>
 
 
-                               {/* Community Partner Section */}
+                               {/* Our Sponsors Section */}
                                 <div className="text-center mb-12">
-                                  
-                                        <h4 className=" font-black mb-6 text-xl text-center">
-                                            Our Sponsors
-                                        </h4>
-                                        <div className="flex flex-wrap gap-12 items-center justify-center">
-                                        {/* <div className="flex  items-center justify-center">
-                                            <a href="https://icpc.global/">
-                                            <Image
-                                                alt="ICPC Logo"
-                                                draggable="false" 
-                                                src="/icpc.svg"
-                                                className="max-h-[120px] w-auto object-contain"
-                                                width={200}
-                                                height={200}
-                                                unoptimized
-                                            />
+                                    <h4 className="font-black mb-6 text-2xl text-center">
+                                        Our Sponsors
+                                    </h4>
+                                    <div className="flex flex-wrap gap-6 md:gap-12 items-center justify-center">
+                                        <div className="flex items-center justify-center">
+                                            <a
+                                                href="https://www.janestreet.com/"
+                                                className="flex items-center gap-2"
+                                            >
+                                                <Image
+                                                    alt="Jane Street Logo"
+                                                    draggable="false"
+                                                    src="/jane2.png"
+                                                    className="max-h-[60px] md:max-h-[80px] w-auto object-contain"
+                                                    width={100}
+                                                    height={100}
+                                                    unoptimized
+                                                />
                                             </a>
-                                        </div> */}
-                                <div className="flex items-center justify-center">
-                                    <a
-                                        href="https://www.janestreet.com/"
-                                        className="flex items-center gap-2" // makes image & text inline
-                                    >
-                                        <Image
-                                        alt="Jane Street Logo"
-                                        draggable="false"
-                                        src="/jane2.png"
-                                        className="max-h-[80px] w-auto object-contain   "
-                                        width={100}
-                                        height={100}
-                                        unoptimized
-                                        />
-                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
-                                    </a>
-                                    </div>
-                                    <div className="flex items-center justify-center">
-                                    <a
-                                        href="https://www.jetbrains.com/"
-                                        className="flex items-center gap-2" // makes image & text inline
-                                    >
-                                        <Image
-                                        alt="JetBrains Logo"
-                                        draggable="false"
-                                        src="/jetbrains-logo.png"
-                                        className="max-h-[170px] w-auto object-contain   "
-                                        width={100}
-                                        height={100}
-                                        unoptimized
-                                        />
-                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
-                                    </a>
-                                    </div>
-
+                                        </div>
+                                        <div className="flex items-center justify-center">
+                                            <a
+                                                href="https://www.jetbrains.com/"
+                                                className="flex items-center gap-2"
+                                            >
+                                                <Image
+                                                    alt="JetBrains Logo"
+                                                    draggable="false"
+                                                    src="/jetbrains_logo.svg"
+                                                    className="max-h-[120px] md:max-h-[170px] w-auto object-contain"
+                                                    width={100}
+                                                    height={100}
+                                                    unoptimized
+                                                />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
 
 
-                                {/* Community Partner Section */}
+                                {/* Community Partners Section */}
                                 <div className="text-center mb-12">
-                                  
-                                        <h4 className=" font-black mb-6 text-xl text-center">
-                                            Community Partners
-                                        </h4>
-                                        <div className="flex flex-wrap gap-12 items-center justify-center">
-
-
-                                             <div className="flex items-center justify-center">
-                                                <a href="https://www.codechef.com/">
-                                            <Image
-                                                alt="CodeChef"
-                                                draggable="false" 
-                                                src="https://cdn.codechef.com/images/cc-logo.svg"
-                                                className="max-h-12 w-auto object-contain  opacity-70 hover:opacity-80 transition-opacity"
-                                                width={56}
-                                                height={56}
-                                                unoptimized
-                                            />
+                                    <h4 className="font-black mb-6 text-xl text-center">
+                                        Community Partners
+                                    </h4>
+                                    <div className="flex flex-wrap gap-6 md:gap-12 items-center justify-center">
+                                        <div className="flex items-center justify-center">
+                                            <a href="https://www.codechef.com/">
+                                                <Image
+                                                    alt="CodeChef"
+                                                    draggable="false" 
+                                                    src="https://cdn.codechef.com/images/cc-logo.svg"
+                                                    className="max-h-10 md:max-h-12 w-auto object-contain opacity-70 hover:opacity-80 transition-opacity"
+                                                    width={56}
+                                                    height={56}
+                                                    unoptimized
+                                                />
                                             </a>
                                         </div>
-                                        <div className="flex  items-center justify-center">
+                                        <div className="flex items-center justify-center">
                                             <a href="https://www.asksenior.in/">
-                                            <Image
-                                                alt="Ask Senior"
-                                                draggable="false" 
-                                                src="/senior.png"
-                                                className="max-h-[100px] w-auto object-contain"
-                                                width={200}
-                                                height={200}
-                                                unoptimized
-                                            />
+                                                <Image
+                                                    alt="Ask Senior"
+                                                    draggable="false" 
+                                                    src="/senior.png"
+                                                    className="max-h-[70px] md:max-h-[100px] w-auto object-contain"
+                                                    width={200}
+                                                    height={200}
+                                                    unoptimized
+                                                />
                                             </a>
                                         </div>
-                                <div className="flex items-center justify-center">
-                                    <a
-                                        href="https://maang.in/"
-                                        className="flex items-center gap-2" // makes image & text inline
-                                    >
-                                        <Image
-                                        alt="Algo Zenith"
-                                        draggable="false"
-                                        src="/algozenith.png"
-                                        className="max-h-[100px] w-auto object-contain   "
-                                        width={100}
-                                        height={100}
-                                        unoptimized
-                                        />
-                                        {/* <p className="text-md font-semibold text-gray-500">Algo Zenith</p> */}
-                                    </a>
-                                    </div>
-
+                                        <div className="flex items-center justify-center">
+                                            <a
+                                                href="https://maang.in/"
+                                                className="flex items-center gap-2"
+                                            >
+                                                <Image
+                                                    alt="Algo Zenith"
+                                                    draggable="false"
+                                                    src="/algozenith.png"
+                                                    className="max-h-[70px] md:max-h-[100px] w-auto object-contain"
+                                                    width={100}
+                                                    height={100}
+                                                    unoptimized
+                                                />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 
