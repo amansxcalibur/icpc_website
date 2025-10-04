@@ -136,6 +136,15 @@ export default function AltHero() {
                             Sponsored by
                         </p>
                         <div className="flex items-center gap-6 sm:gap-8">
+
+                                <Image
+                                src="/janestreet_white2.png"
+                                alt="Jane Street"
+                                width={100}
+                                height={40}
+                                className="h-10 sm:h-8 md:h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                            />
+
                             <Image
                                 src="/JetBrains_white_logo.svg"
                                 alt="ICPC"
@@ -143,13 +152,7 @@ export default function AltHero() {
                                 height={40}
                                 className="h-6 sm:h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                             />
-                            <Image
-                                src="/janestreet_white2.png"
-                                alt="Jane Street"
-                                width={100}
-                                height={40}
-                                className="h-6 sm:h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                            />
+                        
                         </div>
                     </div>
                 </div>

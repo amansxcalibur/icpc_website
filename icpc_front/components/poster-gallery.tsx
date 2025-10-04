@@ -169,7 +169,7 @@ export default function PosterGallery() {
             const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -212,7 +212,7 @@ The first phase of the world's biggest and oldest coding competition is here –
         const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -247,7 +247,7 @@ The first phase of the world's biggest and oldest coding competition is here –
             const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -318,7 +318,7 @@ The first phase of the world's biggest and oldest coding competition is here –
                 const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -348,7 +348,7 @@ The first phase of the world's biggest and oldest coding competition is here –
 					const text = `🚀 Get Ready, Coders!
 		The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 		
-		🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+		🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 		
 		💡 Why you shouldn't miss this:
 		✅ Compete with the best coding minds across the country
@@ -394,7 +394,7 @@ The first phase of the world's biggest and oldest coding competition is here –
    const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -420,7 +420,7 @@ The first phase of the world's biggest and oldest coding competition is here –
 			  const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
@@ -463,7 +463,7 @@ The first phase of the world's biggest and oldest coding competition is here –
                         const text = `🚀 Get Ready, Coders!
 The first phase of the world's biggest and oldest coding competition is here – ICPC Asia West Amritapuri site 2025! 🎉
 
-🔥 With 250+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
+🔥 With 350+ onsite slots, this is your golden chance to battle it out and feel the adrenaline of the regionals on your way to the World Finals.
 
 💡 Why you shouldn't miss this:
 ✅ Compete with the best coding minds across the country
