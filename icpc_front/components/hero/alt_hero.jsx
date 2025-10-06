@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import AnnouncementModal from "../tables/announcement-modal";
 
 export default function AltHero() {
     const IMAGE_PATH = '/coursel_images/';
@@ -34,6 +35,7 @@ export default function AltHero() {
 
     return (
         <div className="relative w-full min-h-[85vh] lg:min-h-[80vh] overflow-hidden -mt-[5vw] md:-mt-[5vw] max-md:-mt-[15vw]">
+            
             {/* Background Image Carousel with Auto-Change */}
             <div className="absolute inset-0 w-full h-full">
                 {images.length > 0 ? (
@@ -167,6 +169,7 @@ export default function AltHero() {
                             </div>
                         </div>
                     </div>
+                    <AnnouncementModal />
                 </div>
             </div>
         </div>

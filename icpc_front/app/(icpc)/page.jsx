@@ -8,6 +8,7 @@ import OutreachPartners from "@/components/tables/partners";
 import Sponsors from "@/components/tables/sponsors";
 import Faq from "@/components/tables/faq";
 import WebinarBanner from "@/components/tables/webinarbanner";
+import EventSponsors from "@/components/tables/sponsors";
 export default function Trial(){
     return(
         <div className="min-h-[100vh]">
