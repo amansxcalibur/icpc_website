@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import AnnouncementModal from "../tables/announcement-modal";
 
 export default function AltHero() {
     const IMAGE_PATH = '/coursel_images/';
@@ -169,7 +168,7 @@ export default function AltHero() {
                             </div>
                         </div>
                     </div>
-                    <AnnouncementModal />
+                    {/* <AnnouncementModal /> */}
                 </div>
             </div>
         </div>
