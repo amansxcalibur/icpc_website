@@ -178,4 +178,4 @@ const Sponsors = () => {
     );
 };
 
-export default EventSponsors;
+export default Sponsors;
