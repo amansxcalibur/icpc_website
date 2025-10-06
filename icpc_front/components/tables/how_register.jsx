@@ -104,7 +104,7 @@ export default function HowToRegister() {
       <div className="bg-yellow-500 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
         <div className="text-white text-center">
           <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-            8
+            24
           </div>
           <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
             OCT 2025
@@ -123,11 +123,11 @@ export default function HowToRegister() {
       <div className="bg-red-700 rounded-full h-[8vw] w-[8vw] max-md:h-[18vw] max-md:w-[18vw] flex justify-center items-center mb-[1vw] max-md:mb-[1.5vw]">
         <div className="text-white text-center">
           <div className="text-[3vw] max-md:text-[7vw] font-bold leading-none">
-            11
+            TBD
           </div>
-          <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
+          {/* <div className="text-[1vw] max-md:text-[2.5vw] mt-[0.2vw]">
             OCT 2025
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="text-center">

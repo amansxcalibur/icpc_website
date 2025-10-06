@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import AnnouncementModal from "../tables/announcement-modal";
 
 export default function AltHero() {
     const IMAGE_PATH = '/coursel_images/';
@@ -118,11 +119,11 @@ export default function AltHero() {
                     {/* Timeline */}
                     <div className="mt-6 flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-3 text-center">
                         <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
-                            <span className="block text-white">8 OCT</span>
+                            <span className="block text-white">24 OCT</span>
                             <span>Registration Ends</span>
                         </div> 
                         <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
-                            <span className="block text-white">11 OCT</span>
+                            <span className="block text-white">TBD</span>
                             <span>Online Prelims</span>
                         </div>
                         <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
@@ -168,7 +169,7 @@ export default function AltHero() {
                             </div>
                         </div>
                     </div>
-                    {/* <AnnouncementModal /> */}
+                    <AnnouncementModal />
                 </div>
             </div>
         </div>

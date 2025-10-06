@@ -32,7 +32,7 @@ export default function AnnouncementModal() {
           role="dialog"
           aria-modal="true"
           aria-labelledby="announcement-title"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-start justify-center pt-32 pb-16 px-8 overflow-y-auto"
           onMouseDown={onBackdropClick}
         >
           {/* Backdrop */}
@@ -42,7 +42,7 @@ export default function AnnouncementModal() {
             ref={panelRef}
             className={cn(
               "relative z-10 w-full max-w-xl rounded-lg bg-card text-card-foreground shadow-lg",
-              "outline-none",
+              "outline-none max-h-[80vh] overflow-y-auto",
             )}
             // prevent backdrop click from bubbling when starting inside panel
             onMouseDown={(e) => e.stopPropagation()}
@@ -69,27 +69,35 @@ export default function AnnouncementModal() {
             </button>
 
             <div className="p-6">
-              <header className="mb-3 text-center">
-                <h2 id="announcement-title" className="text-balance text-xl font-semibold text-red-600">
+              <header className="mb-3">
+                <h2 id="announcement-title" className="text-balance text-xl font-bold">
                   Announcement
                 </h2>
               </header>
 
-              <main className="prose prose-sm max-w-none leading-relaxed text-pretty text-center">
+              <main className="prose prose-sm max-w-none leading-relaxed text-pretty text-justify">
                 <p>
-                  In response to several requests from participating teams regarding the overlap of the ICPC India
-                  Online Preliminary Round with the Simon Marais Mathematics Competition (SMMC), as well as requests
-                  from many teams citing festive engagements during the October month, the Organizing Committee has
-                  decided to reschedule the contest to last week of October or 1st week of November. A poll will be
-                  organized to fix the final dates ( Wed Oct 29th 5 PM to 8 PM or Sat Nov 9th 2 PM to 5 PM ).
+                  In response to multiple requests from participating teams regarding the overlap of the ICPC India
+                  Online Preliminary Round with the Simon Marais Mathematics Competition (SMMC), as well as concerns
+                  about festive engagements in October, the Organizing Committee has <strong>decided to reschedule the contest
+                  to either the last week of October or the first week of November.</strong>
+                </p>
+              
+                <p className="mt-1">
+                  <strong>The new date for the online round will be communicated in a weeks time.</strong>
+
+                </p>
+                
+                <p>
+                  To accommodate this change, <strong>the last date for registration and fee submission is extended to October
+                  24, 2025.</strong>
                 </p>
                 <p>
-                  To accommodate this change, the last date for registration and fee submission has been extended to
-                  24th October 2025.
-                </p>
-                <p>
-                  This decision has been taken to ensure maximum participation and avoid any inconvenience to
+                  This decision has been taken to ensure maximum participation and to minimize inconvenience for
                   contestants across institutions.
+                </p>
+                <p>
+                  We sincerely thank you for your understanding and apologize for any inconvenience caused.
                 </p>
               </main>
             </div>
