@@ -135,24 +135,36 @@ export default function AltHero() {
                         <p className="text-white/80 text-xs sm:text-sm font-medium mb-4 uppercase tracking-wider">
                             Sponsored by
                         </p>
-                        <div className="flex items-center gap-6 sm:gap-8">
+                        <div className="flex items-start gap-6 sm:gap-8">
+                            <div className="flex flex-col items-center">
+                                <div className="h-10 sm:h-8 md:h-14 flex items-center justify-center mb-2">
+                                    <Image
+                                        src="/janestreet_white2.png"
+                                        alt="Jane Street"
+                                        width={100}
+                                        height={40}
+                                        className="h-full w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                                    />
+                                </div>
+                                <p className="text-white text-xs sm:text-xs md:text-sm text-center font-light">
+                                    ICPC Titanium Multi-Regional Sponsor
+                                </p>
+                            </div>
 
-                                <Image
-                                src="/janestreet_white2.png"
-                                alt="Jane Street"
-                                width={100}
-                                height={40}
-                                className="h-10 sm:h-8 md:h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                            />
-
-                            <Image
-                                src="/JetBrains_white_logo.svg"
-                                alt="ICPC"
-                                width={80}
-                                height={40}
-                                className="h-6 sm:h-8 md:h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                            />
-                        
+                            <div className="flex flex-col items-center">
+                                <div className="h-10 sm:h-8 md:h-14 flex items-center justify-center mb-2">
+                                    <Image
+                                        src="/JetBrains_white_logo.svg"
+                                        alt="JetBrains"
+                                        width={60}
+                                        height={30}
+                                        className="h-3/4 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                                    />
+                                </div>
+                                <p className="text-white text-xs sm:text-xs md:text-sm text-center font-light">
+                                    ICPC Global Sponsor Programming Tools
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

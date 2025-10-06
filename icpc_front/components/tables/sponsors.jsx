@@ -53,9 +53,9 @@ const EventSponsors = () => {
 
                                {/* Our Sponsors Section */}
                                 <div className="text-center mb-12">
-                                    <h4 className="font-black mb-6 text-2xl text-center">
+                                   <h4 className="font-black mb-6 text-3xl md:text-4xl text-center">
                                         Our Sponsors
-                                    </h4>
+                                    </h4> 
                                     <div className="flex flex-wrap gap-6 md:gap-12 items-center justify-center">
                                         <div className="flex items-center justify-center">
                                             <a
