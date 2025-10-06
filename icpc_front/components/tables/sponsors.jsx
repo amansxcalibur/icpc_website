@@ -3,7 +3,7 @@ import React from 'react';
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 
-const EventSponsors = () => {
+const Sponsors = () => {
     return (
         <section className="text-blue-950 flex justify-center flex-col items-center relative overflow-hidden pb-[5vw] pt-[3vw] min-h-[50vh] bg-white">
             <div className="w-full max-w-[90vw] flex relative flex-col justify-center">

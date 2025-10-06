@@ -4,7 +4,6 @@ import AboutAmrita from "@/components/about/amrita_vv2";
 import AltHero from "@/components/hero/alt_hero";
 import ExclusivePerks2 from "@/components/about/perks_2";
 import WhatsICPC from "@/components/about/icpc";
-import OutreachPartners from "@/components/tables/partners";
 import Sponsors from "@/components/tables/sponsors";
 import Faq from "@/components/tables/faq";
 import WebinarBanner from "@/components/tables/webinarbanner";
