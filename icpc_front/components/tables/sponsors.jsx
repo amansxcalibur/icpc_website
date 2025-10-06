@@ -40,7 +40,7 @@ const Sponsors = () => {
                                         <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                                             Jane Street has a long history of supporting programming competitions worldwide, boasting several ICPC alumni, including multiple World Finalists, among its esteemed employees. This partnership provides an exciting opportunity to sustain and nurture the incredible community of talented programmers worldwide.
                                             <br /><br />
-                                            Jane Street, a quantitative trading firm with offices worldwide, seeks to hire smart, humble individuals who love solving problems, building systems, and testing theories. Could Jane Street's next great idea come from you? Explore opportunities in Software Engineering, Quantitative Trading, Quantitative Research, and more in Jane Street's 2024 Summer internships: {" "}
+                                            Jane Street, a quantitative trading firm with offices worldwide, seeks to hire smart, humble individuals who love solving problems, building systems, and testing theories. Could Jane Street&apos;s next great idea come from you? Explore opportunities in Software Engineering, Quantitative Trading, Quantitative Research, and more in Jane Street&apos;s 2024 Summer internships: {" "}
                                             <a 
                                                 href="https://www.janestreet.com/join-jane-street/open-roles/" 
                                                 target="_blank" 
@@ -102,7 +102,7 @@ const Sponsors = () => {
                                             >
                                                 jb.gg/icpc
                                             </a>
-                                            {" "} to learn about JetBrains' involvement with the ICPC and find materials on how the company supports the brilliant minds of the ICPC community.
+                                            {" "} to learn about JetBrains&apos; involvement with the ICPC and find materials on how the company supports the brilliant minds of the ICPC community.
                                         </p>
                                     </div>
                                 </div>
