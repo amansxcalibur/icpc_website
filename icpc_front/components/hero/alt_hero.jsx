@@ -34,7 +34,7 @@ export default function AltHero() {
     };
 
     return (
-        <div className="relative w-full min-h-[85vh] lg:min-h-[80vh] overflow-hidden -mt-[5vw] md:-mt-[5vw] max-md:-mt-[15vw]">
+        <div className="relative w-full min-h-[85vh] lg:min-h-[80vh] overflow-hidden mt-0">
             
             {/* Background Image Carousel with Auto-Change */}
             <div className="absolute inset-0 w-full h-full">
@@ -85,8 +85,8 @@ export default function AltHero() {
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40 z-5"></div>
             
-            {/* Main Content Container with improved padding */}
-            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full min-h-[85vh] lg:min-h-[80vh] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-20 sm:pt-24 md:pt-28 lg:pt-20 pb-24 sm:pb-28 md:pb-32 lg:pb-36">
+            {/* Main Content Container - Fixed top spacing */}
+            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full min-h-[85vh] lg:min-h-[80vh] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-32 sm:pt-36 md:pt-40 lg:pt-32 pb-24 sm:pb-28 md:pb-32 lg:pb-36">
                 
                 {/* Text Content */}
                 <div className="flex flex-col justify-center items-center text-center max-w-3xl">
