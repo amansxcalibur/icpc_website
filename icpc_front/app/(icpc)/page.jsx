@@ -7,17 +7,19 @@ import WhatsICPC from "@/components/about/icpc";
 import Sponsors from "@/components/tables/sponsors";
 import Faq from "@/components/tables/faq";
 import WebinarBanner from "@/components/tables/webinarbanner";
+import WebinarSection from "@/components/tables/past-sessions";
 export default function Trial(){
     return(
         <div className="min-h-[100vh]">
             {/* <Hero/> */}
             <AltHero/>
-            <WebinarBanner/>
+            {/* <WebinarBanner/> */}
             <WhatsICPC/>
             <WhyParticipate/>
             <ExclusivePerks2/>
             <div className="pt-[8vw] bg-white">
                 <HowToRegister/>
+                <WebinarSection/>
                 <Sponsors/>
                 {/* <OutreachPartners/> */}
                 <Faq/>          {/* Moved FAQ before AboutAmrita */}
