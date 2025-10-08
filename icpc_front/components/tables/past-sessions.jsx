@@ -53,7 +53,7 @@ export default function WebinarSection() {
               <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] text-blue-950 transition-colors duration-300 group-hover:text-blue-600">
                 Introduction to Competitive Programming 
               </h2>
-              <p>Abhijith R Pillai | ICPC@Amrita Club Member</p>
+              <p>Abhijith R Pillai | ICPC@Amrita Club Lead</p>
               <p className="text-[1vw] max-md:text-[3vw] text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
                 October 7, 2025 | 6:30 PM IST
               </p>
