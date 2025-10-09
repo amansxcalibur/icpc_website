@@ -26,7 +26,7 @@ const WebinarBanner = () => {
                   Join Our Upcoming Webinar!
                 </h2>
                 <p className="text-blue-100 text-sm md:text-base">
-                  Roadmap to Reaching WF in ICPC - FREE Webinar
+                 Live Problem Solving & How to Make the Best Use of CP Platforms
                 </p>
               </div>
 
@@ -34,11 +34,11 @@ const WebinarBanner = () => {
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs md:text-sm text-blue-100">
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <Calendar className="w-3 h-3" />
-                  <span className="font-medium">Oct 4</span>
+                  <span className="font-medium">Oct 11</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <Clock className="w-3 h-3" />
-                  <span className="font-medium">8:30 PM IST</span>
+                  <span className="font-medium">6:30 PM IST</span>
                 </div>
               </div>
             </div>
@@ -49,8 +49,8 @@ const WebinarBanner = () => {
                 {/* Profile Image */}
                 <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0 shadow-lg ring-2 ring-white/20">
                   <Image
-                    src="/vivek_gupta.jpg"
-                    alt="Vivek Gupta - ICPC Mentor"
+                    src="/gayathry.jpeg"
+                    alt="GAYATHRY S. NAMPUTIRI - ICPC@Amrita Club Member"
                     fill
                     className="object-cover"
                     priority
@@ -62,25 +62,25 @@ const WebinarBanner = () => {
                   <p className="text-[10px] text-blue-200 uppercase tracking-wider font-semibold mb-1">
                     HOSTED BY
                   </p>
-                  <h3 className="font-bold text-sm md:text-base leading-tight">Vivek Gupta</h3>
-                  <p className="text-xs text-blue-100">Algo Zenith</p>
+                  <h3 className="font-bold text-sm md:text-base leading-tight">GAYATHRY S. NAMPUTIRI</h3>
+                  <p className="text-xs text-blue-100">ICPC@Amrita Club Member</p>
                 </div>
                 
                 {/* Register Button */}
-                <Button 
+                {/* <Button 
                   size="sm"
                   onClick={handleRegistration}
                   className="bg-white text-blue-700 hover:bg-yellow-50 font-bold px-5 md:px-7 py-2.5 md:py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group text-xs md:text-sm whitespace-nowrap"
                 >
                   Join Now
                   <ArrowRight className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                </Button> */}
               </div>
               
               {/* Passcode - Below the button */}
-              <p className="text-sm text-blue-200 text-center">
+              {/* <p className="text-sm text-blue-200 text-center">
                 Passcode: <span className="font-mono font-semibold text-white">481217</span>
-              </p>
+              </p> */}
             </div>
 
           </div>
