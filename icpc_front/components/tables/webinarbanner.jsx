@@ -10,7 +10,7 @@ const WebinarBanner = () => {
 
    const handleRegistration = () => {
     // Replace with your actual registration URL
-    window.open('https://us06web.zoom.us/j/88601490165?pwd=JjUz2s4LRPsZdxDRAkriH7HkaIYMCT.1', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSciBGv2kzb5MTUT1jyfsu9IMgTcJJPxbjAsjIbsdnfNcMdS2w/viewform', '_blank');
   };
 
   return (
@@ -67,14 +67,14 @@ const WebinarBanner = () => {
                 </div>
                 
                 {/* Register Button */}
-                {/* <Button 
+                <Button 
                   size="sm"
                   onClick={handleRegistration}
                   className="bg-white text-blue-700 hover:bg-yellow-50 font-bold px-5 md:px-7 py-2.5 md:py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group text-xs md:text-sm whitespace-nowrap"
                 >
-                  Join Now
+                  Register Now
                   <ArrowRight className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
-                </Button> */}
+                </Button>
               </div>
               
               {/* Passcode - Below the button */}
