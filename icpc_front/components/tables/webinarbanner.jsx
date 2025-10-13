@@ -10,7 +10,7 @@ const WebinarBanner = () => {
 
    const handleRegistration = () => {
     // Replace with your actual registration URL
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSciBGv2kzb5MTUT1jyfsu9IMgTcJJPxbjAsjIbsdnfNcMdS2w/viewform', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbMxRlw01gCY-4ipxA6q3Nplht9ZETRh8Na45rXMkuieGdrQ/viewform', '_blank');
   };
 
   return (
@@ -26,7 +26,8 @@ const WebinarBanner = () => {
                   Join Our Upcoming Webinar!
                 </h2>
                 <p className="text-blue-100 text-sm md:text-base">
-                 Live Problem Solving & How to Make the Best Use of CP Platforms
+                 From Contests to Career: How to Build a Competitive Programming Career
+
                 </p>
               </div>
 
@@ -34,7 +35,7 @@ const WebinarBanner = () => {
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs md:text-sm text-blue-100">
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <Calendar className="w-3 h-3" />
-                  <span className="font-medium">Oct 11</span>
+                  <span className="font-medium">Oct 15</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
                   <Clock className="w-3 h-3" />
@@ -49,8 +50,8 @@ const WebinarBanner = () => {
                 {/* Profile Image */}
                 <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0 shadow-lg ring-2 ring-white/20">
                   <Image
-                    src="/gayathry.jpeg"
-                    alt="GAYATHRY S. NAMPUTIRI - ICPC@Amrita Club Member"
+                    src="/abhijith.jpg"
+                    alt="ABHIJITH R PILLAI - ICPC@Amrita Club Lead"
                     fill
                     className="object-cover"
                     priority
@@ -62,8 +63,8 @@ const WebinarBanner = () => {
                   <p className="text-[10px] text-blue-200 uppercase tracking-wider font-semibold mb-1">
                     HOSTED BY
                   </p>
-                  <h3 className="font-bold text-sm md:text-base leading-tight">GAYATHRY S. NAMPUTIRI</h3>
-                  <p className="text-xs text-blue-100">ICPC@Amrita Club Member</p>
+                  <h3 className="font-bold text-sm md:text-base leading-tight">ABHIJITH R PILLAI</h3>
+                  <p className="text-xs text-blue-100">ICPC@Amrita Club Lead</p>
                 </div>
                 
                 {/* Register Button */}

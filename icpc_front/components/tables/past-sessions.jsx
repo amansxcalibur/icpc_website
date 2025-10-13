@@ -59,6 +59,27 @@ export default function WebinarSection() {
               </p>
             </div>
           </div>
+           {/* Perk 3 */}
+          <div className="flex gap-[2vw] items-center group cursor-pointer animate-fade-in-up animation-delay-200">
+            <div className="w-[15vw] h-[15vw] max-md:w-[30vw] max-md:h-[30vw] rounded-[1vw] overflow-hidden flex-shrink-0 transition-transform duration-500 group-hover:scale-105">
+              <Image
+                src="/gayathry.jpeg"
+                width={500}
+                height={500}
+                alt="Certificates"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div className="transition-transform duration-300 group-hover:translate-x-2">
+              <h2 className="text-[1.5vw] max-md:text-[4vw] font-semibold mb-[0.5vw] text-blue-950 transition-colors duration-300 group-hover:text-blue-600">
+                 Live Problem Solving & How to Make the Best Use of CP Platforms
+              </h2>
+              <p>Gayathry S. Namputhiri | ICPC@Amrita Club Member</p>
+              <p className="text-[1vw] max-md:text-[3vw] text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
+                October 11, 2025 | 6:30 PM IST
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
