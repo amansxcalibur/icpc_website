@@ -106,11 +106,9 @@ export default function Layout({ children }) {
             </noscript>
 
             {/* Noupe Chatbot Embed */}
-            <Script
-                id="noupe-chatbot"
-                strategy="afterInteractive"
-                src="https://www.noupe.com/embed/019905659e8679fbb1ba96d551a1a44d4324.js"
-            />
+           <script src='https://cdn.jotfor.ms/agent/embedjs/0199e1f02d967ce59ea64f13851e763f1e80/embed.js'>
+           </script>
+
             
             <Navbar open={open} hero={hero} darkSection={darkSection} />
             <div className="max-w-screen md:-mt-[6vw] max-md:-mt-[-9vw] bg-stone-30 bg-white">
