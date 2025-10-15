@@ -109,12 +109,27 @@ export default function AltHero() {
                         ~350+ Onsite Slots Available 
                     </p>
                     
-                    <Link
-                        href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
-                        className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 lg:py-5 px-5 sm:px-6 md:px-8 lg:px-10 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
-                    >
-                        Registration Open
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
+                        <Link
+  href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
+  className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg py-3 px-8 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[220px] text-center"
+>
+  Registration Open
+</Link>
+
+<Link
+  href="/data/Declaration_form.pdf"
+  download
+  className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg py-3 px-8 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 min-w-[220px]"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+  </svg>
+  <span className="hidden sm:inline">College Declaration Form</span>
+  <span className="sm:hidden">College Form</span>
+</Link>
+
+                    </div>
                     
                     {/* Timeline */}
                     <div className="mt-6 flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-3 text-center">
