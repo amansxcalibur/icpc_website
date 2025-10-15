@@ -110,8 +110,8 @@ export default function Layout({ children }) {
                 id="noupe-chatbot"
                 strategy="afterInteractive"
                 src="https://www.noupe.com/embed/019905659e8679fbb1ba96d551a1a44d4324.js"
-            />
-             */}
+            /> */}
+            
             <Navbar open={open} hero={hero} darkSection={darkSection} />
             <div className="max-w-screen md:-mt-[6vw] max-md:-mt-[-9vw] bg-stone-30 bg-white">
                 {children}
