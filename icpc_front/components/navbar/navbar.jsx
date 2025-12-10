@@ -276,7 +276,7 @@ export default function Navbar({ open, hero, darkSection }) {
     // Improved text color logic with better contrast
     const getTextColor = () => {
         if (hero) {
-            return "text-white hover:text-gray-200"; // White text on hero
+            return "text-gray-900 hover:text-red-600"; // Dark text
         } else if (darkSection) {
             return "text-white hover:text-gray-200"; // White text on dark sections
         } else {
@@ -289,7 +289,7 @@ export default function Navbar({ open, hero, darkSection }) {
     // Enhanced navbar background with better visibility
     const getNavbarBg = () => {
         if (hero) {
-            return "bg-black/20 backdrop-blur-md border-b border-white/10";
+            return "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm"; // White background
         } else if (darkSection) {
             return "bg-white/10 backdrop-blur-md border-b border-white/10";
         } else {
@@ -300,7 +300,8 @@ export default function Navbar({ open, hero, darkSection }) {
     const locations = [
         { name: "Amritapuri", href: "/reach-us/amritapuri" },
         { name: "Bengaluru", href: "/reach-us/bengaluru" },
-        { name: "Coimbatore", href: "/reach-us/coimbatore" }
+        { name: "Coimbatore", href: "/reach-us/coimbatore" },
+        { name: "Mysuru", href: "/reach-us/mysuru" }
     ];
     
     const locations24 = [
@@ -348,9 +349,10 @@ export default function Navbar({ open, hero, darkSection }) {
                 { label: "Why Amrita", href: "#perks", type: "scroll" },
                 { label: "FAQ", href: "#faq", type: "scroll" },
                 { label: "Hall of Fame", href: "/halloffame", type: "link" },
+                {label:  "Prelims Ranklist", href: "/prelims-ranklist", type: "link"},
                 { label: "Reach Us", type: "dropdown", items: locations },
-                { label: "Promote", href: "/promote", type: "link" },
-                { label: "Ambassador Program", href: "/ambassador-program", type: "link" },
+                // { label: "Promote", href: "/promote", type: "link" },
+                // { label: "Ambassador Program", href: "/ambassador-program", type: "link" },
                 { label: "Organizers", href: "/organizers", type: "link" },
                 { label: "Why Sponsor Us", href: "/why-sponsor-us", type: "link" },
                 { label: "Gallery", href: "/gallery", type: "link" },
