@@ -1,192 +1,189 @@
-'use client';
-import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import AnnouncementModal from "../tables/announcement-modal";
+'use client'
 
-export default function AltHero() {
-    const IMAGE_PATH = '/coursel_images/';
-    const IMAGE_COUNT = 5;
-    const IMAGE_EXTENSION = '.jpg';
-    
-    // Generate images array dynamically
-    const images = Array.from({ length: IMAGE_COUNT }, (_, index) => ({
-        id: String(index + 1),
-        src: `${IMAGE_PATH}${index + 1}${IMAGE_EXTENSION}`,
-        alt: `ICPC 2025 Regionals - Image ${index + 1}`
-    }));
+import { motion } from "framer-motion"
+import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import Shuffle from '../Shuffle';
+import TeamRegistrationModal from '../modal/TeamRegistrationModal';
+export default function ShuffleHero() {
+  return (
+    <>
+      <TeamRegistrationModal />
+      <section className="flex flex-col lg:flex-row min-h-screen pt-20 sm:pt-24 md:pt-28 lg:pt-24 xl:pt-20 max-w-7xl mx-auto gap-x-8 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-8">
 
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+      <div className="flex-1 flex flex-col justify-center py-6 lg:py-20">
+        {/* <span className="block mb-4 text-sm text-blue-600 font-medium">
+          Programming Competition
+        </span> */}
 
-    // Auto-change images every 4 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => 
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 4000);
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 leading-tight mb-4">
+          ICPC 2026
+          <br />
+          <span className="text-blue-600">AMRITAPURI REGIONALS</span>
+        </h1>
 
-        return () => clearInterval(interval);
-    }, [images.length]);
+        <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-6">
+          <Link href="/reach-us/bengaluru" className="hover:text-blue-600">
+            Bengaluru
+          </Link>{" "}
+          ,{" "}
+          <Link href="/reach-us/coimbatore" className="hover:text-blue-600">
+            Coimbatore
+          </Link>{" "}
+          ,{" "}
+          <Link href="/reach-us/amritapuri" className="hover:text-blue-600">
+            Kollam
+          </Link>{" "}
+          <Link href="/reach-us/mysuru" className="hover:text-blue-600">
+          , Mysuru
+          </Link>
 
-    const goToImage = (index) => {
-        setCurrentImageIndex(index);
-    };
+        </p>
 
-    return (
-        <div className="relative w-full min-h-[85vh] lg:min-h-[80vh] overflow-hidden mt-0">
-            
-            {/* Background Image Carousel with Auto-Change */}
-            <div className="absolute inset-0 w-full h-full">
-                {images.length > 0 ? (
-                    <>
-                        {/* Image Container */}
-                        <div className="relative w-full h-full">
-                            {images.map((image, index) => (
-                                <div
-                                    key={image.id}
-                                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                                        index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-                                    }`}
-                                >
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        fill
-                                        className="object-cover"
-                                        priority={index === 0}
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                        
-                        {/* Navigation Dots - positioned above content with better spacing */}
-                        <div className="absolute bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-16 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
-                            {images.map((image, index) => (
-                                <button
-                                    key={image.id}
-                                    onClick={() => goToImage(index)}
-                                    className={`w-5 h-1 rounded-full transition-all duration-300 shadow-lg border-2 border-white/20
-                                        ${index === currentImageIndex 
-                                            ? 'bg-white/70 scale-110' 
-                                            : 'bg-white/30 hover:bg-white/50'
-                                        }`}
-                                />
-                            ))}
-                        </div>
-                    </>
-                ) : (
-                    <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                        <p className="text-gray-500">Loading images...</p>
-                    </div>
-                )}
+<button className="group self-start inline-flex items-center gap-3 border-2 border-black bg-white px-6 py-3 text-base font-semibold">
+
+  <span className="relative overflow-hidden">
+    <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">
+      Coming Soon
+    </span>
+
+    <span className="absolute left-0 top-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+      Coming Soon
+    </span>
+  </span>
+
+  <div className="pointer-events-none flex h-5 w-5 overflow-hidden">
+    <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="shrink-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 text-red-700"
+    >
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+
+    <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="shrink-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 text-blue-700"
+    >
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+  </div>
+
+</button>
+
+        <div className="mt-12 self-start flex justify-center items-center gap-6 sm:gap-10 md:gap-16">
+          <div className="text-center flex flex-col gap-2">
+            <div className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 leading-none whitespace-nowrap">
+              <Shuffle text="OCT 3" shuffleDirection="right" duration={0.35} animationMode="evenodd" shuffleTimes={1} ease="power3.out" stagger={0.03} threshold={0.1} triggerOnce={true} triggerOnHover={true} respectReducedMotion={true} loop={false} loopDelay={0} />
             </div>
+            <div className="text-base sm:text-md text-blue-700 font-semibold tracking-wider uppercase whitespace-nowrap">Online Prelims</div>
+          </div>
 
-            {/* Dark Overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/40 z-5"></div>
-            
-            {/* Main Content Container - Fixed top spacing */}
-            <div className="relative z-10 flex flex-col justify-center items-center w-full h-full min-h-[85vh] lg:min-h-[80vh] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-32 sm:pt-36 md:pt-40 lg:pt-32 pb-24 sm:pb-28 md:pb-32 lg:pb-36">
-                
-                {/* Text Content */}
-                <div className="flex flex-col justify-center items-center text-center max-w-3xl">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 leading-tight tracking-tighter">
-                        ICPC 2025 Regionals
-                    </h1>
-                    
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white font-medium mb-2 sm:mb-2 md:mb-3">
-                        <Link href={'/reach-us/bengaluru'} className="hover:text-blue-300 transition-colors duration-300">
-                            Bengaluru
-                        </Link> | <Link href={'/reach-us/coimbatore'} className="hover:text-blue-300 transition-colors duration-300">
-                            Coimbatore
-                        </Link> | <Link href={'/reach-us/amritapuri'} className="hover:text-blue-300 transition-colors duration-300">
-                            Kollam
-                        </Link> | <span className="hover:text-blue-300 transition-colors duration-300">
-                            Mysuru
-                        </span>
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white pb-3">
-                        ~350+ Onsite Slots Available 
-                    </p>
-                    
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
-                        <Link
-  href="https://icpc.global/regionals/finder/Asia-Amritapuri-First-Round-2026"
-  className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg py-3 px-8 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[220px] text-center"
->
-  Registration Open
-</Link>
+          <div className="hidden sm:block w-px bg-gray-300 h-16"></div>
 
-<Link
-  href="/data/Declaration_form.pdf"
-  download
-  className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg py-3 px-8 rounded-md transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 min-w-[220px]"
->
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-  </svg>
-  <span className="hidden sm:inline">College Declaration Form</span>
-  <span className="sm:hidden">College Form</span>
-</Link>
-
-                    </div>
-                    
-                    {/* Timeline */}
-                    <div className="mt-6 flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-3 text-center">
-                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
-                            <span className="block text-white">24 OCT</span>
-                            <span>Registration Ends</span>
-                        </div> 
-                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
-                            <span className="block text-white">TBD</span>
-                            <span>Online Prelims</span>
-                        </div>
-                        <div className="px-3 py-2 rounded-xl text-white text-sm sm:text-base md:text-lg font-semibold">
-                            <span className="block text-white">2–3 JAN</span>
-                            <span>Onsite Regionals</span>
-                        </div>
-                    </div>
-
-                    {/* Sponsored by section with improved spacing */}
-                    <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col items-center">
-                        <p className="text-white/80 text-xs sm:text-sm font-medium mb-4 uppercase tracking-wider">
-                            Sponsored by
-                        </p>
-                        <div className="flex items-start gap-6 sm:gap-8">
-                            <div className="flex flex-col items-center">
-                                <div className="h-10 sm:h-8 md:h-14 flex items-center justify-center mb-2">
-                                    <Image
-                                        src="/janestreet_white2.png"
-                                        alt="Jane Street"
-                                        width={100}
-                                        height={40}
-                                        className="h-full w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                                    />
-                                </div>
-                                <p className="text-white text-xs sm:text-xs md:text-sm text-center font-light">
-                                    ICPC Titanium Multi-Regional Sponsor
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col items-center">
-                                <div className="h-10 sm:h-8 md:h-14 flex items-center justify-center mb-2">
-                                    <Image
-                                        src="/JetBrains_white_logo.svg"
-                                        alt="JetBrains"
-                                        width={60}
-                                        height={30}
-                                        className="h-3/4 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                                    />
-                                </div>
-                                <p className="text-white text-xs sm:text-xs md:text-sm text-center font-light">
-                                    ICPC Global Sponsor Programming Tools
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <AnnouncementModal />
-                </div>
+          <div className="text-center flex flex-col gap-2">
+            <div className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 leading-none whitespace-nowrap">
+              <Shuffle text="JAN 1-2" shuffleDirection="right" duration={0.35} animationMode="evenodd" shuffleTimes={1} ease="power3.out" stagger={0.03} threshold={0.1} triggerOnce={true} triggerOnHover={true} respectReducedMotion={true} loop={false} loopDelay={0} />
             </div>
+            <div className="text-base sm:text-md text-blue-700 font-semibold tracking-wider uppercase whitespace-nowrap">Onsite Finals</div>
+          </div>
         </div>
-    )
+
+      </div>
+
+      <div className="flex-1 flex items-center justify-center mt-8 lg:mt-0">
+        <ShuffleGrid />
+      </div>
+
+    </section>
+    </>
+  )
+}
+
+const shuffle = (array) => {
+  const newArray = [...array]
+  let currentIndex = newArray.length
+  let randomIndex
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+
+    ;[newArray[currentIndex], newArray[randomIndex]] = [
+      newArray[randomIndex],
+      newArray[currentIndex],
+    ]
+  }
+
+  return newArray
+}
+
+const squareData = [
+  { id: 1, src: "/coursel_images/2025/firstplace.jpg" },
+  { id: 2, src: "/coursel_images/2025/secondplace.jpg" },
+  { id: 3, src: "/coursel_images/2025/thirdplace.jpg" },
+  { id: 4, src: "/coursel_images/2025/frame.JPG" },
+  { id: 5, src: "/coursel_images/2025/teamphoto.JPG" },
+  { id: 6, src: "/coursel_images/2025/veronica.JPG" },
+  { id: 7, src: "/coursel_images/2025/veronica-2.JPG" },
+  { id: 8, src: "/coursel_images/2025/singer.JPG" },
+  { id: 9, src: "/coursel_images/2025/banquet.JPG" },
+  { id: 10, src: "/coursel_images/2025/banquet.JPG" },
+  { id: 11, src: "/coursel_images/2025/womenonlyteam.JPG" },
+  { id: 12, src: "/coursel_images/2025/topteams.jpg" },
+]
+
+const generateSquares = () => {
+  return shuffle(squareData).map((sq) => (
+    <motion.div
+      key={sq.id}
+      layout
+      transition={{ duration: 1.5, type: "spring" }}
+      className="relative w-full h-full rounded-md overflow-hidden"
+    >
+      <Image
+        src={sq.src}
+        alt="ICPC event"
+        fill
+        sizes="(max-width: 768px) 100vw, 600px"
+        className="object-cover"
+      />
+    </motion.div>
+  ))
+}
+
+function ShuffleGrid() {
+  const timeoutRef = useRef(null)
+  const [squares, setSquares] = useState([])
+
+  useEffect(() => {
+    setSquares(generateSquares())
+
+    const shuffleSquares = () => {
+      setSquares(generateSquares())
+      timeoutRef.current = setTimeout(shuffleSquares, 3000)
+    }
+
+    timeoutRef.current = setTimeout(shuffleSquares, 3000)
+
+    return () => clearTimeout(timeoutRef.current)
+  }, [])
+
+  return (
+    <div className="w-full max-w-[600px] aspect-square grid grid-cols-4 grid-rows-4 gap-[3px] overflow-hidden">
+      {squares}
+    </div>
+  )
 }
