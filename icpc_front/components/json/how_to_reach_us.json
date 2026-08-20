@@ -76,5 +76,31 @@
             "Metro Park Inn":["Rating : 3.9", "14.8km away", "Contact No : 04224203555"],
             "Neermala Residency":["Rating : 4.3", "8.4km away", "Contact No : 09677413666"]
         }
+    },
+
+   "Mysuru": {
+    "Description": "Amrita Mysuru Campus is located in Bogadi, a calm and residential area of Mysuru, known for its heritage, culture, and educational environment.",
+    "directions": {
+        "By Air and Taxi": "The nearest airport is Mysuru Airport (17 km away). Kempegowda International Airport, Bengaluru, is around 180 km away. Taxi and cab services are available from both airports.",
+        "By Train": "Mysuru Junction Railway Station is about 10 km from the campus. Autos, taxis, and cab services are readily available.",
+        "By Bus": "The campus is located about 9 km from KSRTC Mysuru Suburban Bus Stand. Local buses towards Bogadi, as well as autos and taxis, are available for direct access."
+    },
+    "Trains": {
+        "From Bengaluru": ["Shatabdi Express", "Wodeyar Express", "Chamundi Express", "Malgudi Express"],
+        "From Chennai": ["Kaveri Express"],
+        "From Mangalore": ["Mangaluru–Mysuru Express"]
+    },
+    "Hotels": {
+        "GLN Residency": ["Rating : 4.4", "0.8km away", ""],
+        "LikeMyApartment (Service Apartments)": ["Rating : 4.3", "0.7km away", ""],
+        "Treebo Samanvaya Retreat": ["Rating : 4.5", "2.5km away", ""]
+    },
+    "Restaurants": {
+        "The Cabana Garden": ["Rating : 4.4", "1km away", ""],
+        "Baamboo Multicuisine Restaurant": ["Rating : 4.3", "1.6km away", ""],
+        "Hotel Uncle Lobo's - Suggi Mane": ["Rating : 4.2", "1.8km away", ""]
     }
+
+}
+
 }

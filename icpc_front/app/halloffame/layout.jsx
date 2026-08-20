@@ -4,6 +4,8 @@ import Terminal from "@/components/ui_elems/terminal/terminalnew";
 import Navbar from "@/components/navbar/navbar";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import ContactUs2 from "@/components/footer/contact_us_2";
 
 export default function Layout({ children }) {
     const [open, setOpen] = useState(true);
@@ -69,10 +71,14 @@ export default function Layout({ children }) {
                 />
             </noscript>
             <Navbar open={open} hero={hero} darkSection={false} />
-            <div className="max-w-screen md:-mt-[6vw] max-md:-pt-[-9vw] bg-stone-30 bg-white">
+             <div className="max-w-screen md:-mt-[6vw] max-md:-pt-[-9vw] bg-stone-30 bg-white">
                 {children}
                 {/* <Terminal/> */}
             </div>
+            
+                        {/* Footer */}
+                        <ContactUs2  className="bg-blue-950"/>
+                       
         </div>
     );
 }

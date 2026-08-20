@@ -89,7 +89,7 @@ const TEAM_DATA = [
             name: "Aravind B L",
             role: "Head, Marketing and Operations",
             bio: "",
-            image: "/organisers/aravindbl3.png",
+            image: "/organisers/Aravindbl4.png",
             campus: "amritapuri",
             socialLinks: {
               linkedin: "",
@@ -132,6 +132,18 @@ const TEAM_DATA = [
               linkedin: "",
               email: ""
             }
+          },
+          {
+            id: "ht-1",
+            name: "Aman Kumar Singh",
+            role: "Head, Training",
+            bio: "",
+            image: "/organisers/aman.jpg",
+            campus: "amritapuri",
+            socialLinks: {
+              linkedin: "https://www.linkedin.com/in/iamamanksingh/",
+              email: ""
+            }
           }
         ]
       }
@@ -145,7 +157,7 @@ const TEAM_DATA = [
         name: "Aswin J",
         role: "Technical Support Lead | Amritapuri",
         bio: "",
-        image: "/organisers/aswinj.jpg",
+        image: "/organisers/aswin.png",
         campus: "amritapuri",
         socialLinks: {
           linkedin: "",
@@ -171,7 +183,7 @@ const TEAM_DATA = [
         name: "Athul R",
         role: "Media & Documentation Lead | Amritapuri",
         bio: "",
-        image: "/organisers/athul.png",
+        image: "/organisers/athul2.jpg",
         campus: "amritapuri",
         socialLinks: {
           linkedin: "",
@@ -265,7 +277,7 @@ const MobileFilterDropdown = ({ selectedCampus, onCampusChange, isOpen, onToggle
                 }}
                 className={`w-full text-left px-4 py-3 transition-colors duration-200 first:rounded-t-lg last:rounded-b-lg ${
                   selectedCampus === campus.value
-                    ? 'bg-black text-white'
+                    ? 'bg-blue-900 text-white'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
                 role="option"
@@ -297,7 +309,7 @@ const DesktopCampusFilter = ({ selectedCampus, onCampusChange }) => (
               onClick={() => onCampusChange(campus.value)}
               className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
                 selectedCampus === campus.value
-                  ? 'bg-black text-white'
+                  ? 'bg-blue-900 text-white'
                   : 'text-gray-600 hover:bg-gray-50 hover:text-black'
               }`}
             >
@@ -420,9 +432,10 @@ const TeamSectionHeader = ({ title, isVisible }) => (
   <header className={`text-center mb-12 sm:mb-16 transition-all duration-700 ease-out transform ${
     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
   }`}>
-    <Badge variant="outline" className="mb-3 sm:mb-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 text-xs sm:text-sm">
+    {/* Remove or comment out the Badge below */}
+    {/* <Badge variant="outline" className="mb-3 sm:mb-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 text-xs sm:text-sm">
       {title.replace(' Team', '')}
-    </Badge>
+    </Badge> */}
     <h2 className="text-2xl sm:text-4xl md:text-5xl font-light text-black tracking-tight">
       {title}
     </h2>

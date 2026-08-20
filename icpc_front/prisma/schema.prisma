@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Team {
+  id          String   @id @default(uuid())
+  personName  String?
+  userEmail   String?
+  isVerified  Boolean  @default(false)
+  campus      String
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  createdAt   DateTime @default(now())
+}
+
+model Admin {
+  id       String         @id @default(uuid())
+  email    String         @unique
+  password String
+  sessions AdminSession[]
+}
+
+model AdminSession {
+  id        String   @id @default(uuid())
+  adminId   String
+  admin     Admin    @relation(fields: [adminId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model Snapshot {
+  id         String          @id @default(uuid())
+  filename   String
+  uploadedAt DateTime        @default(now())
+  entries    SnapshotEntry[]
+}
+
+model SnapshotEntry {
+  id           String   @id @default(uuid())
+  snapshotId   String
+  snapshot     Snapshot @relation(fields: [snapshotId], references: [id], onDelete: Cascade)
+  username     String
+  firstName    String?
+  lastName     String?
+  role         String?
+  teamId       String?
+  teamName     String?
+  teamStatus   String?
+  teamInstName String?
+  ambassador   String?
+}
+
+model Ambassador {
+  id              String               @id @default(uuid())
+  refId           String               @unique
+  name            String
+  email           String               @unique
+  password        String
+  initialPassword String?
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+  sessions        AmbassadorSession[]
+}
+
+model AmbassadorSession {
+  id             String     @id @default(uuid())
+  ambassadorId   String
+  ambassador     Ambassador @relation(fields: [ambassadorId], references: [id], onDelete: Cascade)
+  token          String     @unique
+  expiresAt      DateTime
+  createdAt      DateTime   @default(now())
+}
